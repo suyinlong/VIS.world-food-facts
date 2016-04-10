@@ -1,0 +1,622 @@
+Column Analysis of FoodFacts.csv
+Loading csv file...
+Processing additives_n
+Processing energy_100g
+Processing energy_from_fat_100g
+Processing fat_100g
+Processing saturated_fat_100g
+Processing butyric_acid_100g
+Processing caproic_acid_100g
+Processing caprylic_acid_100g
+Processing capric_acid_100g
+Processing lauric_acid_100g
+Processing myristic_acid_100g
+Processing palmitic_acid_100g
+Processing stearic_acid_100g
+Processing arachidic_acid_100g
+Processing behenic_acid_100g
+Processing lignoceric_acid_100g
+Processing cerotic_acid_100g
+Processing montanic_acid_100g
+Processing melissic_acid_100g
+Processing monounsaturated_fat_100g
+Processing polyunsaturated_fat_100g
+Processing omega_3_fat_100g
+Processing alpha_linolenic_acid_100g
+Processing eicosapentaenoic_acid_100g
+Processing docosahexaenoic_acid_100g
+Processing omega_6_fat_100g
+Processing linoleic_acid_100g
+Processing arachidonic_acid_100g
+Processing gamma_linolenic_acid_100g
+Processing dihomo_gamma_linolenic_acid_100g
+Processing omega_9_fat_100g
+Processing oleic_acid_100g
+Processing elaidic_acid_100g
+Processing gondoic_acid_100g
+Processing mead_acid_100g
+Processing erucic_acid_100g
+Processing nervonic_acid_100g
+Processing trans_fat_100g
+Processing cholesterol_100g
+Processing carbohydrates_100g
+Processing sugars_100g
+Processing sucrose_100g
+Processing glucose_100g
+Processing fructose_100g
+Processing lactose_100g
+Processing maltose_100g
+Processing maltodextrins_100g
+Processing starch_100g
+Processing polyols_100g
+Processing fiber_100g
+Processing proteins_100g
+Processing casein_100g
+Processing serum_proteins_100g
+Processing nucleotides_100g
+Processing salt_100g
+Processing sodium_100g
+Processing alcohol_100g
+Processing vitamin_a_100g
+Processing beta_carotene_100g
+Processing vitamin_d_100g
+Processing vitamin_e_100g
+Processing vitamin_k_100g
+Processing vitamin_c_100g
+Processing vitamin_b1_100g
+Processing vitamin_b2_100g
+Processing vitamin_pp_100g
+Processing vitamin_b6_100g
+Processing vitamin_b9_100g
+Processing vitamin_b12_100g
+Processing biotin_100g
+Processing pantothenic_acid_100g
+Processing silica_100g
+Processing bicarbonate_100g
+Processing potassium_100g
+Processing chloride_100g
+Processing calcium_100g
+Processing phosphorus_100g
+Processing iron_100g
+Processing magnesium_100g
+Processing zinc_100g
+Processing copper_100g
+Processing manganese_100g
+Processing fluoride_100g
+Processing selenium_100g
+Processing chromium_100g
+Processing molybdenum_100g
+Processing iodine_100g
+Processing caffeine_100g
+Processing taurine_100g
+Processing ph_100g
+Processing fruits_vegetables_nuts_100g
+Processing collagen_meat_protein_ratio_100g
+Processing cocoa_100g
+Processing chlorophyl_100g
+Processing carbon_footprint_100g
+Processing nutrition_score_fr_100g
+Processing nutrition_score_uk_100g
+Processing creator
+Processing brands
+Processing brands_tags
+Processing categories
+Processing categories_tags
+Processing origins
+Processing origins_tags
+Processing manufacturing_places
+Processing manufacturing_places_tags
+Processing countries
+Processing countries_tags
+Processing countries_en
+Processing nutrition_grade_uk
+Processing nutrition_grade_fr
+Processing main_category_en
+Processing ingredients_text
+Processing allergens_en
+Processing traces_en
+Processing serving_size
+Processing no_nutriments
+Processing additives_en
+
+# CSV Report
+  row = 65503 col = 159
+
+# Numeric columns
+  additives_n : min = 0.0 max = 26.0 inv = 21839
+  energy_100g : min = 0.0 max = 4134.0 inv = 29129
+  energy_from_fat_100g : min = 0.0 max = 3740.0 inv = 64770
+  fat_100g : min = 0.0 max = 101.0 inv = 29141
+  saturated_fat_100g : min = 0.0 max = 100.0 inv = 33074
+  butyric_acid_100g : min = nan max = nan inv = 65503
+  caproic_acid_100g : min = nan max = nan inv = 65503
+  caprylic_acid_100g : min = 7.4 max = 7.4 inv = 65502
+  capric_acid_100g : min = 6.2 max = 6.2 inv = 65502
+  lauric_acid_100g : min = 0.04473 max = 49.3 inv = 65500
+  myristic_acid_100g : min = 18.9 max = 18.9 inv = 65502
+  palmitic_acid_100g : min = 8.1 max = 8.1 inv = 65502
+  stearic_acid_100g : min = 3.0 max = 3.0 inv = 65502
+  arachidic_acid_100g : min = 0.064 max = 15.4 inv = 65486
+  behenic_acid_100g : min = 5.5 max = 14.6 inv = 65487
+  lignoceric_acid_100g : min = nan max = nan inv = 65503
+  cerotic_acid_100g : min = nan max = nan inv = 65503
+  montanic_acid_100g : min = nan max = nan inv = 65503
+  melissic_acid_100g : min = nan max = nan inv = 65503
+  monounsaturated_fat_100g : min = 0.0 max = 80.0 inv = 63946
+  polyunsaturated_fat_100g : min = 0.0 max = 74.0 inv = 63933
+  omega_3_fat_100g : min = 0.00015 max = 38.2 inv = 64976
+  alpha_linolenic_acid_100g : min = 0.0 max = 47.0 inv = 65374
+  eicosapentaenoic_acid_100g : min = 0.048 max = 85.0 inv = 65470
+  docosahexaenoic_acid_100g : min = 0.044 max = 12.0 inv = 65446
+  omega_6_fat_100g : min = 0.05 max = 71.0 inv = 65366
+  linoleic_acid_100g : min = 0.09 max = 25.0 inv = 65406
+  arachidonic_acid_100g : min = 0.007 max = 0.09 inv = 65498
+  gamma_linolenic_acid_100g : min = 0.095 max = 0.2032 inv = 65486
+  dihomo_gamma_linolenic_acid_100g : min = 0.05 max = 0.08 inv = 65487
+  omega_9_fat_100g : min = 1.0 max = 75.0 inv = 65487
+  oleic_acid_100g : min = 1.08 max = 70.0 inv = 65496
+  elaidic_acid_100g : min = nan max = nan inv = 65503
+  gondoic_acid_100g : min = 1e-06 max = 1.25e-06 inv = 65495
+  mead_acid_100g : min = nan max = nan inv = 65503
+  erucic_acid_100g : min = nan max = nan inv = 65503
+  nervonic_acid_100g : min = nan max = nan inv = 65503
+  trans_fat_100g : min = 0.0 max = 30.3 inv = 64275
+  cholesterol_100g : min = 0.0 max = 0.432 inv = 64112
+  carbohydrates_100g : min = 0.0 max = 139.0 inv = 29438
+  sugars_100g : min = -0.5 max = 105.0 inv = 32864
+  sucrose_100g : min = 0.0 max = 8.4 inv = 65495
+  glucose_100g : min = 0.1 max = 2.0 inv = 65498
+  fructose_100g : min = 0.1 max = 101.0 inv = 65483
+  lactose_100g : min = 0.0 max = 58.5 inv = 65362
+  maltose_100g : min = 0.1 max = 22.0 inv = 65501
+  maltodextrins_100g : min = 1.8 max = 27.5 inv = 65496
+  starch_100g : min = 0.0 max = 87.8 inv = 65287
+  polyols_100g : min = 0.0 max = 100.0 inv = 65253
+  fiber_100g : min = 0.0 max = 94.8 inv = 42957
+  proteins_100g : min = 0.0 max = 86.0 inv = 29573
+  casein_100g : min = 0.92 max = 10.2 inv = 65488
+  serum_proteins_100g : min = 0.3 max = 5.8 inv = 65495
+  nucleotides_100g : min = 0.018 max = 0.024 inv = 65500
+  salt_100g : min = 0.0 max = 254.0 inv = 32595
+  sodium_100g : min = 0.0 max = 100.0 inv = 32605
+  alcohol_100g : min = 0.0 max = 97.9 inv = 63084
+  vitamin_a_100g : min = 0.0 max = 26.7 inv = 64142
+  beta_carotene_100g : min = 0.000812 max = 0.26 inv = 65494
+  vitamin_d_100g : min = 0.0 max = 7.5 inv = 64921
+  vitamin_e_100g : min = 0.0 max = 15.1 inv = 64746
+  vitamin_k_100g : min = 0.0 max = 0.0334 inv = 65444
+  vitamin_c_100g : min = 0.0 max = 100.0 inv = 63595
+  vitamin_b1_100g : min = 1e-05 max = 0.169 inv = 64632
+  vitamin_b2_100g : min = 0.0 max = 30.0 inv = 64782
+  vitamin_pp_100g : min = 2.4e-06 max = 15.9 inv = 64772
+  vitamin_b6_100g : min = 0.0 max = 0.215 inv = 64800
+  vitamin_b9_100g : min = 0.0 max = 4.0 inv = 64766
+  vitamin_b12_100g : min = 0.0 max = 50.0 inv = 64912
+  biotin_100g : min = -2.0 max = 5.0 inv = 65310
+  pantothenic_acid_100g : min = -2.0 max = 5.0 inv = 65096
+  silica_100g : min = 8.2e-06 max = 0.0362 inv = 65475
+  bicarbonate_100g : min = 6.3e-06 max = 1.1 inv = 65441
+  potassium_100g : min = 0.0 max = 34.6 inv = 65006
+  chloride_100g : min = 2e-06 max = 0.5 inv = 65397
+  calcium_100g : min = 0.0 max = 69.5 inv = 62554
+  phosphorus_100g : min = 0.0012 max = 84.9 inv = 64913
+  iron_100g : min = 0.0 max = 19.2 inv = 63650
+  magnesium_100g : min = 5e-07 max = 11.5 inv = 64706
+  zinc_100g : min = 0.0001 max = 4.0 inv = 65258
+  copper_100g : min = 1.67e-05 max = 0.35 inv = 65407
+  manganese_100g : min = 3e-06 max = 0.7 inv = 65418
+  fluoride_100g : min = 0.0 max = 0.56 inv = 65448
+  selenium_100g : min = 7e-07 max = 0.03 inv = 65429
+  chromium_100g : min = 7.06e-06 max = 0.0001 inv = 65488
+  molybdenum_100g : min = 7e-06 max = 4.5e-05 inv = 65498
+  iodine_100g : min = 3.6e-09 max = 0.0147 inv = 65388
+  caffeine_100g : min = 0.003 max = 32.0 inv = 65467
+  taurine_100g : min = 0.0018 max = 0.423 inv = 65487
+  ph_100g : min = 0.005 max = 7.9 inv = 65468
+  fruits_vegetables_nuts_100g : min = 1.4 max = 100.0 inv = 64474
+  collagen_meat_protein_ratio_100g : min = 8.0 max = 25.0 inv = 65394
+  cocoa_100g : min = 6.3 max = 100.0 inv = 65071
+  chlorophyl_100g : min = nan max = nan inv = 65503
+  carbon_footprint_100g : min = 0.0 max = 2842.0 inv = 65323
+  nutrition_score_fr_100g : min = -14.0 max = 35.0 inv = 34209
+  nutrition_score_uk_100g : min = -14.0 max = 33.0 inv = 34209
+
+# Text Group columns
+  creator : set = (omitted) cou = 1905 inv = 68
+  brands : set = (omitted) cou = 17172 inv = 9303
+  brands_tags : set = (omitted) cou = 14097 inv = 9304
+  categories : set = (omitted) cou = 23878 inv = 15608
+  categories_tags : set = (omitted) cou = 14063 inv = 15623
+  origins : set = (omitted) cou = 3655 inv = 50138
+  origins_tags : set = (omitted) cou = 3313 inv = 50175
+  manufacturing_places : set = (omitted) cou = 4424 inv = 44435
+  manufacturing_places_tags : set = (omitted) cou = 4033 inv = 44441
+  countries : set = (omitted) cou = 722 inv = 211
+  countries_tags : set = (omitted) cou = 373 inv = 211
+  countries_en : set = (omitted) cou = 372 inv = 211
+  nutrition_grade_uk : set = set() cou = 0 inv = 65503
+  nutrition_grade_fr : set = {b'b', b'c', b'd', b'a', b'e'} cou = 5 inv = 34209
+  main_category_en : set = (omitted) cou = 2665 inv = 15640
+
+# Text Null columns
+  ingredients_text inv = 21822
+  allergens_en inv = 65486
+  traces_en inv = 50633
+  serving_size inv = 44329
+  no_nutriments inv = 65503
+  additives_en inv = 41838
+
+# Text Group Result
+  countries_en :
+    b'Greece'
+    b'China,Switzerland'
+    b'France,Taiwan'
+    b'China,France'
+    b'Ghana'
+    b'Malta'
+    b'Algeria'
+    b'Serbia'
+    b'Lithuania,United Kingdom'
+    b'Macau'
+    b'Brazil'
+    b'Denmark,France,Spain'
+    b'France,United States'
+    b'Belgium,France,Germany,Netherlands'
+    b'France,Netherlands,Switzerland'
+    b'Taiwan'
+    b'Belgium,France,Italy,Spain'
+    b'Belgium,France,Germany,Hungary,Switzerland'
+    b'Belize'
+    b'Spain'
+    b'Kenya'
+    b'Cook Islands'
+    b'Germany'
+    b'Vietnam'
+    b'Philippines'
+    b'Australia,Philippines'
+    b'Argentina'
+    b'United States'
+    b'Martinique'
+    b'France,Saint Pierre and Miquelon'
+    b'Portugal'
+    b'European Union'
+    b'Denmark,Switzerland,United Kingdom'
+    b'Belgium'
+    b'Brazil,France'
+    b'France,Saudi Arabia'
+    b'Australia,Germany'
+    b'France,French Guiana'
+    b'Iran'
+    b'Japan,\xe6\x97\xa5\xe6\x9c\xac'
+    b'fr:yaourt-veloute-aux-fruits'
+    b'United Kingdom,United States'
+    b'France,Japan'
+    b'Hong Kong'
+    b'El Salvador'
+    b'Denmark,France,Portugal,Switzerland'
+    b'Belarus'
+    b'Russia'
+    b'Egypt'
+    b'Maldives'
+    b'Greece,Israel'
+    b'Belgium,Denmark,Finland,France,Germany,Hungary,Italy,Netherlands,Norway,Spain,Sweden,United Kingdom'
+    b'Belgium,France,Netherlands'
+    b'Lithuania,Sweden'
+    b'Czech Republic,Slovakia'
+    b'Denmark,R\xc3\xa9union'
+    b'Austria,Germany,Netherlands'
+    b'Switzerland,United Kingdom'
+    b'France,Netherlands,Spain,United Kingdom'
+    b'Belgium,Denmark,France,Germany'
+    b'\xe6\x97\xa5\xe6\x9c\xac'
+    b'Italy,Romania'
+    b'Monaco'
+    b'Argentina,France'
+    b'New Zealand'
+    b'Indonesia'
+    b'Armenia'
+    b'France,Serbia'
+    b'Colombia'
+    b'Guatemala'
+    b'Peru'
+    b'Singapore'
+    b'Hong Kong,United States'
+    b'Australia,Thailand,United Kingdom'
+    b'France,Spain,United Kingdom'
+    b'Romania'
+    b'Iceland'
+    b'Belgium,France,Italy,Luxembourg,Netherlands,Spain'
+    b'Albania,Belgium,France,Germany,Italy,Netherlands,Spain'
+    b'R\xc3\xa9union'
+    b'Finland,France'
+    b'Hawaii'
+    b'Poland'
+    b'Turkey'
+    b'France,Greece'
+    b'Ukraine'
+    b'United Arab Emirates'
+    b'Lebanon,Qatar,Syria,Tunisia,Yemen'
+    b'Saudi Arabia'
+    b'Belgium,France'
+    b'France,Switzerland,fr:Europe'
+    b'Austria,France,United Kingdom'
+    b'Canada,France,Greece,Netherlands,Spain,United Kingdom,United States'
+    b'Finland,Portugal,Spain,Sweden,United Kingdom'
+    b'Aruba'
+    b'Qatar'
+    b'Germany,Poland'
+    b'Czech Republic,France,Iraq'
+    b'Croatia,Portugal'
+    b'France,R\xc3\xa9union'
+    b'Moldova,United States'
+    b'Dominican Republic'
+    b'Kuwait'
+    b'Germany,United Kingdom'
+    b'Australia,United Kingdom'
+    b'Belgium,France,Netherlands,Spain,United Kingdom'
+    b'Canada,United States'
+    b'Lebanon'
+    b'Morocco,Spain'
+    b'France,Greece,Netherlands'
+    b'Denmark,Guadeloupe'
+    b'India'
+    b'Czech Republic,Denmark,France,Germany'
+    b'Costa Rica'
+    b'France,United Kingdom'
+    b"C\xc3\xb4te d'Ivoire"
+    b'Germany,Netherlands'
+    b'France,Germany,Spain'
+    b'Belgium,France,Luxembourg,Netherlands,United Kingdom'
+    b'Latvia'
+    b'Andorra'
+    b'Belgium,France,Greece,Netherlands,Portugal'
+    b'Tanzania'
+    b'Portugal,Spain,United Kingdom'
+    b'Belgium,France,Germany,Hungary,Italy,Netherlands,Spain'
+    b'United Kingdom'
+    b'Belgium,fr:Europe'
+    b'Denmark,France,Germany,United Kingdom'
+    b'Cuba'
+    b'Albania,Italy'
+    b'Germany,United Kingdom,United States'
+    b'Pakistan'
+    b'Denmark,Portugal'
+    b'Belgium,France,Italy,Netherlands,Spain,United Kingdom'
+    b'Cambodia'
+    b'Australia,United States'
+    b'Belgium,France,Germany,Switzerland'
+    b'Sweden'
+    b'France,Germany,Switzerland'
+    b'Czech Republic,France'
+    b'Portugal,Spain'
+    b'United Kingdom,fr:Angleterre'
+    b'Thailand'
+    b'Austria,Germany'
+    b'Other-turquie'
+    b'Ecuador'
+    b'Mongolia'
+    b'France,Mauritius'
+    b'Australia'
+    b'Australia,New Zealand,Singapore,Thailand'
+    b'Denmark,Germany'
+    b'Slovakia'
+    b'France'
+    b'Other-\xe6\x97\xa5\xe6\x9c\xac'
+    b'Azerbaijan'
+    b'Georgia'
+    b'Australia,Malaysia'
+    b'France,Italy,Spain'
+    b'France,Senegal'
+    b'France,Italy,Netherlands,United Kingdom'
+    b'Argentina,Saudi Arabia'
+    b'Bulgaria,France'
+    b'Albania'
+    b'China,Hong Kong'
+    b'Denmark'
+    b'Denmark,France,Switzerland,United Kingdom'
+    b'Germany,Spain'
+    b'Niger'
+    b'France,Germany'
+    b'Finland'
+    b'Canada,France'
+    b'France,Italy,United Kingdom'
+    b'Australia,Germany,Netherlands'
+    b'Denmark,Italy'
+    b'Australia,France'
+    b'Belgium,Germany'
+    b'Austria,France'
+    b'Japan'
+    b'Australia,Indonesia'
+    b'Croatia'
+    b'Algeria,Egypt,Morocco,Qatar,Tunisia,United Arab Emirates'
+    b'France,fr:Europe'
+    b'Australia,United Kingdom,United States'
+    b'France,Thailand,United Kingdom'
+    b'Czech Republic'
+    b'France,Netherlands'
+    b'Belgium,France,Germany,Netherlands,Spain,Switzerland,United Kingdom'
+    b'France,New Caledonia'
+    b'Slovenia'
+    b'France,Martinique'
+    b'Germany,Italy'
+    b'Estonia'
+    b'Italy'
+    b'Denmark,Sweden'
+    b'France,Kuwait'
+    b'France,Switzerland,United States'
+    b'Democratic Republic of the Congo'
+    b'Belgium,France,Netherlands,Switzerland'
+    b'Australia,France,United Kingdom'
+    b'Denmark,France,Italy,United Kingdom'
+    b'Cambodia,Thailand'
+    b'France,Morocco'
+    b'France,Portugal,Spain'
+    b'Other-other-\xe6\x97\xa5\xe6\x9c\xac,Other-\xe6\x97\xa5\xe6\x9c\xac'
+    b'Republic of the Congo'
+    b'Malaysia'
+    b'Belgium,Italy'
+    b'Austria,France,Germany,Morocco,Netherlands,United Kingdom'
+    b'Belgium,France,Luxembourg,Switzerland'
+    b'Brunei'
+    b'France,Guadeloupe,Italy,Netherlands,Norway,Sweden,Switzerland,United Kingdom'
+    b'South Africa'
+    b'Belgium,Czech Republic,Denmark,France,Germany,Italy,Netherlands,New Zealand,Spain,Sweden,United Kingdom'
+    b'Belgium,Finland,France,Germany,Greece,Italy,Portugal,Spain'
+    b'Switzerland,United States'
+    b'Belgium,France,Germany,Ireland,Netherlands,Portugal,Spain,United Kingdom'
+    b'Australia,New Zealand'
+    b'Canada,France,Germany,United Kingdom'
+    b'Saint Pierre and Miquelon'
+    b'France,Italy,Serbia,Spain'
+    b'New Caledonia'
+    b'Mexico'
+    b'Polska'
+    b'France,United Kingdom,United States'
+    b'Belgium,France,Italy,United Kingdom'
+    b'Vanuatu'
+    b'Italy,Spain'
+    b'Belgium,France,Switzerland'
+    b'France,Germany,Greece,Sweden,United Kingdom'
+    b'Czech Republic,Italy'
+    b'Czech Republic,United Kingdom'
+    b'Denmark,France,United Kingdom'
+    b'Canada,Portugal'
+    b'Mauritania'
+    b'Cyprus'
+    b'Australia,Czech Republic,France'
+    b'Guinea'
+    b'Netherlands'
+    b'Belgium,France,United Kingdom'
+    b'Denmark,France,Spain,United Kingdom'
+    b'Canada,fr:Quebec'
+    b'French Guiana'
+    b'Scotland,United Kingdom'
+    b'Denmark,France'
+    b'France,Germany,Portugal'
+    b'Mauritius'
+    b'Denmark,United Kingdom'
+    b'Norway'
+    b'Israel'
+    b'France,Hungary,United Kingdom'
+    b'France,Spain'
+    b'Spain,es:Europe'
+    b'Belgium,France,Spain'
+    b'Germany,Greece,Spain'
+    b'Panama'
+    b'France,Germany,Italy'
+    b'France,Tunisia'
+    b'Mayotte'
+    b'Burkina Faso'
+    b'Hungary'
+    b'Algeria,Belgium,Canada,France,Morocco,Switzerland'
+    b'France,Sweden'
+    b'Belgium,Finland,France,Italy,Spain'
+    b'Andorra,Spain'
+    b'France,Ireland,United Kingdom'
+    b'Singapore,Thailanda'
+    b'Irlande'
+    b'Belgium,Finland,France,Italy,Netherlands,Spain,Sweden'
+    b'France,United Arab Emirates'
+    b'Belgium,France,Germany,Italy,Netherlands'
+    b'Spain,United States'
+    b'Ireland'
+    b'fr:\xe6\x97\xa5\xe6\x9c\xac'
+    b'France,Portugal'
+    b'Belgium,France,Germany,Hungary,Italy,Netherlands,Spain,United Kingdom'
+    b'Germany,Switzerland'
+    b'Germany,Turkey'
+    b'Belgium,France,Germany,Italy,Spain'
+    b'Switzerland'
+    b'Belgium,France,Germany'
+    b'Egypt,United Kingdom,United States'
+    b'Togo'
+    b'Thailand,United Kingdom'
+    b'Spain,fr:Europe'
+    b'Chile'
+    b'Poland,United Kingdom'
+    b'France,Russia'
+    b'European Union,France'
+    b'Denmark,Spain'
+    b'France,Guadeloupe'
+    b'Republique-de-chine'
+    b'Australia,Japan'
+    b'France,Portugal,Spain,United Kingdom'
+    b'France,Italy'
+    b'Australia,Belgium,France'
+    b'Qatar,Saudi Arabia,United Arab Emirates'
+    b'South Korea'
+    b'Denmark,France,Switzerland'
+    b'An'
+    b'Finland,France,Greece,Italy,Spain,Sweden'
+    b'Guadeloupe,Martinique'
+    b'Algeria,France'
+    b'Bahrain'
+    b'France,Germany,Romania,Scotland,United Kingdom'
+    b'Belgium,Portugal'
+    b'Australia,Indonesia,United States'
+    b'Guadeloupe,Slovenia,United Kingdom'
+    b'Belgium,Netherlands'
+    b'Austria'
+    b'Jordan'
+    b'Venezuela'
+    b'France,Romania'
+    b'Belgium,France,Italy'
+    b'French Guiana,Guadeloupe,Martinique'
+    b'Denmark,France,Portugal'
+    b'Belgium,United States'
+    b'France,Monaco'
+    b'France,Poland'
+    b'Mozambique'
+    b'Andorra,France'
+    b'France,Switzerland'
+    b'India,United Kingdom,United States'
+    b'Mali'
+    b'Moldova'
+    b'Germany,Switzerland,United Kingdom'
+    b'Belgium,France,Netherlands,United Kingdom'
+    b'Bangladesh'
+    b'Belgium,France,Spain,Switzerland,United Kingdom'
+    b'Burundi'
+    b'en:fresh-foods'
+    b'fr:Quebec'
+    b'Canada'
+    b'Belgium,France,Russia'
+    b'Senegal'
+    b'Belgium,France,Hungary,Italy,fr:Quebec'
+    b'Belgium,France,Germany,Italy,Netherlands,Portugal,Spain,Switzerland,United Kingdom'
+    b'Denmark,France,Germany'
+    b'France,Germany,Italy,Norway,Spain,Sweden,United Kingdom'
+    b'Gabon'
+    b'Finland,France,Sweden,United Kingdom'
+    b'French Polynesia'
+    b'France,Luxembourg'
+    b'Luxembourg'
+    b'China,Denmark'
+    b'Albania,Denmark,Italy'
+    b'Tunisia'
+    b'Belgium,France,Italy,Netherlands,Portugal,Spain,United Kingdom'
+    b'France,Italy,Luxembourg,Netherlands,Spain'
+    b'France,Norway'
+    b'Sint Maarten'
+    b'Denmark,Finland,France,Germany,Hungary,Italy,Netherlands,Norway,Portugal,Russia,Slovenia,Spain,Sweden,United Kingdom'
+    b'Austria,Germany,Spain'
+    b'China'
+    b'Kazakhstan'
+    b'Belgium,Switzerland'
+    b'Bulgaria'
+    b'en:dairies'
+    b'Belgium,France,Luxembourg'
+    b'France,French Polynesia,New Caledonia'
+    b'Morocco'
+    b'France,Germany,Netherlands,United Kingdom'
+    b'Belgium,Denmark'
+    b'Other-\xd8\xa7\xd9\x84\xd8\xb9\xd8\xb1\xd8\xa7\xd9\x82'
+    b'France,Germany,United Kingdom'
+    b'Nederland'
+    b'Lithuania'
+    b'France,India'
+    b'France,Sri Lanka'
+    b'Other-japon'
+    b'Austria,France,Germany,Italy,Switzerland'
+    b'Guadeloupe'
+    b'Iraq'
