@@ -13,6 +13,11 @@
 
 \section*{Raw Data Report}
 
+\setcounter{section}{-1}
+\section{Version History}
+
+First built on April 10, 2016.
+
 \section{CSV Report}
 
 There are 65,503 rows and 159 columns in raw data.
@@ -25,7 +30,7 @@ Here we roughly divide the data type into 5 types: Numeric, Text, Time, URL and 
 \par
 
 \begin{center}
-\begin{longtable}{|c|c|r|}
+\begin{longtable}{|l|c|r|}
 \caption[Column Report Table]{Column Report Table} \label{tab:columnReportTable} \\
 \hline
 \multicolumn{1}{|c|}{\textbf{Column Name}} & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|} {\textbf{Empty/Invalid}} \\
@@ -218,7 +223,7 @@ Figure \ref{fig:columnReportFigure} shows the level of integrities of the column
 \begin{figure}[!htp]
 \centering
 \includegraphics[width=\textwidth]{../vis/integrities.of.raw.columns.png}
-\caption{Interities of Raw Columns}
+\caption{Integrities of Raw Columns}
 \label{fig:columnReportFigure}
 \end{figure}
 
@@ -227,7 +232,7 @@ Figure \ref{fig:columnReportFigure} shows the level of integrities of the column
 Table \ref{tab:numericColumnReportTable} shows the report of numeric columns. I ommited the average values, see ``raw.analysis.txt" if you need them.
 
 \begin{center}
-\begin{longtable}{|c|r|r|r|}
+\begin{longtable}{|l|r|r|r|}
 \caption[Numeric Column Report Table]{Numeric Column Report Table} \label{tab:numericColumnReportTable} \\
 \hline
 \multicolumn{1}{|c|}{\textbf{Column Name}} & \multicolumn{1}{c|}{\textbf{Min}} & \multicolumn{1}{c|}{\textbf{Max}} & \multicolumn{1}{c|} {\textbf{Empty/Invalid}} \\
@@ -359,7 +364,7 @@ nutrition\_score\_uk\_100g& -14.0& 33.0& 34209 (52.23\%)\\
 Table \ref{tab:textGroupColumnReportTable} shows the number of different values on selected text columns. Some of the columns are actually multiset of text information. The number is too large to be reasonably group. Further processing is needed.
 
 \begin{center}
-\begin{longtable}{|c|r|r|}
+\begin{longtable}{|l|r|r|}
 \caption[Text Group Column Report Table]{Text Group Column Report Table} \label{tab:textGroupColumnReportTable} \\
 \hline
 \multicolumn{1}{|c|}{\textbf{Column Name}} & \multicolumn{1}{c|}{\textbf{Group \#}} & \multicolumn{1}{c|} {\textbf{Empty/Invalid}} \\
