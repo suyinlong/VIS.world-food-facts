@@ -1,0 +1,155 @@
+Country Analysis of row.clean.csv
+
+# CSV Report
+  row = 65486 col = 159
+
+# Country Report
+  b'France' : count = 44069 percent = 67.3 %
+  b'United Kingdom' : count = 3865 percent = 5.9 %
+  b'Spain' : count = 3534 percent = 5.4 %
+  b'Germany' : count = 2934 percent = 4.48 %
+  b'United States' : count = 2508 percent = 3.83 %
+  b'Belgium' : count = 1715 percent = 2.62 %
+  b'Switzerland' : count = 1464 percent = 2.24 %
+  b'Australia' : count = 1299 percent = 1.98 %
+  b'Italy' : count = 710 percent = 1.08 %
+  b'Portugal' : count = 544 percent = 0.83 %
+  b'Canada' : count = 482 percent = 0.74 %
+  b'Denmark' : count = 363 percent = 0.55 %
+  b'Brazil' : count = 309 percent = 0.47 %
+  b'fr:Europe' : count = 262 percent = 0.4 %
+  b'Netherlands' : count = 245 percent = 0.37 %
+  b'Austria' : count = 211 percent = 0.32 %
+  b'Guadeloupe' : count = 177 percent = 0.27 %
+  b'Czech Republic' : count = 163 percent = 0.25 %
+  b'R\xc3\xa9union' : count = 130 percent = 0.2 %
+  b'China' : count = 119 percent = 0.18 %
+  b'Japan' : count = 105 percent = 0.16 %
+  b'Poland' : count = 103 percent = 0.16 %
+  b'Tunisia' : count = 102 percent = 0.16 %
+  b'French Guiana' : count = 100 percent = 0.15 %
+  b'Luxembourg' : count = 90 percent = 0.14 %
+  b'Morocco' : count = 78 percent = 0.12 %
+  b'Russia' : count = 71 percent = 0.11 %
+  b'Algeria' : count = 68 percent = 0.1 %
+  b'New Zealand' : count = 66 percent = 0.1 %
+  b'Romania' : count = 63 percent = 0.1 %
+  b'Thailand' : count = 63 percent = 0.1 %
+  b'Ireland' : count = 52 percent = 0.08 %
+  b'Sweden' : count = 51 percent = 0.08 %
+  b'Hong Kong' : count = 50 percent = 0.08 %
+  b'Martinique' : count = 48 percent = 0.07 %
+  b'New Caledonia' : count = 45 percent = 0.07 %
+  b'Greece' : count = 43 percent = 0.07 %
+  b'Saudi Arabia' : count = 41 percent = 0.06 %
+  b'Saint Pierre and Miquelon' : count = 40 percent = 0.06 %
+  b'Hungary' : count = 37 percent = 0.06 %
+  b'Taiwan' : count = 34 percent = 0.05 %
+  b'Cambodia' : count = 33 percent = 0.05 %
+  b'Mexico' : count = 33 percent = 0.05 %
+  b'Senegal' : count = 32 percent = 0.05 %
+  b'United Arab Emirates' : count = 32 percent = 0.05 %
+  b'Iceland' : count = 30 percent = 0.05 %
+  b'fr:Quebec' : count = 29 percent = 0.04 %
+  b'es:Europe' : count = 23 percent = 0.04 %
+  b'India' : count = 23 percent = 0.04 %
+  b'Argentina' : count = 22 percent = 0.03 %
+  b'Lebanon' : count = 22 percent = 0.03 %
+  b'Indonesia' : count = 21 percent = 0.03 %
+  b'Israel' : count = 20 percent = 0.03 %
+  b'Finland' : count = 20 percent = 0.03 %
+  b'Bulgaria' : count = 20 percent = 0.03 %
+  b"C\xc3\xb4te d'Ivoire" : count = 19 percent = 0.03 %
+  b'South Africa' : count = 19 percent = 0.03 %
+  b'Singapore' : count = 18 percent = 0.03 %
+  b'Norway' : count = 17 percent = 0.03 %
+  b'French Polynesia' : count = 17 percent = 0.03 %
+  b'Turkey' : count = 17 percent = 0.03 %
+  b'Qatar' : count = 15 percent = 0.02 %
+  b'Chile' : count = 14 percent = 0.02 %
+  b'Philippines' : count = 13 percent = 0.02 %
+  b'Scotland' : count = 13 percent = 0.02 %
+  b'Kuwait' : count = 12 percent = 0.02 %
+  b'Slovenia' : count = 12 percent = 0.02 %
+  b'Mauritius' : count = 11 percent = 0.02 %
+  b'Kazakhstan' : count = 10 percent = 0.02 %
+  b'Albania' : count = 10 percent = 0.02 %
+  b'South Korea' : count = 9 percent = 0.01 %
+  b'Iraq' : count = 8 percent = 0.01 %
+  b'An' : count = 8 percent = 0.01 %
+  b'European Union' : count = 8 percent = 0.01 %
+  b'Mayotte' : count = 7 percent = 0.01 %
+  b'Egypt' : count = 7 percent = 0.01 %
+  b'Mongolia' : count = 7 percent = 0.01 %
+  b'Latvia' : count = 7 percent = 0.01 %
+  b'Cuba' : count = 7 percent = 0.01 %
+  b'Malta' : count = 6 percent = 0.01 %
+  b'\xe6\x97\xa5\xe6\x9c\xac' : count = 6 percent = 0.01 %
+  b'Slovakia' : count = 6 percent = 0.01 %
+  b'Aruba' : count = 6 percent = 0.01 %
+  b'Vietnam' : count = 6 percent = 0.01 %
+  b'Malaysia' : count = 5 percent = 0.01 %
+  b'Cook Islands' : count = 5 percent = 0.01 %
+  b'Burkina Faso' : count = 5 percent = 0.01 %
+  b'Andorra' : count = 5 percent = 0.01 %
+  b'Togo' : count = 5 percent = 0.01 %
+  b'Venezuela' : count = 5 percent = 0.01 %
+  b'Iran' : count = 4 percent = 0.01 %
+  b'Croatia' : count = 4 percent = 0.01 %
+  b'Serbia' : count = 4 percent = 0.01 %
+  b'Ukraine' : count = 4 percent = 0.01 %
+  b'Gabon' : count = 4 percent = 0.01 %
+  b'Colombia' : count = 3 percent = 0.0 %
+  b'Belarus' : count = 3 percent = 0.0 %
+  b'Lithuania' : count = 3 percent = 0.0 %
+  b'El Salvador' : count = 3 percent = 0.0 %
+  b'Mozambique' : count = 3 percent = 0.0 %
+  b'Peru' : count = 3 percent = 0.0 %
+  b'Ecuador' : count = 3 percent = 0.0 %
+  b'fr:Angleterre' : count = 2 percent = 0.0 %
+  b'Estonia' : count = 2 percent = 0.0 %
+  b'Dominican Republic' : count = 2 percent = 0.0 %
+  b'Kenya' : count = 2 percent = 0.0 %
+  b'Republic of the Congo' : count = 2 percent = 0.0 %
+  b'Armenia' : count = 2 percent = 0.0 %
+  b'Guinea' : count = 2 percent = 0.0 %
+  b'Other-\xe6\x97\xa5\xe6\x9c\xac' : count = 2 percent = 0.0 %
+  b'Azerbaijan' : count = 2 percent = 0.0 %
+  b'Monaco' : count = 2 percent = 0.0 %
+  b'Brunei' : count = 2 percent = 0.0 %
+  b'Vanuatu' : count = 2 percent = 0.0 %
+  b'Ghana' : count = 2 percent = 0.0 %
+  b'Tanzania' : count = 2 percent = 0.0 %
+  b'Moldova' : count = 2 percent = 0.0 %
+  b'Costa Rica' : count = 2 percent = 0.0 %
+  b'Mauritania' : count = 2 percent = 0.0 %
+  b'Polska' : count = 1 percent = 0.0 %
+  b'Other-\xd8\xa7\xd9\x84\xd8\xb9\xd8\xb1\xd8\xa7\xd9\x82' : count = 1 percent = 0.0 %
+  b'Thailanda' : count = 1 percent = 0.0 %
+  b'Belize' : count = 1 percent = 0.0 %
+  b'Hawaii' : count = 1 percent = 0.0 %
+  b'Other-other-\xe6\x97\xa5\xe6\x9c\xac' : count = 1 percent = 0.0 %
+  b'Bangladesh' : count = 1 percent = 0.0 %
+  b'Panama' : count = 1 percent = 0.0 %
+  b'Yemen' : count = 1 percent = 0.0 %
+  b'Syria' : count = 1 percent = 0.0 %
+  b'Republique-de-chine' : count = 1 percent = 0.0 %
+  b'Nederland' : count = 1 percent = 0.0 %
+  b'Irlande' : count = 1 percent = 0.0 %
+  b'Sri Lanka' : count = 1 percent = 0.0 %
+  b'Georgia' : count = 1 percent = 0.0 %
+  b'Cyprus' : count = 1 percent = 0.0 %
+  b'Burundi' : count = 1 percent = 0.0 %
+  b'Guatemala' : count = 1 percent = 0.0 %
+  b'Other-turquie' : count = 1 percent = 0.0 %
+  b'Macau' : count = 1 percent = 0.0 %
+  b'Mali' : count = 1 percent = 0.0 %
+  b'Pakistan' : count = 1 percent = 0.0 %
+  b'Bahrain' : count = 1 percent = 0.0 %
+  b'Sint Maarten' : count = 1 percent = 0.0 %
+  b'fr:\xe6\x97\xa5\xe6\x9c\xac' : count = 1 percent = 0.0 %
+  b'Other-japon' : count = 1 percent = 0.0 %
+  b'Democratic Republic of the Congo' : count = 1 percent = 0.0 %
+  b'Niger' : count = 1 percent = 0.0 %
+  b'Maldives' : count = 1 percent = 0.0 %
+  b'Jordan' : count = 1 percent = 0.0 %
