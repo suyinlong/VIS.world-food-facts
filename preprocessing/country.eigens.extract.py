@@ -2,13 +2,19 @@
 # @Author: Yinlong Su
 # @Date:   2016-04-25 22:02:32
 # @Last Modified by:   Yinlong Su
-# @Last Modified time: 2016-04-26 00:18:31
+# @Last Modified time: 2016-04-26 12:27:27
 
 import math
 import pandas
 import numpy as np
 import json
 from bson import json_util
+from matplotlib.mlab import PCA as mlabPCA
+from numpy import mean, cov, double, cumsum, dot, linalg, array, rank, vstack
+from bson import json_util
+from bson.json_util import dumps
+from scipy.spatial.distance import squareform, pdist
+from sklearn import manifold
 
 csvPath = 'row.clean.csv'
 eigenPath = 'country.eigens.txt'
@@ -170,11 +176,79 @@ def getid(str, strarray):
             return x
     return -1
 
-def main():
-    print('Eigen extraction')
-    print()
+def temp_clean(matrix):
+    matrix_row = len(matrix)
+    matrix_col = len(matrix[0])
+    new_matrix = []
+    fix_row = 0
+    fix_col = 0
+    labels = []
+    for a in range(matrix_row):
+        invcount = 0
+        for b in range(matrix_col):
+            if math.isnan(matrix[a][b]):
+                invcount += 1
+        if (invcount <= 5):
+            row = []
+            for b in range(matrix_col):
+                if math.isnan(matrix[a][b]):
+                    row.append(float(0.0))
+                    fix_col += 1
+                else:
+                    row.append(matrix[a][b])
+            new_matrix.append(row)
+            labels.append(countryTag[a])
+        else:
+            fix_row +=1
+    cleanReport = {
+        'matrix_row': matrix_row,
+        'matrix_col': matrix_col,
+        'fix_row': fix_row,
+        'fix_col': fix_col
+    }
+    return cleanReport, new_matrix, labels
 
-    print('# List of eigenvalues (column, country, normalized average)')
+
+def do_pca(data):
+    A = array(data)
+    matrix_pca = mlabPCA(A)
+    matrix_pca_y = []
+
+    for i in range(len(data)):
+        matrix_pca_y.append([matrix_pca.Y[i, 0], matrix_pca.Y[i,1]])
+
+    # return PCA result and the fracs vector
+    return matrix_pca_y, matrix_pca.fracs.tolist()
+
+def do_mds(data, metric, dim):
+    matrix_mds_coords = []
+
+    # construct the distance matrix
+    similarities = squareform(pdist(data, metric))
+
+    # get MDS object
+    matrix_mds = manifold.MDS(n_components=dim, dissimilarity="precomputed", random_state=6)
+    results = matrix_mds.fit(similarities)
+    coords = results.embedding_
+
+    for i in range(len(coords)):
+        matrix_mds_coords.append([coords[i, 0], coords[i, 1]])
+    return matrix_mds_coords
+
+def do_isomap(data, dim):
+    # get isomap object
+    isomap = manifold.Isomap(n_neighbors=5, n_components=dim)
+    results = isomap.fit(data)
+    coords = results.embedding_
+
+    matrix_isomap = []
+    for i in range(len(coords)):
+        matrix_isomap.append([coords[i, 0], coords[i, 1]])
+    return matrix_isomap
+
+def extract_matrix():
+    listReport = []
+
     column = ''
     country = ''
     normalized_average = ''
@@ -191,14 +265,32 @@ def main():
         k = line.find("normalized average: ")
         if k > 0:
             normalized_average = line[24:-1]
-            print(' ', column, country, normalized_average)
+            listReport.append({
+                'column': column,
+                'country': country,
+                'normalized_average': normalized_average
+                })
+            #print(' ', column, country, normalized_average)
             a = getid(country, countryTag)
             b = getid(column, attributeColumnName)
             if a >= 0 and b >= 0:
                 matrix[a][b] = float(normalized_average)
+    return listReport, matrix
+
+def report(listReport, cleanReport, matrix):
+    matrix_row = len(matrix)
+    matrix_col = len(matrix[0])
+
+    print('Eigen extraction')
+    print()
+
+    print('# List of eigenvalues (column, country, normalized average)')
+    for r in listReport:
+        print(' ', r['column'], r['country'], r['normalized_average'])
     print()
 
     print('# Matrix of eigenvalues')
+    print('  row =', matrix_row,'col =', matrix_col)
     for a in range(matrix_row):
         for b in range(matrix_col):
             print(matrix[a][b], end=' ')
@@ -212,5 +304,25 @@ def main():
     #         print('&', round(matrix[a][b], 2), end='')
     #     print('\\\\')
     # print()
+
+    print('# Fixed matrix of eigenvalues')
+    print('  row =', cleanReport['matrix_row'], 'col =', cleanReport['matrix_col'])
+    print('  fix row =', cleanReport['fix_row'], 'fix col =', cleanReport['fix_col'])
+    print()
+
+
+def main():
+    lR, matrix = extract_matrix()
+    cR, new_matrix, labels = temp_clean(matrix)
+    matrix_pca_y, matrix_pca_fracs = do_pca(new_matrix)
+    matrix_mds_coords_euclidean = do_mds(new_matrix, 'euclidean', 10)
+    matrix_mds_coords_cosine = do_mds(new_matrix, 'cosine', 10)
+    matrix_mds_coords_correlation = do_mds(new_matrix, 'correlation', 10)
+    matrix_isomap = do_isomap(new_matrix, 10)
+
+    report(lR, cR, matrix)
+
+    #json_object = json.dumps(labels, default=json_util.default)
+    #print(json_object)
 
 main()

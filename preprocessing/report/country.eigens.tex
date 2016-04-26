@@ -272,6 +272,44 @@ India& 0.08& 0.12& 0.13& 0.29& 0.16& 0.03& 0.1& 0.0& 0.0& 0.0\\
 \par
 Among those eigenvectors, we should remove some countries that have no supporting data. Perhaps remove or change some attributes too. Further work still need to be done.
 
+\section{Visualization on eigenvectors}
+We removed the countries which have at least 5 nan values (half of 10 attributes). For those nan values remained, we substitution them with $0$. Therefore 50 countries were removed and 50 nan values were filled with $0$. Then we perform PCA, MDS - Euclidean, MDS - Cosine, MDS - Correlation and ISOMAP on the new matrix to visualize the eigenvectors. Figure \ref{fig:pcaEigenvectorsFigure}, \ref{fig:mdsEuclideanEigenvectorsFigure}, \ref{fig:mdsCosineEigenvectorsFigure}, \ref{fig:mdsCorrelationEigenvectorsFigure} and \ref{fig:isomapEigenvectorsFigure} show the minimum spanning tree of the results.
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\textwidth]{../vis/country.eigens.vis.pca.png}
+\caption{PCA on eigenvectors}
+\label{fig:pcaEigenvectorsFigure}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\textwidth]{../vis/country.eigens.vis.mds.euclidean.png}
+\caption{MDS - Euclidean on eigenvectors}
+\label{fig:mdsEuclideanEigenvectorsFigure}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\textwidth]{../vis/country.eigens.vis.mds.cosine.png}
+\caption{MDS - Cosine on eigenvectors}
+\label{fig:mdsCosineEigenvectorsFigure}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\textwidth]{../vis/country.eigens.vis.mds.correlation.png}
+\caption{MDS - Correlation on eigenvectors}
+\label{fig:mdsCorrelationEigenvectorsFigure}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\textwidth]{../vis/country.eigens.vis.isomap.png}
+\caption{ISOMAP on eigenvectors}
+\label{fig:isomapEigenvectorsFigure}
+\end{figure}
+
 \section{Contact Information}
 If there is any problem please contact me.
 \par
