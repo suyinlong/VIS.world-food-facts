@@ -2,7 +2,7 @@
 # @Author: Yinlong Su
 # @Date:   2016-04-25 17:18:10
 # @Last Modified by:   Yinlong Su
-# @Last Modified time: 2016-04-25 21:13:09
+# @Last Modified time: 2016-04-25 23:32:15
 
 import math
 import pandas
@@ -59,7 +59,6 @@ countryTag = [
     b'Egypt',
     b'South Africa',
     b'Bangladesh',
-    b'fr:Europe',
     b'Iraq',
     b'Kenya',
     b'An',
@@ -109,7 +108,6 @@ countryTag = [
     b'European Union',
     b'United Arab Emirates',
     b'Guinea',
-    b'Other-turquie',
     b'Mozambique',
     b'Macau',
     b'Azerbaijan',

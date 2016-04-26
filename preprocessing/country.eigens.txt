@@ -448,17 +448,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  additives_n b'fr:Europe'
-    invalid: 36
-    count: 226
-    sum: 400.0
-    min: 0.0
-    max: 14.0
-    average: 1.76991150442
-    median: 1.0
-    standard deviation: 8.11571288102
-    normalized average: 0.068073519401
-    normalized median: 0.0384615384615
   additives_n b'Iraq'
     invalid: 6
     count: 2
@@ -998,17 +987,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  additives_n b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 0.0
-    min: 0.0
-    max: 0.0
-    average: 0.0
-    median: 0.0
-    standard deviation: nan
-    normalized average: 0.0
-    normalized median: 0.0
   additives_n b'Mozambique'
     invalid: 3
     count: 0
@@ -1955,17 +1933,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  energy_100g b'fr:Europe'
-    invalid: 91
-    count: 171
-    sum: 145330.14
-    min: 0.0
-    max: 3700.0
-    average: 849.883859649
-    median: 647.0
-    standard deviation: 515849.937041
-    normalized average: 0.205583904124
-    normalized median: 0.156507014998
   energy_100g b'Iraq'
     invalid: 7
     count: 1
@@ -2505,17 +2472,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  energy_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 97.16
-    min: 97.16
-    max: 97.16
-    average: 97.16
-    median: 97.16
-    standard deviation: nan
-    normalized average: 0.0235026608612
-    normalized median: 0.0235026608612
   energy_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -3462,17 +3418,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  fat_100g b'fr:Europe'
-    invalid: 90
-    count: 172
-    sum: 1411.39
-    min: 0.0
-    max: 100.0
-    average: 8.20575581395
-    median: 2.2
-    standard deviation: 204.987846794
-    normalized average: 0.0812451070688
-    normalized median: 0.0217821782178
   fat_100g b'Iraq'
     invalid: 7
     count: 1
@@ -4012,17 +3957,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  fat_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 1.46
-    min: 1.46
-    max: 1.46
-    average: 1.46
-    median: 1.46
-    standard deviation: nan
-    normalized average: 0.0144554455446
-    normalized median: 0.0144554455446
   fat_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -4969,17 +4903,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  carbohydrates_100g b'fr:Europe'
-    invalid: 92
-    count: 170
-    sum: 4322.11
-    min: 0.0
-    max: 87.0
-    average: 25.4241764706
-    median: 12.0
-    standard deviation: 758.009992513
-    normalized average: 0.182907744393
-    normalized median: 0.0863309352518
   carbohydrates_100g b'Iraq'
     invalid: 7
     count: 1
@@ -5519,17 +5442,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  carbohydrates_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 1.42
-    min: 1.42
-    max: 1.42
-    average: 1.42
-    median: 1.42
-    standard deviation: nan
-    normalized average: 0.0102158273381
-    normalized median: 0.0102158273381
   carbohydrates_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -6476,17 +6388,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  sugars_100g b'fr:Europe'
-    invalid: 114
-    count: 148
-    sum: 1449.68
-    min: 0.0
-    max: 77.6
-    average: 9.79513513514
-    median: 3.3
-    standard deviation: 240.812917669
-    normalized average: 0.093287001287
-    normalized median: 0.0314285714286
   sugars_100g b'Iraq'
     invalid: 7
     count: 1
@@ -7026,17 +6927,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  sugars_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 0.0
-    min: 0.0
-    max: 0.0
-    average: 0.0
-    median: 0.0
-    standard deviation: nan
-    normalized average: 0.0
-    normalized median: 0.0
   sugars_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -7983,17 +7873,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  fiber_100g b'fr:Europe'
-    invalid: 132
-    count: 130
-    sum: 332.57
-    min: 0.0
-    max: 79.4
-    average: 2.55823076923
-    median: 1.7
-    standard deviation: 50.8086983959
-    normalized average: 0.0269855566375
-    normalized median: 0.0179324894515
   fiber_100g b'Iraq'
     invalid: 8
     count: 0
@@ -8533,17 +8412,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  fiber_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 1.33
-    min: 1.33
-    max: 1.33
-    average: 1.33
-    median: 1.33
-    standard deviation: nan
-    normalized average: 0.014029535865
-    normalized median: 0.014029535865
   fiber_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -9490,17 +9358,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  proteins_100g b'fr:Europe'
-    invalid: 91
-    count: 171
-    sum: 1084.08
-    min: 0.0
-    max: 33.0
-    average: 6.33964912281
-    median: 4.5
-    standard deviation: 46.2629622291
-    normalized average: 0.0737168502652
-    normalized median: 0.0523255813953
   proteins_100g b'Iraq'
     invalid: 7
     count: 1
@@ -10040,17 +9897,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  proteins_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 1.01
-    min: 1.01
-    max: 1.01
-    average: 1.01
-    median: 1.01
-    standard deviation: nan
-    normalized average: 0.0117441860465
-    normalized median: 0.0117441860465
   proteins_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -10997,17 +10843,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  salt_100g b'fr:Europe'
-    invalid: 112
-    count: 150
-    sum: 190.212136
-    min: 0.0
-    max: 99.06
-    average: 1.26808090667
-    median: 0.508
-    standard deviation: 65.0094725243
-    normalized average: 0.00499244451444
-    normalized median: 0.002
   salt_100g b'Iraq'
     invalid: 7
     count: 1
@@ -11547,17 +11382,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  salt_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 1.20904
-    min: 1.20904
-    max: 1.20904
-    average: 1.20904
-    median: 1.20904
-    standard deviation: nan
-    normalized average: 0.00476
-    normalized median: 0.00476
   salt_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -12504,17 +12328,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  sodium_100g b'fr:Europe'
-    invalid: 112
-    count: 150
-    sum: 74.8866677165
-    min: 0.0
-    max: 39.0
-    average: 0.499244451444
-    median: 0.2
-    standard deviation: 10.0764883942
-    normalized average: 0.00499244451444
-    normalized median: 0.002
   sodium_100g b'Iraq'
     invalid: 7
     count: 1
@@ -13054,17 +12867,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  sodium_100g b'Other-turquie'
-    invalid: 0
-    count: 1
-    sum: 0.476
-    min: 0.476
-    max: 0.476
-    average: 0.476
-    median: 0.476
-    standard deviation: nan
-    normalized average: 0.00476
-    normalized median: 0.00476
   sodium_100g b'Mozambique'
     invalid: 3
     count: 0
@@ -14011,17 +13813,6 @@ Country Eigens of row.clean.csv
     standard deviation: -0.0
     normalized average: nan
     normalized median: nan
-  alcohol_100g b'fr:Europe'
-    invalid: 260
-    count: 2
-    sum: 11.7
-    min: 5.1
-    max: 6.6
-    average: 5.85
-    median: 6.6
-    standard deviation: 1.125
-    normalized average: 0.0597548518897
-    normalized median: 0.0674157303371
   alcohol_100g b'Iraq'
     invalid: 8
     count: 0
@@ -14552,17 +14343,6 @@ Country Eigens of row.clean.csv
     normalized median: nan
   alcohol_100g b'Guinea'
     invalid: 2
-    count: 0
-    sum: 0
-    min: nan
-    max: nan
-    average: nan
-    median: nan
-    standard deviation: -0.0
-    normalized average: nan
-    normalized median: nan
-  alcohol_100g b'Other-turquie'
-    invalid: 1
     count: 0
     sum: 0
     min: nan
