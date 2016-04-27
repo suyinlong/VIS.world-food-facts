@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 12:58:23
+* @Last Modified time: 2016-04-27 13:44:12
 */
 
 
@@ -21,7 +21,7 @@ var barPadding = 10;
 
 var oldCountryCount, countryCount, currentIndex;
 var scaleY;
-var svg, defs, g1, g2, g3, t;
+var svg, defs, g0, g1, g2, g3, t;
 
 function clearSvg() {
     d3.select("#popup-panel-chart")
@@ -73,7 +73,7 @@ function makeGrid() {
         .attr("class", "popup-panel-chart-grid");
 }
 
-function initBarChart() {
+function initPanelChart() {
     scaleY = d3.scale.linear()
         .domain([0, 1])
         .range([0, height]);
@@ -81,6 +81,8 @@ function initBarChart() {
     svg = makeSvg();
     makeGrid();
     defs = svg.append("defs");
+    g0 = svg.append("g")
+        .attr("id", "mainLine");
     g1 = svg.append("g")
         .attr("id", "mainBar1");
     g2 = svg.append("g")
@@ -94,6 +96,41 @@ function initBarChart() {
     countryCount = 0;
     currentIndex = 0;
 
+    initLineChart();
+    initBarChart();
+}
+
+function initLineChart() {
+    var dots = [];
+    for (i = 0; i < dataset_world.length; i++) {
+        dx = i * ((width + barPadding) / dataset_world.length) + frame + ((width + barPadding) / dataset_world.length - barPadding) / 2;
+        dy = height - scaleY(dataset_world[i]) + frame;
+        dots.push({ x: dx, y: dy });
+    }
+
+    for (i = 0; i < dots.length - 1; i++) {
+        g0.append("path")
+            .attr("stroke", "#ffd800")
+            .attr("stroke-width", "5px")
+            .attr("fill", "none")
+            .attr("d", "M" + dots[i].x + "," + dots[i].y + "L" + dots[i+1].x + "," + dots[i+1].y);
+    }
+    for (i = 0; i < dots.length; i++) {
+        g0.append("circle")
+            .attr("cx", dots[i].x)
+            .attr("cy", dots[i].y)
+            .attr("r", 10)
+            .attr("fill", "#ffd800")
+            .on("mouseover", function() {
+                d3.select(this).transition().duration(200).attr("r", 20).attr("fill", "orange");
+            })
+            .on("mouseout", function() {
+                d3.select(this).transition().duration(200).attr("r", 10).attr("fill", "#ffd800");
+            });
+    }
+}
+
+function initBarChart() {
     makeBarGroup(1, dataset_length);
     makeBarGroup(2, dataset_length);
     makeBarGroup(3, dataset_length);
@@ -172,6 +209,7 @@ function makeBarGroup(group, length) {
             .attr("y", barY)
             .attr("width", barWidth)
             .attr("height", barHeight)
+            .attr("opacity", "0.7")
             .attr("fill", "url(#" + lg.attr("id") + ")")
             .attr("filter", "url(#" + f.attr("id") + ")")
             .attr("pointlight", "f_g" + group + "n" + i + "_pointlight");
@@ -180,7 +218,6 @@ function makeBarGroup(group, length) {
 }
 
 function adjustBarXAndWidth(g, group, length, delay) {
-    console.log("adjustBarXAndWidth g=" + group);
     for (i = 0; i < length; i++) {
         barX = i * ((width + barPadding) / length) + frame;
         barWidth = (width + barPadding) / length - barPadding;
@@ -201,7 +238,6 @@ function adjustBarXAndWidth(g, group, length, delay) {
 }
 
 function updateBarChartPosition(length, delay) {
-    console.log(countryCount);
     // updateBarChartPosition: Country 1
     adjustBarXAndWidth(g1, 1, length, delay);
 
@@ -242,21 +278,26 @@ function updateBarChartValue(group, dataset, delay) {
 
 
 function makeBarChart(op, dataset) {
-    if (op == 'change')
+    if (op == 'change' && countryCount > 0)
         updateBarChartValue(currentIndex, dataset, 0);
-    else if (op == 'add') {
-        countryCount++;
-        currentIndex++;
-        updateBarChartPosition(dataset.length, 0);
-        if (countryCount == 1)
+    else if (op == 'add' || op == 'change') {
+        if (countryCount == 3) {
             updateBarChartValue(currentIndex, dataset, 0);
-        else
-            updateBarChartValue(currentIndex, dataset, 500);
-    } else if (op == 'remove') {
+        } else {
+            countryCount++;
+            currentIndex++;
+            updateBarChartPosition(dataset.length, 0);
+            if (countryCount == 1)
+                updateBarChartValue(currentIndex, dataset, 0);
+            else
+                updateBarChartValue(currentIndex, dataset, 500);
+        }
+    } else if (op == 'remove' && countryCount > 0) {
         countryCount--;
         updateBarChartValue(currentIndex, dataset_10_empty, 0);
         currentIndex--;
-        updateBarChartPosition(dataset.length, 500);
+        if (countryCount > 0)
+            updateBarChartPosition(dataset.length, 500);
     }
 }
-initBarChart();
+initPanelChart();

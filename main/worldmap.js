@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-26 17:42:43
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 12:50:05
+* @Last Modified time: 2016-04-27 15:03:43
 */
 
 var map = new Datamap({
@@ -41,24 +41,33 @@ function callback_map(datamap) {
         });
 }
 
-function alphaPopupPanel(dataset) {
+function alphaPopupPanel(dataset, type) {
     div_popup_panel_transition += 2;
-    k = div_popup_panel_transition / 100;
 
+    if (type == 0)
+        k = div_popup_panel_transition / 100;
+    else
+        k = 1 - div_popup_panel_transition / 100;
+
+    h = document.body.clientHeight / 2;
     _left = ($('shadow-popup-panel').offsetLeft + 480) * k - 480;
-    _top = ($('shadow-popup-panel').offsetTop + 250) * k - 250;
+    _top = ($('shadow-popup-panel').offsetTop - 250 - h) * k + 250 + h;
 
     scale = "scale(" + k + ", " + k + ")";
 
     div_popup_panel.attr("style", "opacity: " + k + "; transform: " + scale + "; left: " + _left + "px; top: " + _top + "px;");
 
     if (div_popup_panel_transition < 100)
-        setTimeout(alphaPopupPanel, 10, dataset);
+        setTimeout(alphaPopupPanel, 10, dataset, type);
     else {
-        div_popup_panel.attr("class", "popup-panel visible")
-            .attr("style", "");
-        makeBarChart(div_popup_panel_show_action, dataset);
-        div_popup_panel_show_action = 'change';
+        if (type == 0) {
+            div_popup_panel.attr("class", "popup-panel visible")
+                .attr("style", "");
+            makeBarChart(div_popup_panel_show_action, dataset);
+            div_popup_panel_show_action = 'change';
+        } else {
+
+        }
     }
 
 }
@@ -71,7 +80,7 @@ function showPopupPanel(id) {
         div_popup_panel.attr("class", "resizing-popup-panel visible");
 
         div_popup_panel_transition = -2;
-        alphaPopupPanel(dataset);
+        alphaPopupPanel(dataset, 0);
     }
 
 
@@ -79,11 +88,13 @@ function showPopupPanel(id) {
 
 function hidePopupPanel() {
     div_mask.attr("class", "mask hidden");
-    div_popup_panel.attr("class", "popup-panel hidden");
+    div_popup_panel.attr("class", "resizing-popup-panel visible");
+
+    div_popup_panel_transition = -2;
+    alphaPopupPanel(dataset, 1);
 }
 
 function loadCountryData(id) {
-    console.log(id);
     cInfo = countryInfo[id];
 
     if (cInfo) {
@@ -103,8 +114,7 @@ function compareto() {
 }
 
 function removelast() {
-    if (countryCount > 1)
-        makeBarChart('remove', dataset_10_empty);
+    makeBarChart('remove', dataset_10_empty);
 }
 
 div_mask = d3.select(".mask");
