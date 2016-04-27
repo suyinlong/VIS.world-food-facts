@@ -1,0 +1,279 @@
+/*
+* @Author: Yinlong Su
+* @Date:   2016-02-17 22:39:06
+* @Last Modified by:   Yinlong Su
+* @Last Modified time: 2016-04-27 12:46:55
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+  min-width: 1220px;
+  font-size: 36px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  line-height: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 170px;
+  position: relative;
+
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 170px;
+  height: 100%;
+  z-index: 10;
+  background: #333333;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  transition: all 0.25s ease;
+}
+
+.sidebar-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 12px;
+}
+
+.sidebar-list-button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 12px;
+
+}
+
+.sidebar-list-button-icon {
+  display: block;
+  font-size: 2em;
+  pointer-events: none;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar-list-button-label {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.5em;
+  pointer-events: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.article-view {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 600px;
+
+}
+
+.background-view {
+  opacity: 1;
+  backface-visibility: hidden;
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 1.0);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+
+}
+
+.views {
+  width: 960px;
+  height: 700px;
+  margin: auto;
+  overflow: visible;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  vertical-align: baseline;
+  z-index: 1;
+}
+
+
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 102;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow-popup-panel {
+  width: 960px;
+  height: 500px;
+  margin: auto;
+  padding: 5px;
+  overflow: visible;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.resizing-popup-panel {
+  width: 960px;
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 103;
+  background-color: rgb(154, 207, 254);
+  box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.7);
+}
+
+.popup-panel {
+  width: 960px;
+  height: 500px;
+  margin: auto;
+  padding: 5px;
+  overflow: visible;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 103;
+  background-color: rgb(154, 207, 254);
+  box-shadow: 0px 0px 35px 5px rgba(0, 0, 0, 0.7);
+}
+
+.popup-panel-chart {
+  float: left;
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 100%;
+  position: relative;
+  /*background-color: rgb(35, 117, 243);*/
+  background-color: rgb(245, 246, 247);
+  color: rgb(255, 255, 255);
+}
+
+.popup-panel-chart-grid {
+  stroke: rgb(205, 205, 205);
+  stroke-width: 2;
+}
+
+.popup-panel-picture {
+  float: left;
+  top: 0px;
+  left: 5px;
+  width: 345px;
+  height: 200px;
+  position: relative;
+  background-color: rgb(133,133,133);
+}
+
+.popup-panel-location {
+  float: left;
+  top: 5px;
+  left: 5px;
+  width: 345px;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: "Bookman old style";
+  text-align: right;
+}
+
+.popup-panel-description {
+  float: left;
+  top: 10px;
+  left: 5px;
+  width: 345px;
+  height: 200px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: Consolas;
+  font-size: 16px;
+
+}
+
+.popup-panel-description h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(150, 150, 150);
+}
+
+.popup-panel-toolbox {
+  float: left;
+  top: 15px;
+  left: 5px;
+  width: 345px;
+  height: 35px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+}

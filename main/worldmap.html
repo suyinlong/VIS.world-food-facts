@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>World Food Facts</title>
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="mask hidden"></div>
+    <div class="sidebar">
+      <div class="sidebar-list">
+        <div class="sidebar-list-button">
+          <span class="sidebar-list-button-icon">ICON</span>
+          <span class="sidebar-list-button-label">Text</span>
+        </div>
+        <div class="sidebar-list-button">
+          <span class="sidebar-list-button-icon">ICON</span>
+          <span class="sidebar-list-button-label">Text</span>
+        </div>
+        <div class="sidebar-list-button">
+          <span class="sidebar-list-button-icon">ICON</span>
+          <span class="sidebar-list-button-label">Text</span>
+        </div>
+      </div>
+
+    </div>
+
+    <article class="article-view">
+      <div class="views" id="views">
+      </div>
+
+      <div class="backgrounds">
+        <div class="background-view"></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="shadow-popup-panel hidden" id="shadow-popup-panel"></div>
+  <div class="popup-panel hidden" id="popup-panel">
+    <div class="popup-panel-chart" id="popup-panel-chart">
+    </div>
+    <div class="popup-panel-picture">
+    </div>
+    <div class="popup-panel-location" id="popup-panel-location"></div>
+    <div class="popup-panel-description" id="popup-panel-description"></div>
+    <div class="popup-panel-toolbox"><a href="#" onclick="compareto();">Compare to</a>&nbsp;<a href="#" onclick="removelast();">Remove last</a></div>
+  </div>
+
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script language="Javascript" src="../lib/datamaps/datamaps.world.min.js"></script>
+  <script language="Javascript" src="worldmap.js"></script>
+  <script language="Javascript" src="country.data.js"></script>
+  <script language="Javascript" src="charchart.js"></script>
+
+</body>
+</html>
