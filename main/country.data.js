@@ -2,11 +2,23 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 11:43:33
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 13:12:03
+* @Last Modified time: 2016-04-27 18:40:33
 */
 var dataset_length = 10;
 var dataset_10_empty = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
 
+var dataset_label = [
+    'Additives',
+    'Energy',
+    'Fat',
+    'Carbohydrates',
+    'Sugars',
+    'Fiber',
+    'Proteins',
+    'Salt',
+    'Sodium',
+    'Alcohol'
+];
 var dataset_world = [0.1, 0.3, 0.7, 0.4, 0.5, 0.8, 0.05, 0.6, 0.9, 0.2];
 var dataset_CHN = [0.65, 0.2, 0.7, 0.4, 0.5, 0.1, 0.7, 0.2, 0.9, 0.6];
 var dataset_USA = [0.3, 0.4, 0.5, 0.1, 0.7, 0.2, 0.9, 0.8, 0.1, 0.5];

@@ -15,12 +15,12 @@
     <div class="sidebar">
       <div class="sidebar-list">
         <div class="sidebar-list-button">
-          <span class="sidebar-list-button-icon">ICON</span>
-          <span class="sidebar-list-button-label">Text</span>
+          <span class="sidebar-list-button-icon"><img src="images/sidebar-location.png"/></span>
+          <span class="sidebar-list-button-label">Location</span>
         </div>
         <div class="sidebar-list-button">
-          <span class="sidebar-list-button-icon">ICON</span>
-          <span class="sidebar-list-button-label">Text</span>
+          <span class="sidebar-list-button-icon"><img src="images/sidebar-browse.png"/></span>
+          <span class="sidebar-list-button-label">Browse</span>
         </div>
         <div class="sidebar-list-button">
           <span class="sidebar-list-button-icon">ICON</span>
@@ -48,7 +48,13 @@
     </div>
     <div class="popup-panel-location" id="popup-panel-location"></div>
     <div class="popup-panel-description" id="popup-panel-description"></div>
-    <div class="popup-panel-toolbox"><a href="#" onclick="compareto();">Compare to</a>&nbsp;<a href="#" onclick="removelast();">Remove last</a></div>
+    <div class="popup-panel-toolbox">
+      <span class="popup-panel-icon popup-panel-icon-location" id="popup-panel-icon-location"></span>
+      <span class="popup-panel-icon popup-panel-icon-add" id="popup-panel-icon-add"></span>
+      <span class="popup-panel-icon popup-panel-icon-remove" id="popup-panel-icon-remove"></span>
+      <span class="popup-panel-icon popup-panel-icon-browse" id="popup-panel-icon-browse"></span>
+      <span class="popup-panel-icon popup-panel-icon-close" id="popup-panel-icon-close"></span>
+    </div>
   </div>
 
 
@@ -56,8 +62,9 @@
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script language="Javascript" src="../lib/datamaps/datamaps.world.min.js"></script>
   <script language="Javascript" src="worldmap.js"></script>
+  <script language="Javascript" src="panel.js"></script>
   <script language="Javascript" src="country.data.js"></script>
-  <script language="Javascript" src="charchart.js"></script>
+  <script language="Javascript" src="panel.chart.js"></script>
 
 </body>
 </html>

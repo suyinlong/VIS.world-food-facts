@@ -2,15 +2,10 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 13:44:12
+* @Last Modified time: 2016-04-27 18:41:03
 */
 
-
-
-
 var colorPicker = ['#2375F3', 'lightskyblue', 'gold', 'tomato', 'lightslategray', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
-
-
 var colorComparePicker = ['tomato', 'gold', 'lightskyblue'];
 
 var frame = 10;
@@ -166,8 +161,6 @@ function makeBarGroup(group, length) {
         barWidth = (width + barPadding) / length - barPadding;
         barHeight = scaleY(d);
 
-
-
         f = defs.append("filter")
             .attr("id", "f_g" + group + "n" + i)
             .attr("x", 0)
@@ -252,7 +245,7 @@ function updateBarChartPosition(length, delay) {
     oldCountryCount = countryCount;
 }
 
-function updateBarChartValue(group, dataset, delay) {
+function updateBarChartValue(group, id, dataset, delay) {
     var g = group == 1 ? g1 : (group == 2 ? g2 : g3);
 
     for (i = 0; i < dataset.length; i++) {
@@ -262,6 +255,9 @@ function updateBarChartValue(group, dataset, delay) {
         barHeight = scaleY(d);
 
         rect = g.select("#rect_g" + group + "n" + i);
+        rect.on("mouseover", function() {
+                loadCountryData(id);
+            });
         rect.transition()
             .delay(delay)
             .duration(500)
@@ -277,24 +273,24 @@ function updateBarChartValue(group, dataset, delay) {
 }
 
 
-function makeBarChart(op, dataset) {
+function makeBarChart(id, op, dataset) {
     if (op == 'change' && countryCount > 0)
-        updateBarChartValue(currentIndex, dataset, 0);
+        updateBarChartValue(currentIndex, id, dataset, 0);
     else if (op == 'add' || op == 'change') {
         if (countryCount == 3) {
-            updateBarChartValue(currentIndex, dataset, 0);
+            updateBarChartValue(currentIndex, id, dataset, 0);
         } else {
             countryCount++;
             currentIndex++;
             updateBarChartPosition(dataset.length, 0);
             if (countryCount == 1)
-                updateBarChartValue(currentIndex, dataset, 0);
+                updateBarChartValue(currentIndex, id, dataset, 0);
             else
-                updateBarChartValue(currentIndex, dataset, 500);
+                updateBarChartValue(currentIndex, id, dataset, 500);
         }
     } else if (op == 'remove' && countryCount > 0) {
         countryCount--;
-        updateBarChartValue(currentIndex, dataset_10_empty, 0);
+        updateBarChartValue(currentIndex, id, dataset_10_empty, 0);
         currentIndex--;
         if (countryCount > 0)
             updateBarChartPosition(dataset.length, 500);
