@@ -2,10 +2,10 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 16:30:28
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 22:28:17
+* @Last Modified time: 2016-04-28 11:54:40
 */
 
-var div_mask;
+var div_topmask;
 var div_popup_panel;
 var div_popup_panel_transition;
 var div_popup_panel_show_action = 'add';
@@ -24,7 +24,7 @@ function clickMapPopup(id) {
 // show Popup Panel
 function showPopupPanel(id, dataset) {
     // show mask
-    div_mask.attr("class", "mask visible");
+    div_topmask.attr("class", "topmask visible");
     // use resizing css class
     div_popup_panel.attr("class", "resizing-popup-panel visible");
     // start animation, 0 = enter
@@ -35,7 +35,7 @@ function showPopupPanel(id, dataset) {
 // hide Popup Panel
 function hidePopupPanel() {
     // hide mask
-    div_mask.attr("class", "mask hidden");
+    div_topmask.attr("class", "topmask hidden");
     // use resizing css class
     div_popup_panel.attr("class", "resizing-popup-panel visible");
     // start animation, 1 = exit
@@ -129,11 +129,11 @@ var panel_tooltip = d3.select("body")
         .attr("class", "popup-panel-tooltip n")
         .style("opacity", 0.0);
 
-div_mask = d3.select(".mask");
+div_topmask = d3.select(".topmask");
 div_popup_panel = d3.select(".popup-panel");
 
 // event for mask
-div_mask.on("click", function() {
+div_topmask.on("click", function() {
         hidePopupPanel();
     })
 

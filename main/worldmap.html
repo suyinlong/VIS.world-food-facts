@@ -11,14 +11,14 @@
 <body>
 
   <div class="page">
-    <div class="mask hidden"></div>
+    <div class="topmask hidden"></div>
     <div class="sidebar">
       <div class="sidebar-list">
-        <div class="sidebar-list-button">
+        <div class="sidebar-list-button" id="sidebar-list-button-location">
           <span class="sidebar-list-button-icon sidebar-list-button-icon-location"></span>
           <span class="sidebar-list-button-label">Location</span>
         </div>
-        <div class="sidebar-list-button">
+        <div class="sidebar-list-button" id="sidebar-list-button-info">
           <span class="sidebar-list-button-icon sidebar-list-button-icon-info"></span>
           <span class="sidebar-list-button-label">Info</span>
         </div>
@@ -26,21 +26,34 @@
           <span class="sidebar-list-button-icon sidebar-list-button-icon-compare"></span>
           <span class="sidebar-list-button-label">Compare</span>
         </div>
-        <div class="sidebar-list-button">
+        <div class="sidebar-list-button" id="sidebar-list-button-link">
           <span class="sidebar-list-button-icon sidebar-list-button-icon-link"></span>
           <span class="sidebar-list-button-label">Link</span>
         </div>
-        <div class="sidebar-list-button">
+        <div class="sidebar-list-button" id="sidebar-list-button-browse">
           <span class="sidebar-list-button-icon sidebar-list-button-icon-browse"></span>
           <span class="sidebar-list-button-label">Browse</span>
         </div>
-        <div class="sidebar-list-button">
+        <div class="sidebar-list-button" id="sidebar-list-button-judge">
           <span class="sidebar-list-button-icon sidebar-list-button-icon-judge"></span>
           <span class="sidebar-list-button-label">Judge</span>
         </div>
       </div>
-
     </div>
+    <div class="midmask hidden" id="midmask"></div>
+    <div class="sidebar-panel hidden" id="sidebar-panel">
+      <section class="sidebar-panel-link hidden" id="sidebar-panel-link">
+        <div class="sidebar-panel-body">
+        <h1>Link between countries</h1>
+        <h3>Type</h3>
+        <a href="#" onclick="link_makeTreeGraph(link_dataset_pca);">PCA</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_euclidean);">MDS - Euclidean</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_cosine);">MDS - Cosine</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_correlation);">MDS - Correlation</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_isomap);">ISOMAP</a>
+        </div>
+        <div class="sidebar-panel-sub" id="sidebar-panel-sub">
+          <div class="sidebar-panel-sub-chart" id="sidebar-panel-sub-chart"></div>
+        </div>
+      </section>
+    </div>
+
 
     <article class="article-view">
       <div class="views" id="views">
@@ -74,10 +87,12 @@
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script language="Javascript" src="../lib/datamaps/datamaps.world.min.js"></script>
   <script language="Javascript" src="country.data.js"></script>
+  <script language="Javascript" src="link.data.js"></script>
   <script language="Javascript" src="worldmap.js"></script>
 
   <script language="Javascript" src="panel.js"></script>
   <script language="Javascript" src="sidebar.js"></script>
+  <script language="Javascript" src="sidebar.link.chart.js"></script>
   <script language="Javascript" src="panel.chart.js"></script>
 
 </body>
