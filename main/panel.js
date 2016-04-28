@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 16:30:28
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 18:37:49
+* @Last Modified time: 2016-04-27 22:28:17
 */
 
 var div_mask;
@@ -40,7 +40,7 @@ function hidePopupPanel() {
     div_popup_panel.attr("class", "resizing-popup-panel visible");
     // start animation, 1 = exit
     div_popup_panel_transition = -2;
-    alphaPopupPanel(dataset, 1);
+    alphaPopupPanel('', null, 1);
 }
 
 // enter/exit animation of Popup Panel
@@ -73,7 +73,8 @@ function alphaPopupPanel(id, dataset, type) {
         if (type == 0) {
             div_popup_panel.attr("class", "popup-panel visible")
                 .attr("style", "");
-            makeBarChart(id, div_popup_panel_show_action, dataset);
+            if (dataset)
+                makeBarChart(id, div_popup_panel_show_action, dataset);
             div_popup_panel_show_action = 'change';
         } else {
             div_popup_panel.attr("class", "popup-panel hidden")
@@ -135,6 +136,7 @@ div_popup_panel = d3.select(".popup-panel");
 div_mask.on("click", function() {
         hidePopupPanel();
     })
+
 // event for toolbox icons
 d3.select(".popup-panel-icon-location")
     .on("click", function() {
@@ -186,6 +188,4 @@ d3.select(".popup-panel-icon-close")
     .on("mouseout", function() {
         panel_tooltip.style("opacity", 0.0);
     });
-
-
 

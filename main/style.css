@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-02-17 22:39:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 18:44:57
+* @Last Modified time: 2016-04-27 22:32:03
 */
 * {
   box-sizing: border-box;
@@ -85,7 +85,10 @@ div {
   border: 2px solid transparent;
   cursor: pointer;
   font-size: 12px;
+}
 
+.sidebar-list-button:hover {
+  border: 2px solid rgb(133, 133, 133);
 }
 
 .sidebar-list-button-icon {
@@ -95,6 +98,34 @@ div {
   text-align: center;
   cursor: pointer;
   color: #fff;
+  width: 91px;
+  height: 52px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sidebar-list-button-icon-location {
+  background-image: url(images/sidebar-location.png);
+}
+
+.sidebar-list-button-icon-info {
+  background-image: url(images/sidebar-info.png);
+}
+
+.sidebar-list-button-icon-compare {
+  background-image: url(images/sidebar-compare.png);
+}
+
+.sidebar-list-button-icon-link {
+  background-image: url(images/sidebar-link.png);
+}
+
+.sidebar-list-button-icon-browse {
+  background-image: url(images/sidebar-browse.png);
+}
+
+.sidebar-list-button-icon-judge {
+  background-image: url(images/sidebar-judge.png);
 }
 
 .sidebar-list-button-label {
@@ -357,20 +388,27 @@ div {
 }
 
 .popup-panel-datatip {
-  line-height: 1;
+  line-height: 1.2;
   font-weight: bold;
   font-size: 14px;
   font-family: sans-serif;
   text-align: center;
-  width: 220px;
+  width: 120px;
+  height: 68px;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  opacity: 0.9;
+  background: #9dd53a;
+  background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
+  background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+  background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 );
+  color: #000;
   border-radius: 2px;
   z-index: 2000;
   position: absolute;
-  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.7);
 }
+
 .popup-panel-datatip:after {
   display: inline;
   font-size: 10px;
@@ -386,4 +424,10 @@ div {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
+}
+
+.popup-panel-datatip strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
 }

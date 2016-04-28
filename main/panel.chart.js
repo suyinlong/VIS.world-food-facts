@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 18:41:03
+* @Last Modified time: 2016-04-27 19:40:55
 */
 
 var colorPicker = ['#2375F3', 'lightskyblue', 'gold', 'tomato', 'lightslategray', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
@@ -203,6 +203,7 @@ function makeBarGroup(group, length) {
             .attr("width", barWidth)
             .attr("height", barHeight)
             .attr("opacity", "0.7")
+            .attr("_fill", "url(#" + lg.attr("id") + ")")
             .attr("fill", "url(#" + lg.attr("id") + ")")
             .attr("filter", "url(#" + f.attr("id") + ")")
             .attr("pointlight", "f_g" + group + "n" + i + "_pointlight");
@@ -247,16 +248,25 @@ function updateBarChartPosition(length, delay) {
 
 function updateBarChartValue(group, id, dataset, delay) {
     var g = group == 1 ? g1 : (group == 2 ? g2 : g3);
-
+    var d, l;
     for (i = 0; i < dataset.length; i++) {
         d = dataset[i];
+        l = dataset_label[i];
 
         barY = height - scaleY(d) + frame;
         barHeight = scaleY(d);
 
         rect = g.select("#rect_g" + group + "n" + i);
-        rect.on("mouseover", function() {
+        rect.attr("label", l)
+            .attr("d", d)
+            .on("mouseover", function() {
                 loadCountryData(id);
+                showBarDatatip(d3.select(this), id);
+                d3.select(this).attr("fill", "orange");
+            })
+            .on("mouseout", function() {
+                panel_chart_datatip.style("opacity", 0.0);
+                d3.select(this).attr("fill", d3.select(this).attr("_fill"));
             });
         rect.transition()
             .delay(delay)
@@ -272,6 +282,16 @@ function updateBarChartValue(group, id, dataset, delay) {
 
 }
 
+// show panel chart tooltip (only for bars)
+function showBarDatatip(rect, id) {
+
+    _left = parseFloat($('shadow-popup-panel').offsetLeft) + parseFloat(rect.attr("x")) + parseFloat(rect.attr("width") / 2) - 60 + 5;
+    _top = parseFloat($('shadow-popup-panel').offsetTop) + parseFloat(rect.attr("y")) - 80;
+    panel_chart_datatip.html(id + "<br/><strong>" + rect.attr("label") + "</strong><br/>" + rect.attr("d"))
+        .style("left", _left + "px")
+        .style("top", _top + "px")
+        .style("opacity", 0.9);
+}
 
 function makeBarChart(id, op, dataset) {
     if (op == 'change' && countryCount > 0)
@@ -296,4 +316,9 @@ function makeBarChart(id, op, dataset) {
             updateBarChartPosition(dataset.length, 500);
     }
 }
+
+var panel_chart_datatip = d3.select("body")
+        .append("div")
+        .attr("class", "popup-panel-datatip n")
+        .style("opacity", 0.0);
 initPanelChart();

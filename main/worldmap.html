@@ -15,16 +15,28 @@
     <div class="sidebar">
       <div class="sidebar-list">
         <div class="sidebar-list-button">
-          <span class="sidebar-list-button-icon"><img src="images/sidebar-location.png"/></span>
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-location"></span>
           <span class="sidebar-list-button-label">Location</span>
         </div>
         <div class="sidebar-list-button">
-          <span class="sidebar-list-button-icon"><img src="images/sidebar-browse.png"/></span>
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-info"></span>
+          <span class="sidebar-list-button-label">Info</span>
+        </div>
+        <div class="sidebar-list-button" id="sidebar-list-button-compare">
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-compare"></span>
+          <span class="sidebar-list-button-label">Compare</span>
+        </div>
+        <div class="sidebar-list-button">
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-link"></span>
+          <span class="sidebar-list-button-label">Link</span>
+        </div>
+        <div class="sidebar-list-button">
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-browse"></span>
           <span class="sidebar-list-button-label">Browse</span>
         </div>
         <div class="sidebar-list-button">
-          <span class="sidebar-list-button-icon">ICON</span>
-          <span class="sidebar-list-button-label">Text</span>
+          <span class="sidebar-list-button-icon sidebar-list-button-icon-judge"></span>
+          <span class="sidebar-list-button-label">Judge</span>
         </div>
       </div>
 
@@ -61,9 +73,11 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script language="Javascript" src="../lib/datamaps/datamaps.world.min.js"></script>
-  <script language="Javascript" src="worldmap.js"></script>
-  <script language="Javascript" src="panel.js"></script>
   <script language="Javascript" src="country.data.js"></script>
+  <script language="Javascript" src="worldmap.js"></script>
+
+  <script language="Javascript" src="panel.js"></script>
+  <script language="Javascript" src="sidebar.js"></script>
   <script language="Javascript" src="panel.chart.js"></script>
 
 </body>

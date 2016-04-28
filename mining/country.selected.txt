@@ -1,0 +1,1627 @@
+Eigen extraction
+
+# List of eigenvalues (column, country, normalized average)
+  additives_n Romania 0.0680473372781
+  additives_n Malta 0.0512820512821
+  additives_n Kuwait 0.115384615385
+  additives_n Sweden 0.00699300699301
+  additives_n United Kingdom 0.0484234234234
+  additives_n Iran 0.0
+  additives_n Norway 0.0604395604396
+  additives_n Hungary 0.0207100591716
+  additives_n Canada 0.0710560625815
+  additives_n France 0.0742469886629
+  additives_n Polska 0.0
+  additives_n Japan 0.0333333333333
+  additives_n Greece 0.042735042735
+  additives_n Estonia nan
+  additives_n Senegal 0.0737179487179
+  additives_n Israel 0.0384615384615
+  additives_n Argentina 0.0734265734266
+  additives_n Morocco 0.129807692308
+  additives_n Kazakhstan nan
+  additives_n Thailanda 0.0
+  additives_n Russia 0.00480769230769
+  additives_n Belize nan
+  additives_n South Korea 0.0769230769231
+  additives_n Mayotte 0.0
+  additives_n Cambodia 0.00854700854701
+  additives_n Spain 0.0357816864196
+  additives_n Albania 0.010989010989
+  additives_n Hawaii nan
+  additives_n Dominican Republic nan
+  additives_n Egypt 0.211538461538
+  additives_n South Africa 0.0664335664336
+  additives_n Bangladesh nan
+  additives_n Iraq 0.0576923076923
+  additives_n Kenya 0.0576923076923
+  additives_n An 0.0274725274725
+  additives_n Panama nan
+  additives_n Yemen nan
+  additives_n Switzerland 0.0660910518053
+  additives_n Tunisia 0.0863905325444
+  additives_n French Polynesia 0.0769230769231
+  additives_n Colombia 0.0192307692308
+  additives_n Syria nan
+  additives_n Luxembourg 0.0843195266272
+  additives_n New Zealand 0.102335164835
+  additives_n Hong Kong 0.0528846153846
+  additives_n Mongolia nan
+  additives_n China 0.0461538461538
+  additives_n Turkey 0.0115384615385
+  additives_n Philippines 0.0307692307692
+  additives_n Nederland 0.0
+  additives_n Lebanon 0.0230769230769
+  additives_n French Guiana 0.0690559440559
+  additives_n Belarus 0.0
+  additives_n Italy 0.0353490440196
+  additives_n Mauritius 0.0833333333333
+  additives_n Croatia nan
+  additives_n Qatar 0.169230769231
+  additives_n Irlande 0.0
+  additives_n Chile 0.134615384615
+  additives_n Sri Lanka 0.0
+  additives_n Georgia nan
+  additives_n Republic of the Congo nan
+  additives_n Armenia nan
+  additives_n Martinique 0.0594405594406
+  additives_n Slovakia nan
+  additives_n Malaysia 0.0384615384615
+  additives_n Cyprus 0.0
+  additives_n Czech Republic 0.0487179487179
+  additives_n Lithuania 0.0384615384615
+  additives_n Burundi nan
+  additives_n Guatemala nan
+  additives_n Mexico 0.0673076923077
+  additives_n Algeria 0.10989010989
+  additives_n Denmark 0.0612015721505
+  additives_n Germany 0.0299201235065
+  additives_n El Salvador nan
+  additives_n Cook Islands nan
+  additives_n Guadeloupe 0.0644171779141
+  additives_n European Union 0.115384615385
+  additives_n United Arab Emirates 0.0659340659341
+  additives_n Guinea nan
+  additives_n Mozambique nan
+  additives_n Macau nan
+  additives_n Azerbaijan nan
+  additives_n Monaco 0.192307692308
+  additives_n Australia 0.0222955678297
+  additives_n Brunei nan
+  additives_n Serbia 0.0769230769231
+  additives_n New Caledonia 0.0512820512821
+  additives_n Iceland 0.025641025641
+  additives_n Austria 0.0237906423473
+  additives_n Ukraine nan
+  additives_n Burkina Faso 0.0641025641026
+  additives_n Portugal 0.0703826630223
+  additives_n Gabon nan
+  additives_n Mali nan
+  additives_n Peru nan
+  additives_n Andorra 0.00769230769231
+  additives_n Vanuatu nan
+  additives_n Pakistan nan
+  additives_n Ghana nan
+  additives_n Saint Pierre and Miquelon 0.0935550935551
+  additives_n Finland 0.0160256410256
+  additives_n Ireland 0.0274725274725
+  additives_n Latvia nan
+  additives_n Tanzania nan
+  additives_n Togo 0.307692307692
+  additives_n Moldova nan
+  additives_n Poland 0.0888773388773
+  additives_n Venezuela 0.0
+  additives_n Aruba nan
+  additives_n Belgium 0.0725274725275
+  additives_n Brazil 0.0345721694036
+  additives_n Bahrain nan
+  additives_n Sint Maarten nan
+  additives_n Slovenia 0.00961538461538
+  additives_n United States 0.0838695525007
+  additives_n Singapore 0.0384615384615
+  additives_n Taiwan 0.0
+  additives_n Costa Rica nan
+  additives_n Cuba 0.0705128205128
+  additives_n Mauritania nan
+  additives_n Ecuador nan
+  additives_n Thailand 0.026525198939
+  additives_n Netherlands 0.0604395604396
+  additives_n Vietnam nan
+  additives_n Scotland 0.0480769230769
+  additives_n Indonesia 0.0817307692308
+  additives_n Democratic Republic of the Congo nan
+  additives_n Niger nan
+  additives_n Saudi Arabia 0.153846153846
+  additives_n Maldives nan
+  additives_n Bulgaria 0.0480769230769
+  additives_n Jordan nan
+  additives_n India 0.0769230769231
+  energy_100g Romania 0.368178620384
+  energy_100g Malta 0.20198355104
+  energy_100g Kuwait 0.0212868892114
+  energy_100g Sweden 0.284373488147
+  energy_100g United Kingdom 0.271129919673
+  energy_100g Iran nan
+  energy_100g Norway 0.339703273666
+  energy_100g Hungary 0.38017053701
+  energy_100g Canada 0.254224846938
+  energy_100g France 0.260390716028
+  energy_100g Polska 0.0486211901306
+  energy_100g Japan 0.250958282163
+  energy_100g Greece 0.277147380921
+  energy_100g Estonia nan
+  energy_100g Senegal 0.370812167392
+  energy_100g Israel 0.245202386712
+  energy_100g Argentina 0.22103289792
+  energy_100g Morocco 0.310165027146
+  energy_100g Kazakhstan nan
+  energy_100g Thailanda 0.253265602322
+  energy_100g Russia 0.380745041122
+  energy_100g Belize 0.0478955007257
+  energy_100g South Korea 0.369698435736
+  energy_100g Mayotte nan
+  energy_100g Cambodia 0.214713352685
+  energy_100g Spain 0.244586617151
+  energy_100g Albania 0.262119013062
+  energy_100g Hawaii nan
+  energy_100g Dominican Republic nan
+  energy_100g Egypt 0.275278180939
+  energy_100g South Africa 0.36176547207
+  energy_100g Bangladesh nan
+  energy_100g Iraq 0.0459603289792
+  energy_100g Kenya 0.0983551040155
+  energy_100g An 0.435091114336
+  energy_100g Panama nan
+  energy_100g Yemen nan
+  energy_100g Switzerland 0.271851744784
+  energy_100g Tunisia 0.383836690384
+  energy_100g French Polynesia 0.339320270924
+  energy_100g Colombia 0.0529753265602
+  energy_100g Syria nan
+  energy_100g Luxembourg 0.256037332688
+  energy_100g New Zealand 0.316224655847
+  energy_100g Hong Kong 0.183584300919
+  energy_100g Mongolia nan
+  energy_100g China 0.365908724399
+  energy_100g Turkey 0.269732704403
+  energy_100g Philippines 0.291001451379
+  energy_100g Nederland 0.671262699565
+  energy_100g Lebanon 0.292614094501
+  energy_100g French Guiana 0.219202336482
+  energy_100g Belarus nan
+  energy_100g Italy 0.295075089756
+  energy_100g Mauritius 0.388485728108
+  energy_100g Croatia nan
+  energy_100g Qatar 0.197073052733
+  energy_100g Irlande 0.387034349299
+  energy_100g Chile 0.24544428318
+  energy_100g Sri Lanka nan
+  energy_100g Georgia nan
+  energy_100g Republic of the Congo nan
+  energy_100g Armenia nan
+  energy_100g Martinique 0.122964038058
+  energy_100g Slovakia 0.0459603289792
+  energy_100g Malaysia nan
+  energy_100g Cyprus nan
+  energy_100g Czech Republic 0.176453797775
+  energy_100g Lithuania 0.345750685373
+  energy_100g Burundi nan
+  energy_100g Guatemala nan
+  energy_100g Mexico 0.233169189301
+  energy_100g Algeria 0.291787614901
+  energy_100g Denmark 0.302431806101
+  energy_100g Germany 0.264956523705
+  energy_100g El Salvador nan
+  energy_100g Cook Islands nan
+  energy_100g Guadeloupe 0.208607591077
+  energy_100g European Union 0.459603289792
+  energy_100g United Arab Emirates 0.241276608612
+  energy_100g Guinea nan
+  energy_100g Mozambique nan
+  energy_100g Macau nan
+  energy_100g Azerbaijan nan
+  energy_100g Monaco 0.439042089985
+  energy_100g Australia 0.247028554905
+  energy_100g Brunei nan
+  energy_100g Serbia 0.317771327205
+  energy_100g New Caledonia 0.243347847121
+  energy_100g Iceland nan
+  energy_100g Austria 0.263161648866
+  energy_100g Ukraine 0.462022254475
+  energy_100g Burkina Faso 0.0585389453314
+  energy_100g Portugal 0.277816295139
+  energy_100g Gabon nan
+  energy_100g Mali nan
+  energy_100g Peru nan
+  energy_100g Andorra 0.505563618771
+  energy_100g Vanuatu nan
+  energy_100g Pakistan nan
+  energy_100g Ghana nan
+  energy_100g Saint Pierre and Miquelon 0.259441521529
+  energy_100g Finland 0.440795839381
+  energy_100g Ireland 0.437651185293
+  energy_100g Latvia nan
+  energy_100g Tanzania nan
+  energy_100g Togo 0.0553942912433
+  energy_100g Moldova 0.532172230285
+  energy_100g Poland 0.225303739811
+  energy_100g Venezuela 0.0241896468312
+  energy_100g Aruba 0.483792936623
+  energy_100g Belgium 0.276545845561
+  energy_100g Brazil 0.313249953711
+  energy_100g Bahrain nan
+  energy_100g Sint Maarten nan
+  energy_100g Slovenia 0.402999516207
+  energy_100g United States 0.284540284815
+  energy_100g Singapore 0.146796599627
+  energy_100g Taiwan 0.0563014029995
+  energy_100g Costa Rica nan
+  energy_100g Cuba 0.28027600387
+  energy_100g Mauritania nan
+  energy_100g Ecuador nan
+  energy_100g Thailand 0.185970004838
+  energy_100g Netherlands 0.316911250874
+  energy_100g Vietnam nan
+  energy_100g Scotland 0.221800435414
+  energy_100g Indonesia 0.330108047089
+  energy_100g Democratic Republic of the Congo nan
+  energy_100g Niger nan
+  energy_100g Saudi Arabia 0.204765360426
+  energy_100g Maldives nan
+  energy_100g Bulgaria 0.329769392034
+  energy_100g Jordan nan
+  energy_100g India 0.123671383648
+  fat_100g Romania 0.136203185536
+  fat_100g Malta 0.0871287128713
+  fat_100g Kuwait 0.0
+  fat_100g Sweden 0.10004950495
+  fat_100g United Kingdom 0.139716786848
+  fat_100g Iran nan
+  fat_100g Norway 0.128382838284
+  fat_100g Hungary 0.235891089109
+  fat_100g Canada 0.105441486772
+  fat_100g France 0.128162942593
+  fat_100g Polska 0.0
+  fat_100g Japan 0.081199819982
+  fat_100g Greece 0.121242124212
+  fat_100g Estonia nan
+  fat_100g Senegal 0.175006188119
+  fat_100g Israel 0.137293729373
+  fat_100g Argentina 0.0653465346535
+  fat_100g Morocco 0.136908690869
+  fat_100g Kazakhstan nan
+  fat_100g Thailanda 0.20198019802
+  fat_100g Russia 0.249257425743
+  fat_100g Belize 0.0158415841584
+  fat_100g South Korea 0.13201320132
+  fat_100g Mayotte nan
+  fat_100g Cambodia 0.115445544554
+  fat_100g Spain 0.13167699339
+  fat_100g Albania 0.0617821782178
+  fat_100g Hawaii nan
+  fat_100g Dominican Republic nan
+  fat_100g Egypt 0.120297029703
+  fat_100g South Africa 0.284935262757
+  fat_100g Bangladesh nan
+  fat_100g Iraq 0.0
+  fat_100g Kenya 0.0346534653465
+  fat_100g An 0.168646864686
+  fat_100g Panama nan
+  fat_100g Yemen nan
+  fat_100g Switzerland 0.13218027624
+  fat_100g Tunisia 0.236997467189
+  fat_100g French Polynesia 0.132425742574
+  fat_100g Colombia 0.0264356435644
+  fat_100g Syria nan
+  fat_100g Luxembourg 0.146410891089
+  fat_100g New Zealand 0.131071107111
+  fat_100g Hong Kong 0.139851485149
+  fat_100g Mongolia nan
+  fat_100g China 0.131188118812
+  fat_100g Turkey 0.190585058506
+  fat_100g Philippines 0.049504950495
+  fat_100g Nederland 0.574257425743
+  fat_100g Lebanon 0.154207920792
+  fat_100g French Guiana 0.0875702351485
+  fat_100g Belarus nan
+  fat_100g Italy 0.120335714539
+  fat_100g Mauritius nan
+  fat_100g Croatia nan
+  fat_100g Qatar 0.144678217822
+  fat_100g Irlande 0.0584158415842
+  fat_100g Chile 0.0660066006601
+  fat_100g Sri Lanka nan
+  fat_100g Georgia nan
+  fat_100g Republic of the Congo nan
+  fat_100g Armenia nan
+  fat_100g Martinique 0.0789702970297
+  fat_100g Slovakia 0.0
+  fat_100g Malaysia nan
+  fat_100g Cyprus nan
+  fat_100g Czech Republic 0.0794059405941
+  fat_100g Lithuania 0.110891089109
+  fat_100g Burundi nan
+  fat_100g Guatemala nan
+  fat_100g Mexico 0.100072135785
+  fat_100g Algeria 0.154579207921
+  fat_100g Denmark 0.163016541175
+  fat_100g Germany 0.138446278136
+  fat_100g El Salvador nan
+  fat_100g Cook Islands nan
+  fat_100g Guadeloupe 0.0828671617162
+  fat_100g European Union 0.166336633663
+  fat_100g United Arab Emirates 0.112561881188
+  fat_100g Guinea nan
+  fat_100g Mozambique nan
+  fat_100g Macau nan
+  fat_100g Azerbaijan nan
+  fat_100g Monaco 0.153465346535
+  fat_100g Australia 0.109411078786
+  fat_100g Brunei nan
+  fat_100g Serbia 0.110396039604
+  fat_100g New Caledonia 0.127524752475
+  fat_100g Iceland nan
+  fat_100g Austria 0.0995651592186
+  fat_100g Ukraine 0.19801980198
+  fat_100g Burkina Faso 0.0039603960396
+  fat_100g Portugal 0.124067071223
+  fat_100g Gabon nan
+  fat_100g Mali nan
+  fat_100g Peru nan
+  fat_100g Andorra 0.29702970297
+  fat_100g Vanuatu nan
+  fat_100g Pakistan nan
+  fat_100g Ghana nan
+  fat_100g Saint Pierre and Miquelon 0.148223822382
+  fat_100g Finland 0.182425742574
+  fat_100g Ireland 0.392644978784
+  fat_100g Latvia nan
+  fat_100g Tanzania nan
+  fat_100g Togo nan
+  fat_100g Moldova 0.326732673267
+  fat_100g Poland 0.1207248272
+  fat_100g Venezuela 0.0
+  fat_100g Aruba 0.171287128713
+  fat_100g Belgium 0.140986502666
+  fat_100g Brazil 0.123802631579
+  fat_100g Bahrain nan
+  fat_100g Sint Maarten nan
+  fat_100g Slovenia 0.153465346535
+  fat_100g United States 0.13503021367
+  fat_100g Singapore 0.0712541254125
+  fat_100g Taiwan 0.0026402640264
+  fat_100g Costa Rica nan
+  fat_100g Cuba 0.163366336634
+  fat_100g Mauritania nan
+  fat_100g Ecuador nan
+  fat_100g Thailand 0.0720010422095
+  fat_100g Netherlands 0.125815020526
+  fat_100g Vietnam nan
+  fat_100g Scotland 0.0758415841584
+  fat_100g Indonesia 0.112211221122
+  fat_100g Democratic Republic of the Congo nan
+  fat_100g Niger nan
+  fat_100g Saudi Arabia 0.0882838283828
+  fat_100g Maldives nan
+  fat_100g Bulgaria 0.173544554455
+  fat_100g Jordan nan
+  fat_100g India 0.132920792079
+  carbohydrates_100g Romania 0.40518705036
+  carbohydrates_100g Malta 0.187050359712
+  carbohydrates_100g Kuwait 0.0474820143885
+  carbohydrates_100g Sweden 0.258561151079
+  carbohydrates_100g United Kingdom 0.202294213373
+  carbohydrates_100g Iran nan
+  carbohydrates_100g Norway 0.354436450839
+  carbohydrates_100g Hungary 0.228237410072
+  carbohydrates_100g Canada 0.223879256595
+  carbohydrates_100g France 0.200825141397
+  carbohydrates_100g Polska 0.0863309352518
+  carbohydrates_100g Japan 0.312829736211
+  carbohydrates_100g Greece 0.219744204636
+  carbohydrates_100g Estonia nan
+  carbohydrates_100g Senegal 0.324764803542
+  carbohydrates_100g Israel 0.191846522782
+  carbohydrates_100g Argentina 0.251676258993
+  carbohydrates_100g Morocco 0.289024780176
+  carbohydrates_100g Kazakhstan nan
+  carbohydrates_100g Thailanda 0.089928057554
+  carbohydrates_100g Russia 0.246803699897
+  carbohydrates_100g Belize 0.0345323741007
+  carbohydrates_100g South Korea 0.388489208633
+  carbohydrates_100g Mayotte nan
+  carbohydrates_100g Cambodia 0.172559095581
+  carbohydrates_100g Spain 0.178578080625
+  carbohydrates_100g Albania 0.264244604317
+  carbohydrates_100g Hawaii nan
+  carbohydrates_100g Dominican Republic nan
+  carbohydrates_100g Egypt 0.261510791367
+  carbohydrates_100g South Africa 0.14216934145
+  carbohydrates_100g Bangladesh nan
+  carbohydrates_100g Iraq 0.0805755395683
+  carbohydrates_100g Kenya 0.0863309352518
+  carbohydrates_100g An 0.464988009592
+  carbohydrates_100g Panama nan
+  carbohydrates_100g Yemen nan
+  carbohydrates_100g Switzerland 0.216721972422
+  carbohydrates_100g Tunisia 0.317117396991
+  carbohydrates_100g French Polynesia 0.29118705036
+  carbohydrates_100g Colombia 0.0492805755396
+  carbohydrates_100g Syria nan
+  carbohydrates_100g Luxembourg 0.166786570743
+  carbohydrates_100g New Zealand 0.275186396337
+  carbohydrates_100g Hong Kong 0.167176258993
+  carbohydrates_100g Mongolia nan
+  carbohydrates_100g China 0.316996402878
+  carbohydrates_100g Turkey 0.309610311751
+  carbohydrates_100g Philippines 0.439808153477
+  carbohydrates_100g Nederland 0.0791366906475
+  carbohydrates_100g Lebanon 0.0287769784173
+  carbohydrates_100g French Guiana 0.19769229862
+  carbohydrates_100g Belarus nan
+  carbohydrates_100g Italy 0.278688063634
+  carbohydrates_100g Mauritius nan
+  carbohydrates_100g Croatia nan
+  carbohydrates_100g Qatar 0.148201438849
+  carbohydrates_100g Irlande 0.540287769784
+  carbohydrates_100g Chile 0.143980815348
+  carbohydrates_100g Sri Lanka nan
+  carbohydrates_100g Georgia nan
+  carbohydrates_100g Republic of the Congo nan
+  carbohydrates_100g Armenia nan
+  carbohydrates_100g Martinique 0.136594724221
+  carbohydrates_100g Slovakia 0.0805755395683
+  carbohydrates_100g Malaysia nan
+  carbohydrates_100g Cyprus nan
+  carbohydrates_100g Czech Republic 0.153525179856
+  carbohydrates_100g Lithuania 0.370743405276
+  carbohydrates_100g Burundi nan
+  carbohydrates_100g Guatemala nan
+  carbohydrates_100g Mexico 0.241027749229
+  carbohydrates_100g Algeria 0.223920863309
+  carbohydrates_100g Denmark 0.215175442468
+  carbohydrates_100g Germany 0.187567508225
+  carbohydrates_100g El Salvador nan
+  carbohydrates_100g Cook Islands nan
+  carbohydrates_100g Guadeloupe 0.183380690406
+  carbohydrates_100g European Union 0.473021582734
+  carbohydrates_100g United Arab Emirates 0.193165467626
+  carbohydrates_100g Guinea nan
+  carbohydrates_100g Mozambique nan
+  carbohydrates_100g Macau nan
+  carbohydrates_100g Azerbaijan nan
+  carbohydrates_100g Monaco 0.492805755396
+  carbohydrates_100g Australia 0.214563538033
+  carbohydrates_100g Brunei nan
+  carbohydrates_100g Serbia 0.498920863309
+  carbohydrates_100g New Caledonia 0.218385291767
+  carbohydrates_100g Iceland nan
+  carbohydrates_100g Austria 0.264708341435
+  carbohydrates_100g Ukraine 0.479856115108
+  carbohydrates_100g Burkina Faso 0.0992805755396
+  carbohydrates_100g Portugal 0.24237036345
+  carbohydrates_100g Gabon nan
+  carbohydrates_100g Mali nan
+  carbohydrates_100g Peru nan
+  carbohydrates_100g Andorra 0.363309352518
+  carbohydrates_100g Vanuatu nan
+  carbohydrates_100g Pakistan nan
+  carbohydrates_100g Ghana nan
+  carbohydrates_100g Saint Pierre and Miquelon 0.21619945423
+  carbohydrates_100g Finland 0.440827338129
+  carbohydrates_100g Ireland 0.243525179856
+  carbohydrates_100g Latvia nan
+  carbohydrates_100g Tanzania nan
+  carbohydrates_100g Togo 0.0971223021583
+  carbohydrates_100g Moldova 0.352517985612
+  carbohydrates_100g Poland 0.161653318854
+  carbohydrates_100g Venezuela 0.136690647482
+  carbohydrates_100g Aruba 0.503597122302
+  carbohydrates_100g Belgium 0.222702555995
+  carbohydrates_100g Brazil 0.319705124789
+  carbohydrates_100g Bahrain nan
+  carbohydrates_100g Sint Maarten nan
+  carbohydrates_100g Slovenia 0.391366906475
+  carbohydrates_100g United States 0.254619220194
+  carbohydrates_100g Singapore 0.139928057554
+  carbohydrates_100g Taiwan 0.0410071942446
+  carbohydrates_100g Costa Rica nan
+  carbohydrates_100g Cuba 0.220683453237
+  carbohydrates_100g Mauritania nan
+  carbohydrates_100g Ecuador nan
+  carbohydrates_100g Thailand 0.193658273381
+  carbohydrates_100g Netherlands 0.321782238075
+  carbohydrates_100g Vietnam nan
+  carbohydrates_100g Scotland 0.194172661871
+  carbohydrates_100g Indonesia 0.377697841727
+  carbohydrates_100g Democratic Republic of the Congo nan
+  carbohydrates_100g Niger nan
+  carbohydrates_100g Saudi Arabia 0.185851318945
+  carbohydrates_100g Maldives nan
+  carbohydrates_100g Bulgaria 0.224417266187
+  carbohydrates_100g Jordan nan
+  carbohydrates_100g India 0.294604316547
+  sugars_100g Romania 0.211373433584
+  sugars_100g Malta 0.0219047619048
+  sugars_100g Kuwait 0.0628571428571
+  sugars_100g Sweden 0.187669172932
+  sugars_100g United Kingdom 0.159205551794
+  sugars_100g Iran nan
+  sugars_100g Norway 0.219365079365
+  sugars_100g Hungary 0.0333333333333
+  sugars_100g Canada 0.174353510896
+  sugars_100g France 0.120625348822
+  sugars_100g Polska 0.114285714286
+  sugars_100g Japan 0.456952380952
+  sugars_100g Greece 0.119307359307
+  sugars_100g Estonia nan
+  sugars_100g Senegal 0.211904761905
+  sugars_100g Israel 0.0119047619048
+  sugars_100g Argentina 0.082
+  sugars_100g Morocco 0.236149659864
+  sugars_100g Kazakhstan nan
+  sugars_100g Thailanda 0.101904761905
+  sugars_100g Russia 0.0263492063492
+  sugars_100g Belize nan
+  sugars_100g South Korea 0.047619047619
+  sugars_100g Mayotte nan
+  sugars_100g Cambodia 0.110476190476
+  sugars_100g Spain 0.0998133840682
+  sugars_100g Albania 0.0947619047619
+  sugars_100g Hawaii nan
+  sugars_100g Dominican Republic nan
+  sugars_100g Egypt 0.306666666667
+  sugars_100g South Africa 0.0737142857143
+  sugars_100g Bangladesh nan
+  sugars_100g Iraq 0.106666666667
+  sugars_100g Kenya 0.114285714286
+  sugars_100g An 0.341428571429
+  sugars_100g Panama nan
+  sugars_100g Yemen nan
+  sugars_100g Switzerland 0.130146365915
+  sugars_100g Tunisia 0.275979949875
+  sugars_100g French Polynesia 0.26380952381
+  sugars_100g Colombia 0.0652380952381
+  sugars_100g Syria nan
+  sugars_100g Luxembourg 0.140973084886
+  sugars_100g New Zealand 0.202995670996
+  sugars_100g Hong Kong 0.0821428571429
+  sugars_100g Mongolia nan
+  sugars_100g China 0.012380952381
+  sugars_100g Turkey 0.201916666667
+  sugars_100g Philippines 0.457142857143
+  sugars_100g Nederland 0.0609523809524
+  sugars_100g Lebanon 0.0097619047619
+  sugars_100g French Guiana 0.113893452381
+  sugars_100g Belarus nan
+  sugars_100g Italy 0.144717573892
+  sugars_100g Mauritius nan
+  sugars_100g Croatia nan
+  sugars_100g Qatar 0.508571428571
+  sugars_100g Irlande 0.687619047619
+  sugars_100g Chile 0.00238095238095
+  sugars_100g Sri Lanka nan
+  sugars_100g Georgia nan
+  sugars_100g Republic of the Congo nan
+  sugars_100g Armenia nan
+  sugars_100g Martinique 0.146603174603
+  sugars_100g Slovakia 0.106666666667
+  sugars_100g Malaysia nan
+  sugars_100g Cyprus nan
+  sugars_100g Czech Republic 0.180586080586
+  sugars_100g Lithuania 0.288888888889
+  sugars_100g Burundi nan
+  sugars_100g Guatemala nan
+  sugars_100g Mexico 0.0980714285714
+  sugars_100g Algeria 0.353968253968
+  sugars_100g Denmark 0.165224089636
+  sugars_100g Germany 0.124802836672
+  sugars_100g El Salvador nan
+  sugars_100g Cook Islands nan
+  sugars_100g Guadeloupe 0.124793965111
+  sugars_100g European Union 0.261428571429
+  sugars_100g United Arab Emirates 0.318095238095
+  sugars_100g Guinea nan
+  sugars_100g Mozambique nan
+  sugars_100g Macau nan
+  sugars_100g Azerbaijan nan
+  sugars_100g Monaco 0.271428571429
+  sugars_100g Australia 0.150856920252
+  sugars_100g Brunei nan
+  sugars_100g Serbia 0.238095238095
+  sugars_100g New Caledonia 0.13782010582
+  sugars_100g Iceland nan
+  sugars_100g Austria 0.12934888241
+  sugars_100g Ukraine 0.190476190476
+  sugars_100g Burkina Faso nan
+  sugars_100g Portugal 0.138770876467
+  sugars_100g Gabon nan
+  sugars_100g Mali nan
+  sugars_100g Peru nan
+  sugars_100g Andorra 0.447619047619
+  sugars_100g Vanuatu nan
+  sugars_100g Pakistan nan
+  sugars_100g Ghana nan
+  sugars_100g Saint Pierre and Miquelon 0.123323809524
+  sugars_100g Finland 0.305396825397
+  sugars_100g Ireland 0.1
+  sugars_100g Latvia nan
+  sugars_100g Tanzania nan
+  sugars_100g Togo nan
+  sugars_100g Moldova 0.02
+  sugars_100g Poland 0.146691086691
+  sugars_100g Venezuela 0.0857142857143
+  sugars_100g Aruba 0.0761904761905
+  sugars_100g Belgium 0.143919699935
+  sugars_100g Brazil 0.21000952381
+  sugars_100g Bahrain nan
+  sugars_100g Sint Maarten nan
+  sugars_100g Slovenia 0.208
+  sugars_100g United States 0.158148817038
+  sugars_100g Singapore 0.0516666666667
+  sugars_100g Taiwan 0.0561904761905
+  sugars_100g Costa Rica nan
+  sugars_100g Cuba 0.0535714285714
+  sugars_100g Mauritania nan
+  sugars_100g Ecuador nan
+  sugars_100g Thailand 0.0795037593985
+  sugars_100g Netherlands 0.216238548753
+  sugars_100g Vietnam nan
+  sugars_100g Scotland 0.0507482993197
+  sugars_100g Indonesia 0.236507936508
+  sugars_100g Democratic Republic of the Congo nan
+  sugars_100g Niger nan
+  sugars_100g Saudi Arabia 0.507619047619
+  sugars_100g Maldives nan
+  sugars_100g Bulgaria 0.324105820106
+  sugars_100g Jordan nan
+  sugars_100g India 0.159047619048
+  fiber_100g Romania 0.0275015069319
+  fiber_100g Malta 0.0158227848101
+  fiber_100g Kuwait nan
+  fiber_100g Sweden 0.0817104836092
+  fiber_100g United Kingdom 0.0215701739702
+  fiber_100g Iran nan
+  fiber_100g Norway 0.0154711673699
+  fiber_100g Hungary 0.040611814346
+  fiber_100g Canada 0.0269960150023
+  fiber_100g France 0.0286088848096
+  fiber_100g Polska nan
+  fiber_100g Japan 0.0400843881857
+  fiber_100g Greece 0.0279535864979
+  fiber_100g Estonia nan
+  fiber_100g Senegal 0.0346343178622
+  fiber_100g Israel 0.0
+  fiber_100g Argentina 0.0117352320675
+  fiber_100g Morocco 0.0211849507736
+  fiber_100g Kazakhstan nan
+  fiber_100g Thailanda 0.0580168776371
+  fiber_100g Russia 0.00914205344585
+  fiber_100g Belize nan
+  fiber_100g South Korea 0.0
+  fiber_100g Mayotte nan
+  fiber_100g Cambodia 0.0134493670886
+  fiber_100g Spain 0.0397410255717
+  fiber_100g Albania 0.0175808720113
+  fiber_100g Hawaii nan
+  fiber_100g Dominican Republic nan
+  fiber_100g Egypt 0.00580168776371
+  fiber_100g South Africa 0.0296317606444
+  fiber_100g Bangladesh nan
+  fiber_100g Iraq nan
+  fiber_100g Kenya nan
+  fiber_100g An 0.0907172995781
+  fiber_100g Panama nan
+  fiber_100g Yemen nan
+  fiber_100g Switzerland 0.0253008168973
+  fiber_100g Tunisia 0.0215393811533
+  fiber_100g French Polynesia 0.0791139240506
+  fiber_100g Colombia 0.0210970464135
+  fiber_100g Syria nan
+  fiber_100g Luxembourg 0.010864978903
+  fiber_100g New Zealand 0.0514000767165
+  fiber_100g Hong Kong 0.0211075949367
+  fiber_100g Mongolia nan
+  fiber_100g China 0.105485232068
+  fiber_100g Turkey 0.0231540084388
+  fiber_100g Philippines 0.084388185654
+  fiber_100g Nederland 0.0696202531646
+  fiber_100g Lebanon 0.0424578059072
+  fiber_100g French Guiana 0.033373769339
+  fiber_100g Belarus nan
+  fiber_100g Italy 0.0339078511151
+  fiber_100g Mauritius nan
+  fiber_100g Croatia nan
+  fiber_100g Qatar 0.0116033755274
+  fiber_100g Irlande 0.0348101265823
+  fiber_100g Chile 0.0
+  fiber_100g Sri Lanka nan
+  fiber_100g Georgia nan
+  fiber_100g Republic of the Congo nan
+  fiber_100g Armenia nan
+  fiber_100g Martinique 0.0285864978903
+  fiber_100g Slovakia nan
+  fiber_100g Malaysia nan
+  fiber_100g Cyprus nan
+  fiber_100g Czech Republic 0.0163502109705
+  fiber_100g Lithuania 0.0237341772152
+  fiber_100g Burundi nan
+  fiber_100g Guatemala nan
+  fiber_100g Mexico 0.0316832429174
+  fiber_100g Algeria 0.00949367088608
+  fiber_100g Denmark 0.033328145535
+  fiber_100g Germany 0.0431630554724
+  fiber_100g El Salvador nan
+  fiber_100g Cook Islands nan
+  fiber_100g Guadeloupe 0.0235713913632
+  fiber_100g European Union 0.0305907172996
+  fiber_100g United Arab Emirates 0.0316455696203
+  fiber_100g Guinea nan
+  fiber_100g Mozambique nan
+  fiber_100g Macau nan
+  fiber_100g Azerbaijan nan
+  fiber_100g Monaco 0.0400843881857
+  fiber_100g Australia 0.0382475503016
+  fiber_100g Brunei nan
+  fiber_100g Serbia 0.316455696203
+  fiber_100g New Caledonia 0.05531946956
+  fiber_100g Iceland nan
+  fiber_100g Austria 0.0368087941372
+  fiber_100g Ukraine 0.0351265822785
+  fiber_100g Burkina Faso nan
+  fiber_100g Portugal 0.027784126426
+  fiber_100g Gabon nan
+  fiber_100g Mali nan
+  fiber_100g Peru nan
+  fiber_100g Andorra 0.0907172995781
+  fiber_100g Vanuatu nan
+  fiber_100g Pakistan nan
+  fiber_100g Ghana nan
+  fiber_100g Saint Pierre and Miquelon 0.0273558368495
+  fiber_100g Finland 0.0242616033755
+  fiber_100g Ireland 0.0240506329114
+  fiber_100g Latvia nan
+  fiber_100g Tanzania nan
+  fiber_100g Togo nan
+  fiber_100g Moldova 0.045358649789
+  fiber_100g Poland 0.0212948312236
+  fiber_100g Venezuela nan
+  fiber_100g Aruba 0.0147679324895
+  fiber_100g Belgium 0.0371790835095
+  fiber_100g Brazil 0.0442510548523
+  fiber_100g Bahrain nan
+  fiber_100g Sint Maarten nan
+  fiber_100g Slovenia 0.0478199718706
+  fiber_100g United States 0.0316551965356
+  fiber_100g Singapore 0.0159071729958
+  fiber_100g Taiwan 0.0
+  fiber_100g Costa Rica nan
+  fiber_100g Cuba 0.0284810126582
+  fiber_100g Mauritania nan
+  fiber_100g Ecuador nan
+  fiber_100g Thailand 0.0187161826756
+  fiber_100g Netherlands 0.0421010176222
+  fiber_100g Vietnam nan
+  fiber_100g Scotland 0.0323990355636
+  fiber_100g Indonesia 0.0263713080169
+  fiber_100g Democratic Republic of the Congo nan
+  fiber_100g Niger nan
+  fiber_100g Saudi Arabia nan
+  fiber_100g Maldives nan
+  fiber_100g Bulgaria 0.0333936106088
+  fiber_100g Jordan nan
+  fiber_100g India 0.028129395218
+  proteins_100g Romania 0.0848202959831
+  proteins_100g Malta 0.0488372093023
+  proteins_100g Kuwait 0.0
+  proteins_100g Sweden 0.0947093023256
+  proteins_100g United Kingdom 0.0821860465116
+  proteins_100g Iran nan
+  proteins_100g Norway 0.0519379844961
+  proteins_100g Hungary 0.107122093023
+  proteins_100g Canada 0.0636323293938
+  proteins_100g France 0.0879666149447
+  proteins_100g Polska 0.0
+  proteins_100g Japan 0.0503488372093
+  proteins_100g Greece 0.0919896640827
+  proteins_100g Estonia nan
+  proteins_100g Senegal 0.0887718023256
+  proteins_100g Israel 0.0286821705426
+  proteins_100g Argentina 0.0285658914729
+  proteins_100g Morocco 0.0621705426357
+  proteins_100g Kazakhstan nan
+  proteins_100g Thailanda 0.0476744186047
+  proteins_100g Russia 0.10761627907
+  proteins_100g Belize 0.0406976744186
+  proteins_100g South Korea 0.0852713178295
+  proteins_100g Mayotte nan
+  proteins_100g Cambodia 0.0958471760797
+  proteins_100g Spain 0.0673547670206
+  proteins_100g Albania 0.117790697674
+  proteins_100g Hawaii nan
+  proteins_100g Dominican Republic nan
+  proteins_100g Egypt 0.0470930232558
+  proteins_100g South Africa 0.0813953488372
+  proteins_100g Bangladesh nan
+  proteins_100g Iraq 0.0
+  proteins_100g Kenya 0.05
+  proteins_100g An 0.0631782945736
+  proteins_100g Panama nan
+  proteins_100g Yemen nan
+  proteins_100g Switzerland 0.0847822189922
+  proteins_100g Tunisia 0.0729328165375
+  proteins_100g French Polynesia 0.0941860465116
+  proteins_100g Colombia 0.0368023255814
+  proteins_100g Syria nan
+  proteins_100g Luxembourg 0.0802810077519
+  proteins_100g New Zealand 0.0890697674419
+  proteins_100g Hong Kong 0.0341787790698
+  proteins_100g Mongolia nan
+  proteins_100g China 0.0976744186047
+  proteins_100g Turkey 0.093226744186
+  proteins_100g Philippines 0.093023255814
+  proteins_100g Nederland 0.244186046512
+  proteins_100g Lebanon 0.114534883721
+  proteins_100g French Guiana 0.0877296988181
+  proteins_100g Belarus nan
+  proteins_100g Italy 0.0861321467551
+  proteins_100g Mauritius nan
+  proteins_100g Croatia nan
+  proteins_100g Qatar 0.053488372093
+  proteins_100g Irlande 0.0732558139535
+  proteins_100g Chile 0.360755813953
+  proteins_100g Sri Lanka nan
+  proteins_100g Georgia nan
+  proteins_100g Republic of the Congo nan
+  proteins_100g Armenia nan
+  proteins_100g Martinique 0.0444186046512
+  proteins_100g Slovakia 0.0
+  proteins_100g Malaysia nan
+  proteins_100g Cyprus nan
+  proteins_100g Czech Republic 0.0434108527132
+  proteins_100g Lithuania 0.0891472868217
+  proteins_100g Burundi nan
+  proteins_100g Guatemala nan
+  proteins_100g Mexico 0.0441362126246
+  proteins_100g Algeria 0.0668604651163
+  proteins_100g Denmark 0.0898280068483
+  proteins_100g Germany 0.0990062490876
+  proteins_100g El Salvador nan
+  proteins_100g Cook Islands nan
+  proteins_100g Guadeloupe 0.0742632401798
+  proteins_100g European Union 0.0941860465116
+  proteins_100g United Arab Emirates 0.0822259136213
+  proteins_100g Guinea nan
+  proteins_100g Mozambique nan
+  proteins_100g Macau nan
+  proteins_100g Azerbaijan nan
+  proteins_100g Monaco 0.0581395348837
+  proteins_100g Australia 0.0773602957778
+  proteins_100g Brunei nan
+  proteins_100g Serbia 0.0982558139535
+  proteins_100g New Caledonia 0.0496511627907
+  proteins_100g Iceland nan
+  proteins_100g Austria 0.071209625323
+  proteins_100g Ukraine 0.0775581395349
+  proteins_100g Burkina Faso 0.00131782945736
+  proteins_100g Portugal 0.0813664690682
+  proteins_100g Gabon nan
+  proteins_100g Mali nan
+  proteins_100g Peru nan
+  proteins_100g Andorra 0.0697674418605
+  proteins_100g Vanuatu nan
+  proteins_100g Pakistan nan
+  proteins_100g Ghana nan
+  proteins_100g Saint Pierre and Miquelon 0.0535324779471
+  proteins_100g Finland 0.0476744186047
+  proteins_100g Ireland 0.0695348837209
+  proteins_100g Latvia nan
+  proteins_100g Tanzania nan
+  proteins_100g Togo nan
+  proteins_100g Moldova 0.0767441860465
+  proteins_100g Poland 0.0625713032032
+  proteins_100g Venezuela 0.0697674418605
+  proteins_100g Aruba 0.093023255814
+  proteins_100g Belgium 0.071799623803
+  proteins_100g Brazil 0.0748179275832
+  proteins_100g Bahrain nan
+  proteins_100g Sint Maarten nan
+  proteins_100g Slovenia 0.09
+  proteins_100g United States 0.0764869271474
+  proteins_100g Singapore 0.057015503876
+  proteins_100g Taiwan 0.0112403100775
+  proteins_100g Costa Rica nan
+  proteins_100g Cuba 0.0232558139535
+  proteins_100g Mauritania nan
+  proteins_100g Ecuador nan
+  proteins_100g Thailand 0.0817571059432
+  proteins_100g Netherlands 0.0815364086923
+  proteins_100g Vietnam nan
+  proteins_100g Scotland 0.106860465116
+  proteins_100g Indonesia 0.0639534883721
+  proteins_100g Democratic Republic of the Congo nan
+  proteins_100g Niger nan
+  proteins_100g Saudi Arabia 0.0503875968992
+  proteins_100g Maldives nan
+  proteins_100g Bulgaria 0.0531937984496
+  proteins_100g Jordan nan
+  proteins_100g India 0.0982558139535
+  salt_100g Romania 0.0020526967629
+  salt_100g Malta 0.00472440944882
+  salt_100g Kuwait 0.007
+  salt_100g Sweden 0.00199655615416
+  salt_100g United Kingdom 0.0031679939316
+  salt_100g Iran nan
+  salt_100g Norway 0.00220866141732
+  salt_100g Hungary 0.00169291338583
+  salt_100g Canada 0.00453442872658
+  salt_100g France 0.00432050041318
+  salt_100g Polska 0.0
+  salt_100g Japan 0.00885754593176
+  salt_100g Greece 0.00223680028633
+  salt_100g Estonia nan
+  salt_100g Senegal 0.00206666666667
+  salt_100g Israel 0.00598333333333
+  salt_100g Argentina 0.00150735433071
+  salt_100g Morocco 0.00217377952756
+  salt_100g Kazakhstan nan
+  salt_100g Thailanda 0.029
+  salt_100g Russia 0.00323727034121
+  salt_100g Belize nan
+  salt_100g South Korea 0.00813333333333
+  salt_100g Mayotte nan
+  salt_100g Cambodia 0.0031240056243
+  salt_100g Spain 0.00420050225738
+  salt_100g Albania 0.00089434
+  salt_100g Hawaii nan
+  salt_100g Dominican Republic nan
+  salt_100g Egypt 0.001
+  salt_100g South Africa 0.00157538057743
+  salt_100g Bangladesh nan
+  salt_100g Iraq 0.0
+  salt_100g Kenya nan
+  salt_100g An 0.00265800524934
+  salt_100g Panama nan
+  salt_100g Yemen nan
+  salt_100g Switzerland 0.00435223717217
+  salt_100g Tunisia 0.00202199305655
+  salt_100g French Polynesia 0.000557592519685
+  salt_100g Colombia 0.0021342519685
+  salt_100g Syria nan
+  salt_100g Luxembourg 0.00376128500358
+  salt_100g New Zealand 0.0038863722262
+  salt_100g Hong Kong 0.00356852854331
+  salt_100g Mongolia nan
+  salt_100g China 0.0122814444444
+  salt_100g Turkey 0.00296963582677
+  salt_100g Philippines 0.00305657480315
+  salt_100g Nederland 0.00236220472441
+  salt_100g Lebanon 0.00305
+  salt_100g French Guiana 0.00295729130435
+  salt_100g Belarus nan
+  salt_100g Italy 0.00404135512152
+  salt_100g Mauritius nan
+  salt_100g Croatia nan
+  salt_100g Qatar 0.0016
+  salt_100g Irlande 0.0033
+  salt_100g Chile 0.00261783333333
+  salt_100g Sri Lanka nan
+  salt_100g Georgia nan
+  salt_100g Republic of the Congo nan
+  salt_100g Armenia nan
+  salt_100g Martinique 0.00112210781345
+  salt_100g Slovakia 0.0
+  salt_100g Malaysia nan
+  salt_100g Cyprus nan
+  salt_100g Czech Republic 0.0010570563295
+  salt_100g Lithuania 0.00170443569554
+  salt_100g Burundi nan
+  salt_100g Guatemala nan
+  salt_100g Mexico 0.00514150211993
+  salt_100g Algeria 0.000918056692913
+  salt_100g Denmark 0.0050547620183
+  salt_100g Germany 0.00444414350877
+  salt_100g El Salvador nan
+  salt_100g Cook Islands nan
+  salt_100g Guadeloupe 0.00300614707841
+  salt_100g European Union 0.00285433070866
+  salt_100g United Arab Emirates 0.00458534488189
+  salt_100g Guinea nan
+  salt_100g Mozambique nan
+  salt_100g Macau nan
+  salt_100g Azerbaijan nan
+  salt_100g Monaco 0.0038
+  salt_100g Australia 0.00507547994918
+  salt_100g Brunei nan
+  salt_100g Serbia 0.000817086614173
+  salt_100g New Caledonia 0.000618275590551
+  salt_100g Iceland nan
+  salt_100g Austria 0.0254198886115
+  salt_100g Ukraine 0.00425196850394
+  salt_100g Burkina Faso nan
+  salt_100g Portugal 0.00559939716931
+  salt_100g Gabon nan
+  salt_100g Mali nan
+  salt_100g Peru nan
+  salt_100g Andorra 0.0001
+  salt_100g Vanuatu nan
+  salt_100g Pakistan nan
+  salt_100g Ghana nan
+  salt_100g Saint Pierre and Miquelon 0.00184275215598
+  salt_100g Finland 0.00200793700787
+  salt_100g Ireland 0.00337048931384
+  salt_100g Latvia nan
+  salt_100g Tanzania nan
+  salt_100g Togo nan
+  salt_100g Moldova 0.00472440944882
+  salt_100g Poland 0.00597966224313
+  salt_100g Venezuela nan
+  salt_100g Aruba 0.00697
+  salt_100g Belgium 0.00386240387675
+  salt_100g Brazil 0.0117076241354
+  salt_100g Bahrain nan
+  salt_100g Sint Maarten nan
+  salt_100g Slovenia 0.00237322834646
+  salt_100g United States 0.00586933321618
+  salt_100g Singapore 0.0117358923885
+  salt_100g Taiwan 0.0003195
+  salt_100g Costa Rica nan
+  salt_100g Cuba 0.00298106299213
+  salt_100g Mauritania nan
+  salt_100g Ecuador nan
+  salt_100g Thailand 0.0247714421881
+  salt_100g Netherlands 0.00884602040816
+  salt_100g Vietnam nan
+  salt_100g Scotland 0.000914285714286
+  salt_100g Indonesia 0.00500196850394
+  salt_100g Democratic Republic of the Congo nan
+  salt_100g Niger nan
+  salt_100g Saudi Arabia 0.000354330708661
+  salt_100g Maldives nan
+  salt_100g Bulgaria 0.00137526771654
+  salt_100g Jordan nan
+  salt_100g India 0.0010175
+  sodium_100g Romania 0.0020526967629
+  sodium_100g Malta 0.00472440944882
+  sodium_100g Kuwait 0.007
+  sodium_100g Sweden 0.00199655615416
+  sodium_100g United Kingdom 0.00317271480441
+  sodium_100g Iran nan
+  sodium_100g Norway 0.00220866141732
+  sodium_100g Hungary 0.00169291338583
+  sodium_100g Canada 0.00453681106435
+  sodium_100g France 0.00430572628449
+  sodium_100g Polska 0.0
+  sodium_100g Japan 0.00885676666667
+  sodium_100g Greece 0.00223680028633
+  sodium_100g Estonia nan
+  sodium_100g Senegal 0.00206666666667
+  sodium_100g Israel 0.00598333333333
+  sodium_100g Argentina 0.0015085
+  sodium_100g Morocco 0.00217377952756
+  sodium_100g Kazakhstan nan
+  sodium_100g Thailanda 0.029
+  sodium_100g Russia 0.00323727034121
+  sodium_100g Belize nan
+  sodium_100g South Korea 0.00813333333333
+  sodium_100g Mayotte nan
+  sodium_100g Cambodia 0.00312614285714
+  sodium_100g Spain 0.00420051444445
+  sodium_100g Albania 0.00089434
+  sodium_100g Hawaii nan
+  sodium_100g Dominican Republic nan
+  sodium_100g Egypt 0.001
+  sodium_100g South Africa 0.00157533333333
+  sodium_100g Bangladesh nan
+  sodium_100g Iraq 0.0
+  sodium_100g Kenya nan
+  sodium_100g An 0.00265800524934
+  sodium_100g Panama nan
+  sodium_100g Yemen nan
+  sodium_100g Switzerland 0.00435215263389
+  sodium_100g Tunisia 0.00202212727273
+  sodium_100g French Polynesia 0.000557592519685
+  sodium_100g Colombia 0.0021335
+  sodium_100g Syria nan
+  sodium_100g Luxembourg 0.00376115615605
+  sodium_100g New Zealand 0.00388636363636
+  sodium_100g Hong Kong 0.0035675
+  sodium_100g Mongolia nan
+  sodium_100g China 0.0122814444444
+  sodium_100g Turkey 0.00297253937008
+  sodium_100g Philippines 0.003055
+  sodium_100g Nederland 0.00236220472441
+  sodium_100g Lebanon 0.00305
+  sodium_100g French Guiana 0.00295741266689
+  sodium_100g Belarus nan
+  sodium_100g Italy 0.00404135503289
+  sodium_100g Mauritius nan
+  sodium_100g Croatia nan
+  sodium_100g Qatar 0.0016
+  sodium_100g Irlande 0.0033
+  sodium_100g Chile 0.00261783333333
+  sodium_100g Sri Lanka nan
+  sodium_100g Georgia nan
+  sodium_100g Republic of the Congo nan
+  sodium_100g Armenia nan
+  sodium_100g Martinique 0.00112210781345
+  sodium_100g Slovakia 0.0
+  sodium_100g Malaysia nan
+  sodium_100g Cyprus nan
+  sodium_100g Czech Republic 0.0010570563295
+  sodium_100g Lithuania 0.00170443569554
+  sodium_100g Burundi nan
+  sodium_100g Guatemala nan
+  sodium_100g Mexico 0.0051426
+  sodium_100g Algeria 0.000918056692913
+  sodium_100g Denmark 0.00505440710862
+  sodium_100g Germany 0.00444413557199
+  sodium_100g El Salvador nan
+  sodium_100g Cook Islands nan
+  sodium_100g Guadeloupe 0.00300645629757
+  sodium_100g European Union 0.00285433070866
+  sodium_100g United Arab Emirates 0.0045844
+  sodium_100g Guinea nan
+  sodium_100g Mozambique nan
+  sodium_100g Macau nan
+  sodium_100g Azerbaijan nan
+  sodium_100g Monaco 0.0038
+  sodium_100g Australia 0.00507602277496
+  sodium_100g Brunei nan
+  sodium_100g Serbia 0.000817086614173
+  sodium_100g New Caledonia 0.000618275590551
+  sodium_100g Iceland nan
+  sodium_100g Austria 0.0254198886115
+  sodium_100g Ukraine 0.00423
+  sodium_100g Burkina Faso nan
+  sodium_100g Portugal 0.00559931394181
+  sodium_100g Gabon nan
+  sodium_100g Mali nan
+  sodium_100g Peru nan
+  sodium_100g Andorra 0.0001
+  sodium_100g Vanuatu nan
+  sodium_100g Pakistan nan
+  sodium_100g Ghana nan
+  sodium_100g Saint Pierre and Miquelon 0.0018424671916
+  sodium_100g Finland 0.00200793700787
+  sodium_100g Ireland 0.00337034308211
+  sodium_100g Latvia nan
+  sodium_100g Tanzania nan
+  sodium_100g Togo nan
+  sodium_100g Moldova 0.00472440944882
+  sodium_100g Poland 0.00597969143461
+  sodium_100g Venezuela nan
+  sodium_100g Aruba 0.00697
+  sodium_100g Belgium 0.00386223259414
+  sodium_100g Brazil 0.0117057322785
+  sodium_100g Bahrain nan
+  sodium_100g Sint Maarten nan
+  sodium_100g Slovenia 0.00237322834646
+  sodium_100g United States 0.00586705399872
+  sodium_100g Singapore 0.0117356666667
+  sodium_100g Taiwan 0.0003195
+  sodium_100g Costa Rica nan
+  sodium_100g Cuba 0.00298115
+  sodium_100g Mauritania nan
+  sodium_100g Ecuador nan
+  sodium_100g Thailand 0.0247754736842
+  sodium_100g Netherlands 0.00884610075526
+  sodium_100g Vietnam nan
+  sodium_100g Scotland 0.000914285714286
+  sodium_100g Indonesia 0.005
+  sodium_100g Democratic Republic of the Congo nan
+  sodium_100g Niger nan
+  sodium_100g Saudi Arabia 0.000354330708661
+  sodium_100g Maldives nan
+  sodium_100g Bulgaria 0.00137526771654
+  sodium_100g Jordan nan
+  sodium_100g India 0.0010175
+  alcohol_100g Romania 0.023493360572
+  alcohol_100g Malta 0.127681307457
+  alcohol_100g Kuwait nan
+  alcohol_100g Sweden 0.0494939177268
+  alcohol_100g United Kingdom 0.126289204088
+  alcohol_100g Iran nan
+  alcohol_100g Norway 0.0531154239019
+  alcohol_100g Hungary 0.0723527408921
+  alcohol_100g Canada 0.0229826353422
+  alcohol_100g France 0.0865666642654
+  alcohol_100g Polska nan
+  alcohol_100g Japan nan
+  alcohol_100g Greece 0.0682669390535
+  alcohol_100g Estonia nan
+  alcohol_100g Senegal nan
+  alcohol_100g Israel 0.0510725229826
+  alcohol_100g Argentina 0.0752042900919
+  alcohol_100g Morocco 0.0551583248212
+  alcohol_100g Kazakhstan nan
+  alcohol_100g Thailanda nan
+  alcohol_100g Russia 0.119305413687
+  alcohol_100g Belize nan
+  alcohol_100g South Korea 0.0
+  alcohol_100g Mayotte nan
+  alcohol_100g Cambodia 0.0510725229826
+  alcohol_100g Spain 0.0533349880194
+  alcohol_100g Albania 0.0689479060266
+  alcohol_100g Hawaii nan
+  alcohol_100g Dominican Republic nan
+  alcohol_100g Egypt nan
+  alcohol_100g South Africa 0.0
+  alcohol_100g Bangladesh nan
+  alcohol_100g Iraq nan
+  alcohol_100g Kenya nan
+  alcohol_100g An 0.127681307457
+  alcohol_100g Panama nan
+  alcohol_100g Yemen nan
+  alcohol_100g Switzerland 0.0167732917585
+  alcohol_100g Tunisia 0.0
+  alcohol_100g French Polynesia nan
+  alcohol_100g Colombia nan
+  alcohol_100g Syria nan
+  alcohol_100g Luxembourg 0.061695607763
+  alcohol_100g New Zealand 0.0635852911134
+  alcohol_100g Hong Kong 0.00510725229826
+  alcohol_100g Mongolia nan
+  alcohol_100g China 0.0612870275792
+  alcohol_100g Turkey nan
+  alcohol_100g Philippines nan
+  alcohol_100g Nederland nan
+  alcohol_100g Lebanon nan
+  alcohol_100g French Guiana 0.0329060265577
+  alcohol_100g Belarus nan
+  alcohol_100g Italy 0.115812053115
+  alcohol_100g Mauritius 0.0510725229826
+  alcohol_100g Croatia nan
+  alcohol_100g Qatar nan
+  alcohol_100g Irlande 0.0
+  alcohol_100g Chile 0.0
+  alcohol_100g Sri Lanka nan
+  alcohol_100g Georgia nan
+  alcohol_100g Republic of the Congo nan
+  alcohol_100g Armenia 0.408580183861
+  alcohol_100g Martinique 0.0255362614913
+  alcohol_100g Slovakia nan
+  alcohol_100g Malaysia nan
+  alcohol_100g Cyprus nan
+  alcohol_100g Czech Republic 0.0275791624106
+  alcohol_100g Lithuania nan
+  alcohol_100g Burundi nan
+  alcohol_100g Guatemala nan
+  alcohol_100g Mexico nan
+  alcohol_100g Algeria nan
+  alcohol_100g Denmark 0.188908249715
+  alcohol_100g Germany 0.0626326509392
+  alcohol_100g El Salvador nan
+  alcohol_100g Cook Islands nan
+  alcohol_100g Guadeloupe 0.144535240041
+  alcohol_100g European Union nan
+  alcohol_100g United Arab Emirates nan
+  alcohol_100g Guinea nan
+  alcohol_100g Mozambique nan
+  alcohol_100g Macau nan
+  alcohol_100g Azerbaijan nan
+  alcohol_100g Monaco nan
+  alcohol_100g Australia 0.127511065713
+  alcohol_100g Brunei nan
+  alcohol_100g Serbia nan
+  alcohol_100g New Caledonia nan
+  alcohol_100g Iceland nan
+  alcohol_100g Austria 0.145166135913
+  alcohol_100g Ukraine 0.0459652706844
+  alcohol_100g Burkina Faso nan
+  alcohol_100g Portugal 0.129894450119
+  alcohol_100g Gabon nan
+  alcohol_100g Mali nan
+  alcohol_100g Peru nan
+  alcohol_100g Andorra 0.127681307457
+  alcohol_100g Vanuatu nan
+  alcohol_100g Pakistan nan
+  alcohol_100g Ghana nan
+  alcohol_100g Saint Pierre and Miquelon 0.0
+  alcohol_100g Finland 0.0674157303371
+  alcohol_100g Ireland 0.0247701736466
+  alcohol_100g Latvia nan
+  alcohol_100g Tanzania nan
+  alcohol_100g Togo nan
+  alcohol_100g Moldova nan
+  alcohol_100g Poland 0.163432073544
+  alcohol_100g Venezuela nan
+  alcohol_100g Aruba nan
+  alcohol_100g Belgium 0.056366911243
+  alcohol_100g Brazil 0.0317784587448
+  alcohol_100g Bahrain nan
+  alcohol_100g Sint Maarten nan
+  alcohol_100g Slovenia 0.050051072523
+  alcohol_100g United States 0.0746842223274
+  alcohol_100g Singapore 0.0510725229826
+  alcohol_100g Taiwan 0.0
+  alcohol_100g Costa Rica nan
+  alcohol_100g Cuba 0.408580183861
+  alcohol_100g Mauritania nan
+  alcohol_100g Ecuador nan
+  alcohol_100g Thailand 0.0255362614913
+  alcohol_100g Netherlands 0.0602655771195
+  alcohol_100g Vietnam nan
+  alcohol_100g Scotland 0.0919305413687
+  alcohol_100g Indonesia nan
+  alcohol_100g Democratic Republic of the Congo nan
+  alcohol_100g Niger nan
+  alcohol_100g Saudi Arabia nan
+  alcohol_100g Maldives nan
+  alcohol_100g Bulgaria nan
+  alcohol_100g Jordan nan
+  alcohol_100g India 0.0
+
+# Matrix of eigenvalues
+  row = 50 col = 10
+0.010989010989 0.262119013062 0.0617821782178 0.264244604317 0.0947619047619 0.0175808720113 0.117790697674 0.00089434 0.00089434 0.0689479060266 
+0.00769230769231 0.505563618771 0.29702970297 0.363309352518 0.447619047619 0.0907172995781 0.0697674418605 0.0001 0.0001 0.127681307457 
+0.0734265734266 0.22103289792 0.0653465346535 0.251676258993 0.082 0.0117352320675 0.0285658914729 0.00150735433071 0.0015085 0.0752042900919 
+0.0222955678297 0.247028554905 0.109411078786 0.214563538033 0.150856920252 0.0382475503016 0.0773602957778 0.00507547994918 0.00507602277496 0.127511065713 
+0.0237906423473 0.263161648866 0.0995651592186 0.264708341435 0.12934888241 0.0368087941372 0.071209625323 0.0254198886115 0.0254198886115 0.145166135913 
+0.0725274725275 0.276545845561 0.140986502666 0.222702555995 0.143919699935 0.0371790835095 0.071799623803 0.00386240387675 0.00386223259414 0.056366911243 
+0.0345721694036 0.313249953711 0.123802631579 0.319705124789 0.21000952381 0.0442510548523 0.0748179275832 0.0117076241354 0.0117057322785 0.0317784587448 
+0.00854700854701 0.214713352685 0.115445544554 0.172559095581 0.110476190476 0.0134493670886 0.0958471760797 0.0031240056243 0.00312614285714 0.0510725229826 
+0.0710560625815 0.254224846938 0.105441486772 0.223879256595 0.174353510896 0.0269960150023 0.0636323293938 0.00453442872658 0.00453681106435 0.0229826353422 
+0.134615384615 0.24544428318 0.0660066006601 0.143980815348 0.00238095238095 0.0 0.360755813953 0.00261783333333 0.00261783333333 0.0 
+0.0461538461538 0.365908724399 0.131188118812 0.316996402878 0.012380952381 0.105485232068 0.0976744186047 0.0122814444444 0.0122814444444 0.0612870275792 
+0.0705128205128 0.28027600387 0.163366336634 0.220683453237 0.0535714285714 0.0284810126582 0.0232558139535 0.00298106299213 0.00298115 0.408580183861 
+0.0487179487179 0.176453797775 0.0794059405941 0.153525179856 0.180586080586 0.0163502109705 0.0434108527132 0.0010570563295 0.0010570563295 0.0275791624106 
+0.0612015721505 0.302431806101 0.163016541175 0.215175442468 0.165224089636 0.033328145535 0.0898280068483 0.0050547620183 0.00505440710862 0.188908249715 
+0.0160256410256 0.440795839381 0.182425742574 0.440827338129 0.305396825397 0.0242616033755 0.0476744186047 0.00200793700787 0.00200793700787 0.0674157303371 
+0.0742469886629 0.260390716028 0.128162942593 0.200825141397 0.120625348822 0.0286088848096 0.0879666149447 0.00432050041318 0.00430572628449 0.0865666642654 
+0.0690559440559 0.219202336482 0.0875702351485 0.19769229862 0.113893452381 0.033373769339 0.0877296988181 0.00295729130435 0.00295741266689 0.0329060265577 
+0.0299201235065 0.264956523705 0.138446278136 0.187567508225 0.124802836672 0.0431630554724 0.0990062490876 0.00444414350877 0.00444413557199 0.0626326509392 
+0.042735042735 0.277147380921 0.121242124212 0.219744204636 0.119307359307 0.0279535864979 0.0919896640827 0.00223680028633 0.00223680028633 0.0682669390535 
+0.0644171779141 0.208607591077 0.0828671617162 0.183380690406 0.124793965111 0.0235713913632 0.0742632401798 0.00300614707841 0.00300645629757 0.144535240041 
+0.0528846153846 0.183584300919 0.139851485149 0.167176258993 0.0821428571429 0.0211075949367 0.0341787790698 0.00356852854331 0.0035675 0.00510725229826 
+0.0207100591716 0.38017053701 0.235891089109 0.228237410072 0.0333333333333 0.040611814346 0.107122093023 0.00169291338583 0.00169291338583 0.0723527408921 
+0.0769230769231 0.123671383648 0.132920792079 0.294604316547 0.159047619048 0.028129395218 0.0982558139535 0.0010175 0.0010175 0.0 
+0.0274725274725 0.437651185293 0.392644978784 0.243525179856 0.1 0.0240506329114 0.0695348837209 0.00337048931384 0.00337034308211 0.0247701736466 
+0.0384615384615 0.245202386712 0.137293729373 0.191846522782 0.0119047619048 0.0 0.0286821705426 0.00598333333333 0.00598333333333 0.0510725229826 
+0.0353490440196 0.295075089756 0.120335714539 0.278688063634 0.144717573892 0.0339078511151 0.0861321467551 0.00404135512152 0.00404135503289 0.115812053115 
+0.0843195266272 0.256037332688 0.146410891089 0.166786570743 0.140973084886 0.010864978903 0.0802810077519 0.00376128500358 0.00376115615605 0.061695607763 
+0.0512820512821 0.20198355104 0.0871287128713 0.187050359712 0.0219047619048 0.0158227848101 0.0488372093023 0.00472440944882 0.00472440944882 0.127681307457 
+0.0594405594406 0.122964038058 0.0789702970297 0.136594724221 0.146603174603 0.0285864978903 0.0444186046512 0.00112210781345 0.00112210781345 0.0255362614913 
+0.129807692308 0.310165027146 0.136908690869 0.289024780176 0.236149659864 0.0211849507736 0.0621705426357 0.00217377952756 0.00217377952756 0.0551583248212 
+0.0604395604396 0.316911250874 0.125815020526 0.321782238075 0.216238548753 0.0421010176222 0.0815364086923 0.00884602040816 0.00884610075526 0.0602655771195 
+0.102335164835 0.316224655847 0.131071107111 0.275186396337 0.202995670996 0.0514000767165 0.0890697674419 0.0038863722262 0.00388636363636 0.0635852911134 
+0.0604395604396 0.339703273666 0.128382838284 0.354436450839 0.219365079365 0.0154711673699 0.0519379844961 0.00220866141732 0.00220866141732 0.0531154239019 
+0.0888773388773 0.225303739811 0.1207248272 0.161653318854 0.146691086691 0.0212948312236 0.0625713032032 0.00597966224313 0.00597969143461 0.163432073544 
+0.0703826630223 0.277816295139 0.124067071223 0.24237036345 0.138770876467 0.027784126426 0.0813664690682 0.00559939716931 0.00559931394181 0.129894450119 
+0.0680473372781 0.368178620384 0.136203185536 0.40518705036 0.211373433584 0.0275015069319 0.0848202959831 0.0020526967629 0.0020526967629 0.023493360572 
+0.00480769230769 0.380745041122 0.249257425743 0.246803699897 0.0263492063492 0.00914205344585 0.10761627907 0.00323727034121 0.00323727034121 0.119305413687 
+0.0935550935551 0.259441521529 0.148223822382 0.21619945423 0.123323809524 0.0273558368495 0.0535324779471 0.00184275215598 0.0018424671916 0.0 
+0.0384615384615 0.146796599627 0.0712541254125 0.139928057554 0.0516666666667 0.0159071729958 0.057015503876 0.0117358923885 0.0117356666667 0.0510725229826 
+0.00961538461538 0.402999516207 0.153465346535 0.391366906475 0.208 0.0478199718706 0.09 0.00237322834646 0.00237322834646 0.050051072523 
+0.0664335664336 0.36176547207 0.284935262757 0.14216934145 0.0737142857143 0.0296317606444 0.0813953488372 0.00157538057743 0.00157533333333 0.0 
+0.0769230769231 0.369698435736 0.13201320132 0.388489208633 0.047619047619 0.0 0.0852713178295 0.00813333333333 0.00813333333333 0.0 
+0.0357816864196 0.244586617151 0.13167699339 0.178578080625 0.0998133840682 0.0397410255717 0.0673547670206 0.00420050225738 0.00420051444445 0.0533349880194 
+0.00699300699301 0.284373488147 0.10004950495 0.258561151079 0.187669172932 0.0817104836092 0.0947093023256 0.00199655615416 0.00199655615416 0.0494939177268 
+0.0660910518053 0.271851744784 0.13218027624 0.216721972422 0.130146365915 0.0253008168973 0.0847822189922 0.00435223717217 0.00435215263389 0.0167732917585 
+0.0 0.0563014029995 0.0026402640264 0.0410071942446 0.0561904761905 0.0 0.0112403100775 0.0003195 0.0003195 0.0 
+0.026525198939 0.185970004838 0.0720010422095 0.193658273381 0.0795037593985 0.0187161826756 0.0817571059432 0.0247714421881 0.0247754736842 0.0255362614913 
+0.0863905325444 0.383836690384 0.236997467189 0.317117396991 0.275979949875 0.0215393811533 0.0729328165375 0.00202199305655 0.00202212727273 0.0 
+0.0484234234234 0.271129919673 0.139716786848 0.202294213373 0.159205551794 0.0215701739702 0.0821860465116 0.0031679939316 0.00317271480441 0.126289204088 
+0.0838695525007 0.284540284815 0.13503021367 0.254619220194 0.158148817038 0.0316551965356 0.0764869271474 0.00586933321618 0.00586705399872 0.0746842223274 
+
+# dump: countryTag
+["Albania", "Andorra", "Argentina", "Australia", "Austria", "Belgium", "Brazil", "Cambodia", "Canada", "Chile", "China", "Cuba", "Czech Republic", "Denmark", "Finland", "France", "French Guiana", "Germany", "Greece", "Guadeloupe", "Hong Kong", "Hungary", "India", "Ireland", "Israel", "Italy", "Luxembourg", "Malta", "Martinique", "Morocco", "Netherlands", "New Zealand", "Norway", "Poland", "Portugal", "Romania", "Russia", "Saint Pierre and Miquelon", "Singapore", "Slovenia", "South Africa", "South Korea", "Spain", "Sweden", "Switzerland", "Taiwan", "Thailand", "Tunisia", "United Kingdom", "United States"]
+
+# dump: matrix_pca_y
+[[0.4645058777374864, 0.7790126073592739], [-6.2165038781092266, -0.47828200855394787], [1.0822724856500752, 1.0816036944991698], [0.1706518337036624, -0.5023109942780093], [1.385284651008252, -5.8747580644864295], [-0.10213463709312436, 0.320421352271464], [-0.7618371935359599, -2.271246357859107], [1.0662485926774385, 0.5177165894673618], [0.3294936093853554, 0.32477956589181983], [2.6663040361342127, 2.370511399091889], [-1.0458945567795914, -3.178831364894211], [-0.007366282824410326, -0.1882084090992411], [1.1939144403791633, 1.35362225516205], [-0.4351410548535748, -0.2713542112078127], [-3.5427557566576735, -0.16376033822845368], [0.4872472589559515, 0.3455092334843726], [0.90439978367343, 0.7361515224953806], [0.11699809232831616, -0.11499734177424208], [0.11847175583562526, 0.6230042527950775], [1.0883195219212471, 0.590964931169358], [1.2982467776394908, 0.6973451154989142], [-1.1674596184373527, 0.37176276421122606], [0.4216642410496391, 1.3718807116203655], [-2.541623718795724, 0.22647847771704918], [1.5828816776837518, -0.009730949207665604], [-0.4794501203639104, -0.2272129071395521], [0.7784126817844124, 0.9149020742504814], [1.8014370186075555, 0.12402952914653535], [1.6322983797281276, 1.3661824879419338], [-0.8244392314095471, 1.212188394617182], [-0.9456683612941517, -1.363415844785842], [-1.0155717821829582, 0.23037713280465144], [-1.3495394966651928, 0.5381889414744929], [1.0484809257103542, 0.03767167866895867], [0.13525895740059957, -0.21679421979997457], [-1.9649326481423788, 0.4716981442945056], [-0.7880101102530804, 0.10909465760723082], [0.20348713103633037, 1.2451837584998016], [2.8703824786506305, -1.4426760730046784], [-2.6849777996215565, -0.3649914250616782], [-0.7487088740877459, 1.2384666800258397], [-0.11444363516965651, -0.6133498414288707], [0.5034180203504385, 0.03421847642997561], [-1.3321668472432284, -0.31253375320216353], [0.331775066738318, 0.41042715985049594], [3.766535052924832, 1.6871130248514434], [3.0407562345345083, -4.973728369517716], [-2.378679742687078, 0.9587790553401304], [0.07239058593560468, 0.42575031032035293], [-0.11423182295768923, -0.14685350532919333]]
+
+# dump: matrix_mds_coords_euclidean
+[[0.04944948497223083, 0.01871298432623618], [-0.033968296591683864, -0.10920576479897509], [0.035999555559175056, -0.004595189258466211], [0.026136139453940437, 0.04243236668775622], [0.02092339291771182, 0.041060389895280255], [-0.016602863346630945, 0.0019713605179255576], [-0.02040689021072041, 0.03456343464225415], [0.032755346180436504, -0.008862414629034098], [-0.0253603750052035, 0.01633537947760563], [-0.047778001632897124, -0.12551685367724105], [0.04443436948561226, -0.05024625827831304], [-0.013568591833573968, 0.05683046692735988], [-0.009775903188107365, 0.029287331529464784], [0.017900071148073002, 0.02650010191435143], [-0.03743770443187532, -0.031049514580864288], [0.0009978591053167163, 0.005698933255550184], [0.010205920766796408, 0.014262193375935761], [0.0019717429091947697, -0.010972861249676448], [0.007731712240201597, 0.0008618922764358243], [0.047297784761344774, 0.04492791443285873], [0.03533670337102897, -0.01660890714221877], [0.001445496611079264, -0.0717186937703543], [-0.09561235584453824, 0.056247198764648725], [-0.0671019544235776, 0.03590586227674679], [0.07784573016889383, -0.05803660478965381], [0.01331611202636843, 0.025813445766917492], [-0.017235125273383552, -0.002401383373398453], [0.09775988652788495, 0.030551712836075582], [0.01125490602373774, 0.027284367415301318], [-0.05025292971702736, 0.008814037298903725], [-0.02849680638925655, 0.016913190560746832], [-0.029970359802930658, 0.023796782081555442], [-0.021859774107346824, 0.02341998346200824], [0.03622426320109305, 0.02325170900125564], [0.0030499168232603893, 0.014844206090696343], [-0.0372405453947674, 0.02176003962737075], [-0.02934198422876905, -0.08488791686448786], [-0.015551531374482935, -0.0037441731987231763], [0.06911257970639598, 0.0037420827205786877], [-0.02123951111348307, -0.025819650437550523], [-0.005258359889684424, -0.09336582381766598], [-0.05814643751763362, -0.011056543424227754], [0.015713527531802173, -0.0036942611903725713], [-0.019657471431595394, 0.038248459515203774], [-0.018364447123972734, -0.0054294586402410736], [0.11953202908455722, 0.001401192355171244], [0.04723982150562878, 0.030559912295097438], [-0.09228580177845842, -0.027679311248654], [0.006493997086995812, 0.020487063467127378], [-0.017614327517160404, 0.008405589575698503]]
+
+# dump: matrix_mds_coords_cosine
+[[-0.007080806242335661, 0.010439492813003331], [0.02888764658737545, 0.01736501956914418], [-0.00727929137872399, 0.011073991396913115], [0.011473237726957939, -0.004237740024087206], [0.005959968597638679, -0.004705925315370882], [0.002348504339549042, 0.002422618357614743], [0.0057933082941365064, 0.024256569568059258], [0.00219648096102847, -0.003412555707405033], [0.007060866378432176, 0.01891275322036044], [-0.10680119439830428, -0.036530431108450966], [-0.039517632283077635, -0.025232400620977084], [0.04207156142487044, -0.10912696088542326], [0.023517203738933016, 0.03495858850795707], [0.013645839770982653, -0.02329534683179121], [0.01194734981638137, 0.027074104439392337], [0.0015869430870642666, -0.006701912271620757], [-0.0014349302521663354, 0.00959725652750557], [0.0014330876285661917, -0.006909560064071495], [-0.0003511580071028333, -0.001713359666403505], [0.013290561817916227, -0.013078931116402829], [-0.007392492383593114, 0.0014266996288051187], [-0.01961635965194069, -0.04653506879449843], [-0.013271406044131873, 0.09038397125703637], [-0.017530782872665233, -0.04304888884319178], [-0.028943534333285108, -0.039104276064380585], [0.0028537647832588844, 0.00022294647485962375], [0.006191844579776296, -0.008827403635325396], [-0.014047430364195193, -0.03978860792599969], [0.021676438508710167, 0.03877610202998978], [0.01125539641989693, 0.020485386384804623], [0.006370945904173224, 0.018180616890276797], [0.006212951542117082, 0.01133525832821111], [0.006425021041499851, 0.023324678235288495], [0.020237945131326655, -0.024054446564521607], [0.004552445242785604, -0.006182220976590153], [-0.0002640145165106065, 0.02672382654117734], [-0.02304873144140048, -0.05767807976272253], [-0.0038736055518832986, 0.008618352478378999], [-0.006232010583621624, -0.0071661851419585875], [0.0008386868375531126, 0.0186533335010846], [-0.00550898419412015, -0.04688083316120383], [-0.03401718537617734, 0.013780826447944235], [-0.0010319485851260869, -0.007026912581319107], [0.009532735117334814, 0.021170589149812277], [-0.0016594201232003674, 0.006377217968315355], [0.05983586302710141, 0.07595033731574062], [-0.01087217978457368, 0.014654349579417482], [0.008925088429474379, 0.019660127585881], [0.010417721662729298, -0.00936057623686469], [0.003235689970565439, 0.004773609103606728]]
+
+# dump: matrix_mds_coords_correlation
+[[-0.01896240227388529, 0.013357248927122534], [0.05398134999365775, 0.03692457138127575], [-0.018547454496600023, 0.0177836546140018], [0.025333166087366216, -0.005942536755258935], [0.01086815280060514, -0.0066573100230117735], [0.0030490642937731193, 0.006774962015432947], [0.003057327401358542, 0.04603235017220718], [0.00581490087153514, -0.007114084642641735], [0.007473777891205434, 0.039972043359713966], [-0.18880867748487934, -0.0745073683441192], [-0.07269213942147536, -0.04948732664596765], [0.10084981290671398, -0.21237671843151096], [0.03614454318476666, 0.07455618142096583], [0.03798910377748631, -0.047871123630041625], [0.013450482447708358, 0.04101257876256931], [0.004032358084490662, -0.012073514908016718], [-0.008581451351090338, 0.022230496672938388], [0.0041269363963379255, -0.013362426749489467], [-0.0008649258465662879, -0.0035469176684767324], [0.03346748797252254, -0.024675216812063108], [-0.015617881128438975, 0.003911311665685341], [-0.025151444637257457, -0.08573190947235487], [-0.04229061381957223, 0.18031896034137718], [-0.017055266743517025, -0.07970877324365785], [-0.034069102229054515, -0.06615993240615593], [0.005148263957124652, 0.0004991091806598308], [0.016472473334067907, -0.015274239192464203], [-0.016867265606256687, -0.0817712965729023], [0.030586655341820982, 0.09483168170622863], [0.015780584128437844, 0.0466695120206136], [0.006301410530961414, 0.037566321151987186], [0.008090872516755627, 0.027084841762558355], [0.005360310140402367, 0.038642156260201364], [0.056524748686008576, -0.050183302668930604], [0.010648300559691492, -0.011125875396211628], [-0.007169151740430286, 0.04312506642405385], [-0.023292543274076455, -0.1020692326160182], [-0.011292573264715371, 0.01806774416748397], [-0.014634886486862874, -0.013245256971448299], [-0.002710758340011717, 0.027654359065311516], [-0.0024615387618876416, -0.08804856675737459], [-0.05489960556072482, 0.009987522999129774], [-0.0011426241660226378, -0.014039510308140353], [0.010788335674266614, 0.04503038727680462], [-0.0061793532031246354, 0.013187727269352426], [0.06737734451482182, 0.11633302667653621], [-0.03055132452557008, 0.030748900694347825], [0.011290707854227254, 0.03810535841806158], [0.025715815046321398, -0.017336811021209212], [0.0041186979675841935, 0.011901176830844911]]
+
+# dump: matrix_isomap
+[[0.06947000327506862, 0.027002179569858828], [-0.5576590696899323, -0.154885417794404], [0.13387595413899658, -0.015530645817414736], [0.04329325638637852, 0.011007869178756438], [0.0262988821188184, 0.02493552297702158], [-0.00042343074122828934, -0.015156231275588765], [-0.16470325305861164, -0.07518528754744884], [0.10613184988141867, -0.009641416682211648], [0.025040927862190806, -0.04295529930777022], [0.2684170549042967, -0.03897827685436597], [-0.06629832433829408, 0.2067105440486542], [0.10775765800822562, -0.05453915442696532], [0.1233468440452686, -0.08550289476613344], [0.025774083821590795, 0.007555298868335642], [-0.3541478238307446, -0.1403421990547721], [0.048470179390063414, 0.0008400899679356001], [0.10818184126150908, -0.020081299789095276], [0.0520539099425825, 0.02633996004435764], [0.021852769457233946, 0.014336114667590924], [0.08796042086581131, -0.01954567579364953], [0.1663084388708114, -0.02704706413044846], [0.019730654429882685, 0.2769737221936874], [0.1229696605208482, -0.04541545886554722], [-0.23026505891820595, 0.3006510626030192], [0.1637377778043434, -0.01690791731688512], [-0.014777046342318278, 0.025473809510191976], [0.04422003555409042, 0.01795380031644018], [0.1882273163691296, -0.0222873792876278], [0.19170794061180665, -0.09666695183484807], [-0.13185151093071729, -0.06422864997485894], [-0.14355572074280437, -0.07330996893214142], [-0.08933454870120089, -0.060917107997370656], [-0.20449754127933384, -0.08402067693966998], [0.07812145087605335, -0.013586659410335857], [0.0020923395802338422, -0.010622367979613275], [-0.2527402059878375, -0.08287772786481602], [-0.011305364561287628, 0.3170628136298555], [0.0371274174597773, 0.0058575873386133345], [0.22022138166042424, -0.06082969801295825], [-0.2753117105129502, -0.06152548296774187], [0.021286125748735132, 0.28548915298904143], [-0.29348411257595414, 0.11168972625914853], [0.08267315225242293, 0.007298635771043051], [-0.05817803652659311, -0.043725405327591026], [0.03451349451160796, -0.00380428281445505], [0.33987638594015596, -0.14641084864223147], [0.17909074244407847, -0.02574753887255947], [-0.29774572198942983, -0.031084502252276963], [0.041323283954379224, 0.006700014563635939], [-0.03487475322078936, -0.030518415963390742]]
+
+# dump per country
+
+  # Albania
+dataset_original Albania =[0.010989010989, 0.262119013062, 0.0617821782178, 0.264244604317, 0.0947619047619, 0.0175808720113, 0.117790697674, 0.00089434, 0.00089434, 0.0689479060266] ;
+dataset_normalized Albania =[0.0816326530613761, 0.5184688995208917, 0.1573487031698101, 0.5994288045712666, 0.21170212765958635, 0.16666666666635066, 0.32651087832321396, 0.03518268760608963, 0.03518268760608963, 0.16875000000013768] ;
+
+  # Andorra
+dataset_original Andorra =[0.00769230769231, 0.505563618771, 0.29702970297, 0.363309352518, 0.447619047619, 0.0907172995781, 0.0697674418605, 0.0001, 0.0001, 0.127681307457] ;
+dataset_normalized Andorra =[0.05714285714303755, 1.0, 0.7564841498543664, 0.8241534067737065, 1.0, 0.8599999999963975, 0.19339242546369453, 0.003933927545015277, 0.003933927545015277, 0.31250000000107075] ;
+
+  # Argentina
+dataset_original Argentina =[0.0734265734266, 0.22103289792, 0.0653465346535, 0.251676258993, 0.082, 0.0117352320675, 0.0285658914729, 0.00150735433071, 0.0015085, 0.0752042900919] ;
+dataset_normalized Argentina =[0.5454545454563013, 0.437200956938555, 0.1664265129682153, 0.5709179926571423, 0.1831914893617216, 0.1112499999993838, 0.07918345420379455, 0.059298227216781366, 0.059343297016555455, 0.18406249999996252] ;
+
+  # Australia
+dataset_original Australia =[0.0222955678297, 0.247028554905, 0.109411078786, 0.214563538033, 0.150856920252, 0.0382475503016, 0.0773602957778, 0.00507547994918, 0.00507602277496, 0.127511065713] ;
+dataset_normalized Australia =[0.16562421816395892, 0.4886201176926341, 0.27865141463120224, 0.48672920092404054, 0.3370207792864188, 0.3625867768574856, 0.214439498369051, 0.1996657037625194, 0.19968705813540027, 0.3120833333326307] ;
+
+  # Austria
+dataset_original Austria =[0.0237906423473, 0.263161648866, 0.0995651592186, 0.264708341435, 0.12934888241, 0.0368087941372, 0.071209625323, 0.0254198886115, 0.0254198886115, 0.145166135913] ;
+dataset_normalized Austria =[0.17673048600901922, 0.5205312231638284, 0.253575531583131, 0.6004807745329487, 0.2889709075117329, 0.34894736841903684, 0.1973900975918224, 1.0, 1.0, 0.3552941176471395] ;
+
+  # Belgium
+dataset_original Belgium =[0.0725274725275, 0.276545845561, 0.140986502666, 0.222702555995, 0.143919699935, 0.0371790835095, 0.071799623803, 0.00386240387675, 0.00386223259414, 0.056366911243] ;
+dataset_normalized Belgium =[0.538775510205825, 0.5470050361481097, 0.35906865052146464, 0.505192252686085, 0.3215227338973746, 0.35245771166842454, 0.19902554865644995, 0.15194417000720614, 0.15193743187343156, 0.13795801526727045] ;
+
+  # Brazil
+dataset_original Brazil =[0.0345721694036, 0.313249953711, 0.123802631579, 0.319705124789, 0.21000952381, 0.0442510548523, 0.0748179275832, 0.0117076241354, 0.0117057322785, 0.0317784587448] ;
+dataset_normalized Brazil =[0.25682182985604807, 0.6196054108333489, 0.31530425261621825, 0.7252388795711308, 0.46917021276707116, 0.4194999999978575, 0.20739216026313972, 0.4605694507293573, 0.46049502644965595, 0.07777777777791375] ;
+
+  # Cambodia
+dataset_original Cambodia =[0.00854700854701, 0.214713352685, 0.115445544554, 0.172559095581, 0.110476190476, 0.0134493670886, 0.0958471760797, 0.0031240056243, 0.00312614285714, 0.0510725229826] ;
+dataset_normalized Cambodia =[0.0634920634922557, 0.424700956937838, 0.29402017290919785, 0.3914437255942229, 0.2468085106378986, 0.1274999999993364, 0.2656843559344193, 0.12289611776216418, 0.12298019495355805, 0.12499999999993881] ;
+
+  # Canada
+dataset_original Canada =[0.0710560625815, 0.254224846938, 0.105441486772, 0.223879256595, 0.174353510896, 0.0269960150023, 0.0636323293938, 0.00453442872658, 0.00453681106435, 0.0229826353422] ;
+dataset_normalized Canada =[0.5278450363212225, 0.5028543144698742, 0.2685415387165946, 0.5078615531087726, 0.38951316264004143, 0.2559222222206165, 0.17638615077757316, 0.1783811406840161, 0.1784748601257654, 0.05625000000004589] ;
+
+  # Chile
+dataset_original Chile =[0.134615384615, 0.24544428318, 0.0660066006601, 0.143980815348, 0.00238095238095, 0.0, 0.360755813953, 0.00261783333333, 0.00261783333333, 0.0] ;
+dataset_normalized Chile =[1.0, 0.48548644338107805, 0.16810758885678057, 0.3266149870811022, 0.005319148936165459, 0.0, 1.0, 0.10298366658246046, 0.10298366658246046, 0.0] ;
+
+  # China
+dataset_original China =[0.0461538461538, 0.365908724399, 0.131188118812, 0.316996402878, 0.012380952381, 0.105485232068, 0.0976744186047, 0.0122814444444, 0.0122814444444, 0.0612870275792] ;
+dataset_normalized China =[0.3428571428577796, 0.7237639553425659, 0.33411383285298185, 0.7190942472475172, 0.02765957446819443, 1.0, 0.27074939564917233, 0.48314312592400005, 0.48314312592400005, 0.1500000000001224] ;
+
+  # Cuba
+dataset_original Cuba =[0.0705128205128, 0.28027600387, 0.163366336634, 0.220683453237, 0.0535714285714, 0.0284810126582, 0.0232558139535, 0.00298106299213, 0.00298115, 0.408580183861] ;
+dataset_normalized Cuba =[0.523809523810868, 0.5543832535880193, 0.41606628242117494, 0.5006119951036727, 0.1196808510637787, 0.2699999999984832, 0.06446414182123152, 0.11727285818165868, 0.11727628100822293, 1.0] ;
+
+  # Czech Republic
+dataset_original Czech Republic =[0.0487179487179, 0.176453797775, 0.0794059405941, 0.153525179856, 0.180586080586, 0.0163502109705, 0.0434108527132, 0.0010570563295, 0.0010570563295, 0.0275791624106] ;
+dataset_normalized Czech Republic =[0.361904761905434, 0.3490239234459758, 0.20223342939470626, 0.3482660138720201, 0.4034369885432344, 0.1549999999996208, 0.12033306473296548, 0.04158383011252795, 0.04158383011252795, 0.06749999999995716] ;
+
+  # Denmark
+dataset_original Denmark =[0.0612015721505, 0.302431806101, 0.163016541175, 0.215175442468, 0.165224089636, 0.033328145535, 0.0898280068483, 0.0050547620183, 0.00505440710862, 0.188908249715] ;
+dataset_normalized Denmark =[0.4546402502621561, 0.5982072183837055, 0.4151754128624115, 0.488117282792096, 0.3691176470591882, 0.31595081967033395, 0.24899947103833225, 0.19885067537287388, 0.19883671348321239, 0.46235294117755615] ;
+
+  # Finland
+dataset_original Finland =[0.0160256410256, 0.440795839381, 0.182425742574, 0.440827338129, 0.305396825397, 0.0242616033755, 0.0476744186047, 0.00200793700787, 0.00200793700787, 0.0674157303371] ;
+dataset_normalized Finland =[0.11904761904765443, 0.8718899521539005, 0.46460734870203235, 1.0, 0.682269503546562, 0.22999999999867277, 0.1321514907335939, 0.07899078703915349, 0.07899078703915349, 0.16500000000008566] ;
+
+  # France
+dataset_original France =[0.0742469886629, 0.260390716028, 0.128162942593, 0.200825141397, 0.120625348822, 0.0286088848096, 0.0879666149447, 0.00432050041318, 0.00430572628449, 0.0865666642654] ;
+dataset_normalized France =[0.5515490586402616, 0.5150503445263662, 0.326409223390335, 0.4555641722434016, 0.26948216226194355, 0.27121222799374956, 0.24383977067701665, 0.1699653558365869, 0.16938415231851497, 0.2118719107896094] ;
+
+  # French Guiana
+dataset_original French Guiana =[0.0690559440559, 0.219202336482, 0.0875702351485, 0.19769229862, 0.113893452381, 0.033373769339, 0.0877296988181, 0.00295729130435, 0.00295741266689, 0.0329060265577] ;
+dataset_normalized French Guiana =[0.5129870129881514, 0.4335801239315241, 0.22302649945938496, 0.4484574379144993, 0.25444281914906963, 0.31638333333225194, 0.24318304910126717, 0.11633769720816622, 0.1163424715225566, 0.08053749999998706] ;
+
+  # Germany
+dataset_original Germany =[0.0299201235065, 0.264956523705, 0.138446278136, 0.187567508225, 0.124802836672, 0.0431630554724, 0.0990062490876, 0.00444414350877, 0.00444413557199, 0.0626326509392] ;
+dataset_normalized Germany =[0.22226377462034932, 0.5240814684195357, 0.35259913055493675, 0.42548973714083005, 0.27881484788428496, 0.40918576587645333, 0.2744411739418252, 0.17482938563151146, 0.17482907340433684, 0.15329341317372303] ;
+
+  # Greece
+dataset_original Greece =[0.042735042735, 0.277147380921, 0.121242124212, 0.219744204636, 0.119307359307, 0.0279535864979, 0.0919896640827, 0.00223680028633, 0.00223680028633, 0.0682669390535] ;
+dataset_normalized Greece =[0.317460317460907, 0.5481948673338709, 0.30878307571251823, 0.49848134548247075, 0.26653771760077305, 0.2649999999988624, 0.2549914943150011, 0.08799410259091645, 0.08799410259091645, 0.16708333333347508] ;
+
+  # Guadeloupe
+dataset_original Guadeloupe =[0.0644171779141, 0.208607591077, 0.0828671617162, 0.183380690406, 0.124793965111, 0.0235713913632, 0.0742632401798, 0.00300614707841, 0.00300645629757, 0.144535240041] ;
+dataset_normalized Guadeloupe =[0.4785276073632529, 0.4126238189055508, 0.21104857108534802, 0.4159921006358662, 0.2787950284394977, 0.22345679012209912, 0.2058545900232537, 0.118259647961243, 0.1182718124189527, 0.3537500000004191] ;
+
+  # Hong Kong
+dataset_original Hong Kong =[0.0528846153846, 0.183584300919, 0.139851485149, 0.167176258993, 0.0821428571429, 0.0211075949367, 0.0341787790698, 0.00356852854331, 0.0035675, 0.00510725229826] ;
+dataset_normalized Hong Kong =[0.39285714285815104, 0.3631279904303326, 0.356177953891356, 0.37923296613713864, 0.1835106382979876, 0.2000999999989875, 0.09474214343293405, 0.1403833273170045, 0.14034286516842, 0.01249999999999388] ;
+
+  # Hungary
+dataset_original Hungary =[0.0207100591716, 0.38017053701, 0.235891089109, 0.228237410072, 0.0333333333333, 0.040611814346, 0.107122093023, 0.00169291338583, 0.00169291338583, 0.0723527408921] ;
+dataset_normalized Hungary =[0.153846153846611, 0.7519736842104573, 0.600774495676837, 0.5177478580178494, 0.07446808510631643, 0.3849999999982936, 0.29693795326319006, 0.06659798599841713, 0.06659798599841713, 0.17708333333345064] ;
+
+  # India
+dataset_original India =[0.0769230769231, 0.123671383648, 0.132920792079, 0.294604316547, 0.159047619048, 0.028129395218, 0.0982558139535, 0.0010175, 0.0010175, 0.0] ;
+dataset_normalized India =[0.5714285714303755, 0.24462081339760758, 0.338526657059638, 0.6682986536120622, 0.35531914893705907, 0.2666666666654027, 0.27236099919459916, 0.040027712770530445, 0.040027712770530445, 0.0] ;
+
+  # Ireland
+dataset_original Ireland =[0.0274725274725, 0.437651185293, 0.392644978784, 0.243525179856, 0.1, 0.0240506329114, 0.0695348837209, 0.00337048931384, 0.00337034308211, 0.0247701736466] ;
+dataset_normalized Ireland =[0.20408163265344023, 0.8656698564602182, 1.0, 0.5524275805797163, 0.2234042553191727, 0.22799999999901405, 0.19274778404530202, 0.13259260751894816, 0.13258685486864213, 0.06062500000006578] ;
+
+  # Israel
+dataset_original Israel =[0.0384615384615, 0.245202386712, 0.137293729373, 0.191846522782, 0.0119047619048, 0.0, 0.0286821705426, 0.00598333333333, 0.00598333333333, 0.0510725229826] ;
+dataset_normalized Israel =[0.28571428571481633, 0.48500797448217264, 0.34966378482208316, 0.43519651842885404, 0.026595744680939, 0.0, 0.0795057749127136, 0.2353799981099496, 0.2353799981099496, 0.12499999999993881] ;
+
+  # Italy
+dataset_original Italy =[0.0353490440196, 0.295075089756, 0.120335714539, 0.278688063634, 0.144717573892, 0.0339078511151, 0.0861321467551, 0.00404135512152, 0.00404135503289, 0.115812053115] ;
+dataset_normalized Italy =[0.2625928984320645, 0.5836557038524901, 0.30647460439115537, 0.6321932410472398, 0.32330521826939607, 0.3214464285696565, 0.23875470172275998, 0.15898398231736088, 0.1589839788307209, 0.2834499999990199] ;
+
+  # Luxembourg
+dataset_original Luxembourg =[0.0843195266272, 0.256037332688, 0.146410891089, 0.166786570743, 0.140973084886, 0.010864978903, 0.0802810077519, 0.00376128500358, 0.00376115615605, 0.061695607763] ;
+dataset_normalized Luxembourg =[0.6263736263752754, 0.506439393939014, 0.37288364553247694, 0.37834897320772104, 0.31493987049003347, 0.10299999999996208, 0.22253558957849304, 0.14796622680236246, 0.14796115803388873, 0.1509999999999731] ;
+
+  # Malta
+dataset_original Malta =[0.0512820512821, 0.20198355104, 0.0871287128713, 0.187050359712, 0.0219047619048, 0.0158227848101, 0.0488372093023, 0.00472440944882, 0.00472440944882, 0.127681307457] ;
+dataset_normalized Malta =[0.38095238095383127, 0.39952153110030336, 0.22190201729086884, 0.4243166054671118, 0.04893617021285627, 0.149999999999052, 0.13537469782444755, 0.1858548446464344, 0.1858548446464344, 0.31250000000107075] ;
+
+  # Martinique
+dataset_original Martinique =[0.0594405594406, 0.122964038058, 0.0789702970297, 0.136594724221, 0.146603174603, 0.0285864978903, 0.0444186046512, 0.00112210781345, 0.00112210781345, 0.0255362614913] ;
+dataset_normalized Martinique =[0.44155844156000446, 0.24322169058944446, 0.20112391930814114, 0.309859921121834, 0.32751773049609867, 0.27099999999878654, 0.12312651087859375, 0.044142908358078194, 0.044142908358078194, 0.062499999999969406] ;
+
+  # Morocco
+dataset_original Morocco =[0.129807692308, 0.310165027146, 0.136908690869, 0.289024780176, 0.236149659864, 0.0211849507736, 0.0621705426357, 0.00217377952756, 0.00217377952756, 0.0551583248212] ;
+dataset_normalized Morocco =[0.964285714290755, 0.6135034556086053, 0.3486831572200381, 0.6556416882008851, 0.5275683890579285, 0.20083333333279613, 0.17233413913545328, 0.08551491160258579, 0.08551491160258579, 0.13499999999991433] ;
+
+  # Netherlands
+dataset_original Netherlands =[0.0604395604396, 0.316911250874, 0.125815020526, 0.321782238075, 0.216238548753, 0.0421010176222, 0.0815364086923, 0.00884602040816, 0.00884610075526, 0.0602655771195] ;
+dataset_normalized Netherlands =[0.4489795918383114, 0.6268474215854287, 0.320429465100107, 0.7299507318233435, 0.4830861195546258, 0.399117647056604, 0.22601550838186277, 0.3479960334742791, 0.3479991942709776, 0.14750000000000613] ;
+
+  # New Zealand
+dataset_original New Zealand =[0.102335164835, 0.316224655847, 0.131071107111, 0.275186396337, 0.202995670996, 0.0514000767165, 0.0890697674419, 0.0038863722262, 0.00388636363636, 0.0635852911134] ;
+dataset_normalized New Zealand =[0.7602040816336006, 0.6254893431923096, 0.3338158239458965, 0.6242498423645217, 0.45350096711877164, 0.487272727270159, 0.24689766317530282, 0.15288706750830522, 0.1528867295902234, 0.15562500000007803] ;
+
+  # Norway
+dataset_original Norway =[0.0604395604396, 0.339703273666, 0.128382838284, 0.354436450839, 0.219365079365, 0.0154711673699, 0.0519379844961, 0.00220866141732, 0.00220866141732, 0.0531154239019] ;
+dataset_normalized Norway =[0.4489795918383114, 0.6719298245625382, 0.32696926032670687, 0.8040255677956177, 0.4900709219856904, 0.14666666666597147, 0.1439699167339451, 0.0868871398720763, 0.0868871398720763, 0.1299999999999266] ;
+
+  # Poland
+dataset_original Poland =[0.0888773388773, 0.225303739811, 0.1207248272, 0.161653318854, 0.146691086691, 0.0212948312236, 0.0625713032032, 0.00597966224313, 0.00597969143461, 0.163432073544] ;
+dataset_normalized Poland =[0.6602316602332577, 0.44564864132965537, 0.30746560817835533, 0.3667043871192379, 0.3277141298416306, 0.2018749999987913, 0.17344503063601882, 0.23523558008136944, 0.235236728453042, 0.399999999999021] ;
+
+  # Portugal
+dataset_original Portugal =[0.0703826630223, 0.277816295139, 0.124067071223, 0.24237036345, 0.138770876467, 0.027784126426, 0.0813664690682, 0.00559939716931, 0.00559931394181, 0.129894450119] ;
+dataset_normalized Portugal =[0.5228426395957223, 0.5495179732559824, 0.3159777354271253, 0.5498079236162862, 0.31002004317099047, 0.26339351851725784, 0.22554444286461475, 0.2202762275982918, 0.22027295348874426, 0.3179166666663169] ;
+
+  # Romania
+dataset_original Romania =[0.0680473372781, 0.368178620384, 0.136203185536, 0.40518705036, 0.211373433584, 0.0275015069319, 0.0848202959831, 0.0020526967629, 0.0020526967629, 0.023493360572] ;
+dataset_normalized Romania =[0.5054945054959015, 0.7282537878794046, 0.34688635509312715, 0.9191513667907536, 0.47221724524090125, 0.26071428571320227, 0.23511830635153827, 0.08075160337136002, 0.08075160337136002, 0.05749999999998165] ;
+
+  # Russia
+dataset_original Russia =[0.00480769230769, 0.380745041122, 0.249257425743, 0.246803699897, 0.0263492063492, 0.00914205344585, 0.10761627907, 0.00323727034121, 0.00323727034121, 0.119305413687] ;
+dataset_normalized Russia =[0.03571428571437061, 0.7531100478463468, 0.6348162824211749, 0.5598647782247512, 0.058865248226942425, 0.08666666666625586, 0.2983078162782443, 0.12735186965947023, 0.12735186965947023, 0.2919999999989916] ;
+
+  # Saint Pierre and Miquelon
+dataset_original Saint Pierre and Miquelon =[0.0935550935551, 0.259441521529, 0.148223822382, 0.21619945423, 0.123323809524, 0.0273558368495, 0.0535324779471, 0.00184275215598, 0.0018424671916, 0.0] ;
+dataset_normalized Saint Pierre and Miquelon =[0.6949806949827285, 0.5131728468905445, 0.3775008732851775, 0.4904402144105074, 0.27551063829832717, 0.25933333333205666, 0.14838978576814932, 0.0724925346504601, 0.0724813243582218, 0.0] ;
+
+  # Singapore
+dataset_original Singapore =[0.0384615384615, 0.146796599627, 0.0712541254125, 0.139928057554, 0.0516666666667, 0.0159071729958, 0.057015503876, 0.0117358923885, 0.0117356666667, 0.0510725229826] ;
+dataset_normalized Singapore =[0.28571428571481633, 0.2903622693101518, 0.18147214217069607, 0.31742146062877036, 0.11542553191498037, 0.15079999999948426, 0.15804458769839283, 0.4616815033245528, 0.4616726235924875, 0.12499999999993881] ;
+
+  # Slovenia
+dataset_original Slovenia =[0.00961538461538, 0.402999516207, 0.153465346535, 0.391366906475, 0.208, 0.0478199718706, 0.09, 0.00237322834646, 0.00237322834646, 0.050051072523] ;
+dataset_normalized Slovenia =[0.07142857142874122, 0.7971291866030071, 0.3908501440926961, 0.887800897594227, 0.4646808510638792, 0.4533333333311845, 0.2494762288480412, 0.09336108362750052, 0.09336108362750052, 0.1225000000000673] ;
+
+  # South Africa
+dataset_original South Africa =[0.0664335664336, 0.36176547207, 0.284935262757, 0.14216934145, 0.0737142857143, 0.0296317606444, 0.0813953488372, 0.00157538057743, 0.00157533333333, 0.0] ;
+dataset_normalized South Africa =[0.4935064935081529, 0.7155686418841487, 0.7256816670352665, 0.32250572764703794, 0.16468085106387922, 0.28090909090760857, 0.22562449637417167, 0.06197433047433949, 0.061972471925676204, 0.0] ;
+
+  # South Korea
+dataset_original South Korea =[0.0769230769231, 0.369698435736, 0.13201320132, 0.388489208633, 0.047619047619, 0.0, 0.0852713178295, 0.00813333333333, 0.00813333333333, 0.0] ;
+dataset_normalized South Korea =[0.5714285714303755, 0.731259968101974, 0.33621517771305176, 0.8812729498171817, 0.1063829787233092, 0.0, 0.2363685200111822, 0.31995944032777807, 0.31995944032777807, 0.0] ;
+
+  # Spain
+dataset_original Spain =[0.0357816864196, 0.244586617151, 0.13167699339, 0.178578080625, 0.0998133840682, 0.0397410255717, 0.0673547670206, 0.00420050225738, 0.00420051444445, 0.0533349880194] ;
+dataset_normalized Spain =[0.2658068134035023, 0.4837899881830459, 0.3353589132803797, 0.40509756355614773, 0.22298734738642798, 0.37674492241796786, 0.18670459190264116, 0.16524471533206034, 0.165245194762564, 0.13053738317750796] ;
+
+  # Sweden
+dataset_original Sweden =[0.00699300699301, 0.284373488147, 0.10004950495, 0.258561151079, 0.187669172932, 0.0817104836092, 0.0947093023256, 0.00199655615416, 0.00199655615416, 0.0494939177268] ;
+dataset_normalized Sweden =[0.05194805194822271, 0.5624880382775521, 0.2548090778082731, 0.5865361077114888, 0.41926091825238504, 0.7746153846116217, 0.2625302175668856, 0.07854307250019792, 0.07854307250019792, 0.12113636363636754] ;
+
+  # Switzerland
+dataset_original Switzerland =[0.0660910518053, 0.271851744784, 0.13218027624, 0.216721972422, 0.130146365915, 0.0253008168973, 0.0847822189922, 0.00435223717217, 0.00435215263389, 0.0167732917585] ;
+dataset_normalized Switzerland =[0.4909620991264885, 0.5377201497308253, 0.3366406891267401, 0.4916255269961962, 0.29075251959737136, 0.23985174418529107, 0.23501275852825368, 0.1712138569403896, 0.1712105312657066, 0.04105263157893707] ;
+
+  # Taiwan
+dataset_original Taiwan =[0.0, 0.0563014029995, 0.0026402640264, 0.0410071942446, 0.0561904761905, 0.0, 0.0112403100775, 0.0003195, 0.0003195, 0.0] ;
+dataset_normalized Taiwan =[0.0, 0.11136363636364086, 0.0067243035542610356, 0.09302325581404844, 0.12553191489368357, 0.0, 0.031157668546859262, 0.012568898506323811, 0.012568898506323811, 0.0] ;
+
+  # Thailand
+dataset_original Thailand =[0.026525198939, 0.185970004838, 0.0720010422095, 0.193658273381, 0.0795037593985, 0.0187161826756, 0.0817571059432, 0.0247714421881, 0.0247754736842, 0.0255362614913] ;
+dataset_normalized Thailand =[0.19704433497599155, 0.36784688995241355, 0.18337441225527265, 0.4393064055485812, 0.17761478163496572, 0.17742941176386473, 0.22662727191377013, 0.9744905875352009, 0.9746491836707551, 0.062499999999969406] ;
+
+  # Tunisia
+dataset_original Tunisia =[0.0863905325444, 0.383836690384, 0.236997467189, 0.317117396991, 0.275979949875, 0.0215393811533, 0.0729328165375, 0.00202199305655, 0.00202212727273, 0.0] ;
+dataset_normalized Tunisia =[0.6417582417602337, 0.7592253005014243, 0.6035922525304365, 0.7193687177772116, 0.6165509518484699, 0.20419333333233655, 0.20216671143379505, 0.07954374180991677, 0.07954902177719166, 0.0] ;
+
+  # United Kingdom
+dataset_original United Kingdom =[0.0484234234234, 0.271129919673, 0.139716786848, 0.202294213373, 0.159205551794, 0.0215701739702, 0.0821860465116, 0.0031679939316, 0.00317271480441, 0.126289204088] ;
+dataset_normalized United Kingdom =[0.3597168597177135, 0.5362923865686842, 0.3558349002213023, 0.458896705979252, 0.3556719774121655, 0.20448524923654718, 0.2278162771960409, 0.12462658589962483, 0.12481230161546257, 0.30909282700544266] ;
+
+  # United States
+dataset_original United States =[0.0838695525007, 0.284540284815, 0.13503021367, 0.254619220194, 0.158148817038, 0.0316551965356, 0.0764869271474, 0.00586933321618, 0.00586705399872, 0.0746842223274] ;
+dataset_normalized United States =[0.6230309614355515, 0.5628179604907159, 0.3438989951894487, 0.5775939878744326, 0.3533111869998248, 0.3000912631560955, 0.21201855712120243, 0.23089531610003608, 0.23080565333656633, 0.18278963414634852] ;
+
