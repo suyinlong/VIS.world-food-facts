@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-27 19:40:55
+* @Last Modified time: 2016-04-28 19:28:22
 */
 
 var colorPicker = ['#2375F3', 'lightskyblue', 'gold', 'tomato', 'lightslategray', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
@@ -97,9 +97,9 @@ function initPanelChart() {
 
 function initLineChart() {
     var dots = [];
-    for (i = 0; i < dataset_world.length; i++) {
-        dx = i * ((width + barPadding) / dataset_world.length) + frame + ((width + barPadding) / dataset_world.length - barPadding) / 2;
-        dy = height - scaleY(dataset_world[i]) + frame;
+    for (i = 0; i < dataset_normalized_world.length; i++) {
+        dx = i * ((width + barPadding) / dataset_normalized_world.length) + frame + ((width + barPadding) / dataset_normalized_world.length - barPadding) / 2;
+        dy = height - scaleY(dataset_normalized_world[i]) + frame;
         dots.push({ x: dx, y: dy });
     }
 

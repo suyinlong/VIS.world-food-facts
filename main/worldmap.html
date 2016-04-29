@@ -4,7 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.panel.css" rel="stylesheet" type="text/css">
+  <link href="css/article.css" rel="stylesheet" type="text/css">
+  <link href="css/popup.panel.css" rel="stylesheet" type="text/css">
   <title>World Food Facts</title>
 </head>
 
@@ -46,17 +50,34 @@
         <div class="sidebar-panel-body">
         <h1>Link between countries</h1>
         <h3>Type</h3>
-        <a href="#" onclick="link_makeTreeGraph(link_dataset_pca);">PCA</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_euclidean);">MDS - Euclidean</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_cosine);">MDS - Cosine</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_mds_correlation);">MDS - Correlation</a><br/><a href="#" onclick="link_makeTreeGraph(link_dataset_isomap);">ISOMAP</a>
+        <a href="#" onclick="showTreeGraph(link_dataset_pca);">PCA</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_euclidean);">MDS - Euclidean</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_cosine);">MDS - Cosine</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_correlation);">MDS - Correlation</a><br/><a href="#" onclick="showTreeGraph(link_dataset_isomap);">ISOMAP</a>
         </div>
-        <div class="sidebar-panel-sub" id="sidebar-panel-sub">
+        <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
+          <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
+        </section>
+
+        <!-- <div class="sidebar-panel-sub" id="sidebar-panel-sub">
           <div class="sidebar-panel-sub-chart" id="sidebar-panel-sub-chart"></div>
-        </div>
+        </div> -->
       </section>
     </div>
 
 
     <article class="article-view">
       <div class="views" id="views">
+        <div class="map-view" id="map-view"></div>
+        <div class="legend-view" id="legend-view">
+          <span class="legend-view-item legend-view-item-selected" id="legend-view-item-additives">Additives</span>
+          <span class="legend-view-item" id="legend-view-item-energy">Energy</span>
+          <span class="legend-view-item" id="legend-view-item-fat">Fat</span>
+          <span class="legend-view-item" id="legend-view-item-carbohydrates">Carbohydrates</span>
+          <span class="legend-view-item" id="legend-view-item-sugars">Sugars</span>
+          <span class="legend-view-item" id="legend-view-item-fiber">Fiber</span>
+          <span class="legend-view-item" id="legend-view-item-proteins">Proteins</span>
+          <span class="legend-view-item" id="legend-view-item-salt">Salt</span>
+          <span class="legend-view-item" id="legend-view-item-sodium">Sodium</span>
+          <span class="legend-view-item" id="legend-view-item-alcohol">Alcohol</span>
+        </div>
       </div>
 
       <div class="backgrounds">
@@ -83,17 +104,17 @@
   </div>
 
 
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script language="Javascript" src="../lib/datamaps/datamaps.world.min.js"></script>
-  <script language="Javascript" src="country.data.js"></script>
-  <script language="Javascript" src="link.data.js"></script>
-  <script language="Javascript" src="worldmap.js"></script>
+  <script src="lib/d3/d3.v3.min.js"></script>
+  <script src="lib/topojson/topojson.v1.min.js"></script>
+  <script language="Javascript" src="lib/datamaps/datamaps.world.min.js"></script>
+  <script language="Javascript" src="js/country.data.js"></script>
+  <script language="Javascript" src="js/link.data.js"></script>
+  <script language="Javascript" src="js/worldmap.js"></script>
 
-  <script language="Javascript" src="panel.js"></script>
-  <script language="Javascript" src="sidebar.js"></script>
-  <script language="Javascript" src="sidebar.link.chart.js"></script>
-  <script language="Javascript" src="panel.chart.js"></script>
+  <script language="Javascript" src="js/panel.js"></script>
+  <script language="Javascript" src="js/sidebar.js"></script>
+  <script language="Javascript" src="js/sidebar.link.chart.js"></script>
+  <script language="Javascript" src="js/panel.chart.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 16:30:28
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 11:54:40
+* @Last Modified time: 2016-04-28 12:32:20
 */
 
 var div_topmask;
@@ -117,17 +117,21 @@ function doPanelClose() {
 function showPanelTooltip(id, text) {
     icon = $(id).getBoundingClientRect();
     panel_tooltip.html(text)
+        .attr("class", "popup-panel-tooltip n visible")
         .style("left", (icon.left + 16 - 110) + "px")
-        .style("top", (icon.top + 40) + "px")
-        .style("opacity", 0.9);
+        .style("top", (icon.top + 40) + "px");
+}
+
+// hide panel tooltip
+function hidePanelTooltip() {
+    panel_tooltip.attr("class", "popup-panel-tooltip n hidden");
 }
 
 
 // now create new object and register event listener
 var panel_tooltip = d3.select("body")
         .append("div")
-        .attr("class", "popup-panel-tooltip n")
-        .style("opacity", 0.0);
+        .attr("class", "popup-panel-tooltip n hidden");
 
 div_topmask = d3.select(".topmask");
 div_popup_panel = d3.select(".popup-panel");
@@ -146,7 +150,7 @@ d3.select(".popup-panel-icon-location")
         showPanelTooltip("popup-panel-icon-location", "Set as current location");
     })
     .on("mouseout", function() {
-        panel_tooltip.style("opacity", 0.0);
+        hidePanelTooltip()
     });
 d3.select(".popup-panel-icon-add")
     .on("click", function() {
@@ -156,7 +160,7 @@ d3.select(".popup-panel-icon-add")
         showPanelTooltip("popup-panel-icon-add", "Add new comparing country");
     })
     .on("mouseout", function() {
-        panel_tooltip.style("opacity", 0.0);
+        hidePanelTooltip()
     });
 d3.select(".popup-panel-icon-remove")
     .on("click", function() {
@@ -166,7 +170,7 @@ d3.select(".popup-panel-icon-remove")
         showPanelTooltip("popup-panel-icon-remove", "Remove last country");
     })
     .on("mouseout", function() {
-        panel_tooltip.style("opacity", 0.0);
+        hidePanelTooltip()
     });
 d3.select(".popup-panel-icon-browse")
     .on("click", function() {
@@ -176,7 +180,7 @@ d3.select(".popup-panel-icon-browse")
         showPanelTooltip("popup-panel-icon-browse", "Browse the food");
     })
     .on("mouseout", function() {
-        panel_tooltip.style("opacity", 0.0);
+        hidePanelTooltip()
     });
 d3.select(".popup-panel-icon-close")
     .on("click", function() {
@@ -186,6 +190,6 @@ d3.select(".popup-panel-icon-close")
         showPanelTooltip("popup-panel-icon-close", "Close panel");
     })
     .on("mouseout", function() {
-        panel_tooltip.style("opacity", 0.0);
+        hidePanelTooltip()
     });
 

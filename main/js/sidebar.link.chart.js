@@ -2,26 +2,26 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 10:52:12
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 12:13:42
+* @Last Modified time: 2016-04-28 22:48:06
 */
 
-var link_width = 950;
+var link_width = 980;
 var link_height = 800;
-var link_frame = 15;
+var link_frame = 50;
 
-var link_duration = 200;
+var link_duration = 100;
 
 var link_svg;
 var link_minX, link_maxX, link_minY, link_maxY, link_scaleX, link_scaleY;
 
 function link_clearSvg() {
-    d3.select("#sidebar-panel-sub-chart")
+    d3.select("#sidebar-panel-link-sub-chart")
         .selectAll("*").remove();
 }
 
 function link_makeSvg() {
     link_clearSvg();
-    var newSvg = d3.select("#sidebar-panel-sub-chart")
+    var newSvg = d3.select("#sidebar-panel-link-sub-chart")
         .append("svg")
         .attr("width", link_width + 2 * link_frame)
         .attr("height", link_height + 2 * link_frame);
@@ -29,7 +29,6 @@ function link_makeSvg() {
 }
 
 function link_makeTreeGraph(dataset) {
-    delay = 500;
 
     var lineQueue = [];
 

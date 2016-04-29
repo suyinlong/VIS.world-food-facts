@@ -2,7 +2,7 @@
 # @Author: Yinlong Su
 # @Date:   2016-04-27 21:37:05
 # @Last Modified by:   Yinlong Su
-# @Last Modified time: 2016-04-27 23:41:41
+# @Last Modified time: 2016-04-28 19:26:45
 
 import math
 import pandas
@@ -84,6 +84,7 @@ countryTag = [
     'United Kingdom',
     'United States'
 ]
+dataset_world = [0.06715178143576923, 0.26013337574987905, 0.12899357876930692, 0.20093528728633092, 0.12277163129238096, 0.02969611498691983, 0.08611199066011628, 0.004406478563070866, 0.0043955696978399995, 0.08683721947589376]
 
 def getid(str, strarray):
     for x in range(len(strarray)):
@@ -238,6 +239,17 @@ def dump_per_country(matrix, mvalue):
         print(json_object, ';')
         print()
 
+def dump_world(dataset_world, mvalue):
+    print('# dump world')
+    print()
+
+    nor = []
+    for j in range(len(attributeColumnName)):
+        nor.append(dataset_world[j] / mvalue[j])
+    json_object = json.dumps(nor, default=json_util.default)
+    print('dataset_normalized =', json_object, ';')
+    print()
+
 def main():
     lR, new_matrix = extract_matrix()
 
@@ -253,5 +265,6 @@ def main():
 
     dump(countryTag, matrix_pca_y, matrix_mds_coords_euclidean, matrix_mds_coords_cosine, matrix_mds_coords_correlation, matrix_isomap)
     dump_per_country(new_matrix, mvc)
+    dump_world(dataset_world, mvc)
 
 main()
