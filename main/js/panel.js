@@ -2,42 +2,46 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 16:30:28
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 12:32:20
+* @Last Modified time: 2016-04-29 14:05:03
 */
 
 var div_topmask;
-var div_popup_panel;
+
+var div_info;
+var div_compare;
+
 var div_popup_panel_transition;
-var div_popup_panel_show_action = 'add';
+
+var div_popup_panel;
+var div_compare_show_action = 'add';
 
 function $(id) { return document.getElementById(id); }
 
 // click map popup
 function clickMapPopup(id) {
-    // first load the country data
-    dataset = loadCountryData(id);
-    // only show the panel when the country is valid
-    if (dataset)
-        showPopupPanel(id, dataset);
+    if (checkCountryData(id))
+        showPopupPanel(id);
 }
 
 // show Popup Panel
-function showPopupPanel(id, dataset) {
+function showPopupPanel(id) {
+    name = div_popup_panel.attr("id");
     // show mask
     div_topmask.attr("class", "topmask visible");
     // use resizing css class
-    div_popup_panel.attr("class", "resizing-popup-panel visible");
+    div_popup_panel.attr("class", "popup-panel resizing-" + name + " visible");
     // start animation, 0 = enter
     div_popup_panel_transition = -2;
-    alphaPopupPanel(id, dataset, 0);
+    alphaPopupPanel(id, 0);
 }
 
 // hide Popup Panel
 function hidePopupPanel() {
+    name = div_popup_panel.attr("id");
     // hide mask
     div_topmask.attr("class", "topmask hidden");
     // use resizing css class
-    div_popup_panel.attr("class", "resizing-popup-panel visible");
+    div_popup_panel.attr("class", "popup-panel resizing-" + name + " visible");
     // start animation, 1 = exit
     div_popup_panel_transition = -2;
     alphaPopupPanel('', null, 1);
@@ -48,7 +52,10 @@ function hidePopupPanel() {
 //
 // State 0: Left-bottom minimized
 // State 1: Center popup panel
-function alphaPopupPanel(id, dataset, type) {
+function alphaPopupPanel(id, type) {
+    name = div_popup_panel.attr("id");
+    shadow_name = "shadow-" + name;
+
     div_popup_panel_transition += 2;
 
     if (type == 0)
@@ -58,8 +65,8 @@ function alphaPopupPanel(id, dataset, type) {
 
     // just use shadow-popup-panel to help us accquire the auto margin adjustment
     h = document.body.clientHeight / 2;
-    _left = ($('shadow-popup-panel').offsetLeft + 480) * k - 480;
-    _top = ($('shadow-popup-panel').offsetTop - 250 - h) * k + 250 + h;
+    _left = ($(shadow_name).offsetLeft + 480) * k - 480;
+    _top = ($(shadow_name).offsetTop - 250 - h) * k + 250 + h;
 
     scale = "scale(" + k + ", " + k + ")";
 
@@ -67,50 +74,33 @@ function alphaPopupPanel(id, dataset, type) {
 
     if (div_popup_panel_transition < 100)
         // continue animation
-        setTimeout(alphaPopupPanel, 10, id, dataset, type);
+        setTimeout(alphaPopupPanel, 10, id, type);
     else {
         // finish animation, restore the css class and style attributes
         if (type == 0) {
-            div_popup_panel.attr("class", "popup-panel visible")
+            div_popup_panel.attr("class", "popup-panel " + name + " visible")
                 .attr("style", "");
-            if (dataset)
-                makeBarChart(id, div_popup_panel_show_action, dataset);
-            div_popup_panel_show_action = 'change';
+            if (checkCountryData(id)) {
+                if (div_popup_panel == div_info)
+                    info_makeAll(id);
+                else if (div_popup_panel = div_compare)
+                    compare_makeBarChart(id, div_popup_panel_compare_show_action);
+            }
+            div_popup_panel_compare_show_action = 'change';
         } else {
-            div_popup_panel.attr("class", "popup-panel hidden")
+            div_popup_panel.attr("class", "popup-panel " + name + " hidden")
                 .attr("style", "");
         }
     }
 
 }
 
-// load country data to the panel
-function loadCountryData(id) {
+function checkCountryData(id) {
     cInfo = countryInfo[id];
-    if (cInfo) {
-        d3.select(".popup-panel-picture")
-            .attr("style", "background-image: url(" + cInfo['PIC'] + ");");
-        $("popup-panel-location").innerHTML = cInfo['LAB'];
-        $("popup-panel-description").innerHTML = cInfo['DES'];
-        return cInfo['DAT'];
-    }
-    return cInfo;
-}
-
-// panel action: add comparing country
-function doPanelAdd() {
-    div_popup_panel_show_action = 'add';
-    hidePopupPanel();
-}
-
-// panel action: remove comaring country
-function doPanelRemove() {
-    makeBarChart('empty', 'remove', dataset_10_empty);
-}
-
-// panel action: close panel
-function doPanelClose() {
-    hidePopupPanel();
+    if (cInfo)
+        return 1;
+    else
+        return 0;
 }
 
 // show panel tooltip (only for toolbox icons)
@@ -134,62 +124,13 @@ var panel_tooltip = d3.select("body")
         .attr("class", "popup-panel-tooltip n hidden");
 
 div_topmask = d3.select(".topmask");
-div_popup_panel = d3.select(".popup-panel");
+div_info = d3.select("#info");
+div_compare = d3.select("#compare");
+
+div_popup_panel = div_info;
 
 // event for mask
 div_topmask.on("click", function() {
         hidePopupPanel();
     })
-
-// event for toolbox icons
-d3.select(".popup-panel-icon-location")
-    .on("click", function() {
-        //doPanelAdd();
-    })
-    .on("mouseover", function() {
-        showPanelTooltip("popup-panel-icon-location", "Set as current location");
-    })
-    .on("mouseout", function() {
-        hidePanelTooltip()
-    });
-d3.select(".popup-panel-icon-add")
-    .on("click", function() {
-        doPanelAdd();
-    })
-    .on("mouseover", function() {
-        showPanelTooltip("popup-panel-icon-add", "Add new comparing country");
-    })
-    .on("mouseout", function() {
-        hidePanelTooltip()
-    });
-d3.select(".popup-panel-icon-remove")
-    .on("click", function() {
-        doPanelRemove();
-    })
-    .on("mouseover", function() {
-        showPanelTooltip("popup-panel-icon-remove", "Remove last country");
-    })
-    .on("mouseout", function() {
-        hidePanelTooltip()
-    });
-d3.select(".popup-panel-icon-browse")
-    .on("click", function() {
-        //doPanelAdd();
-    })
-    .on("mouseover", function() {
-        showPanelTooltip("popup-panel-icon-browse", "Browse the food");
-    })
-    .on("mouseout", function() {
-        hidePanelTooltip()
-    });
-d3.select(".popup-panel-icon-close")
-    .on("click", function() {
-        doPanelClose();
-    })
-    .on("mouseover", function() {
-        showPanelTooltip("popup-panel-icon-close", "Close panel");
-    })
-    .on("mouseout", function() {
-        hidePanelTooltip()
-    });
 

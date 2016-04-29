@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 22:42:21
+* @Last Modified time: 2016-04-29 13:31:34
 */
 
 function $(id) { return document.getElementById(id); }
@@ -77,7 +77,8 @@ d3.select("#sidebar-list-button-location")
 
 d3.select("#sidebar-list-button-info")
     .on("click", function() {
-        //showPopupPanel('', null);
+        div_popup_panel = div_info;
+        showPopupPanel('', null);
     })
     .on("mouseover", function() {
         showSidebarTooltip("sidebar-list-button-info", "Show information of selected country");
@@ -88,6 +89,7 @@ d3.select("#sidebar-list-button-info")
 
 d3.select("#sidebar-list-button-compare")
     .on("click", function() {
+        div_popup_panel = div_compare;
         showPopupPanel('', null);
     })
     .on("mouseover", function() {

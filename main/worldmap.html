@@ -4,6 +4,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+
+
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="css/sidebar.css" rel="stylesheet" type="text/css">
   <link href="css/sidebar.panel.css" rel="stylesheet" type="text/css">
@@ -86,22 +91,39 @@
     </article>
   </div>
 
-  <div class="shadow-popup-panel hidden" id="shadow-popup-panel"></div>
-  <div class="popup-panel hidden" id="popup-panel">
-    <div class="popup-panel-chart" id="popup-panel-chart">
+  <div class="shadow-info hidden" id="shadow-info"></div>
+  <div class="popup-panel info hidden" id="info">
+    <header>
+      <h3>Country Information</h3>
+      <span id="info-country-label">World</span>
+    </header>
+    <div class="info-body">
+      <div class="info-body-chart" id="info-body-chart"></div>
+      <div class="info-body-data" id="info-body-data"></div>
     </div>
-    <div class="popup-panel-picture">
-    </div>
-    <div class="popup-panel-location" id="popup-panel-location"></div>
-    <div class="popup-panel-description" id="popup-panel-description"></div>
-    <div class="popup-panel-toolbox">
-      <span class="popup-panel-icon popup-panel-icon-location" id="popup-panel-icon-location"></span>
-      <span class="popup-panel-icon popup-panel-icon-add" id="popup-panel-icon-add"></span>
-      <span class="popup-panel-icon popup-panel-icon-remove" id="popup-panel-icon-remove"></span>
-      <span class="popup-panel-icon popup-panel-icon-browse" id="popup-panel-icon-browse"></span>
-      <span class="popup-panel-icon popup-panel-icon-close" id="popup-panel-icon-close"></span>
+    <div class="info-toolbox">
+      <span class="popup-panel-icon popup-panel-icon-location" id="info-icon-location"></span>
+      <span class="popup-panel-icon popup-panel-icon-add" id="info-icon-add"></span>
+      <span class="popup-panel-icon popup-panel-icon-browse" id="info-icon-browse"></span>
+      <span class="popup-panel-icon popup-panel-icon-close" id="info-icon-close"></span>
     </div>
   </div>
+
+  <div class="shadow-compare hidden" id="shadow-compare"></div>
+  <div class="popup-panel compare hidden" id="compare">
+    <div class="compare-chart" id="compare-chart">
+    </div>
+    <div class="compare-picture">
+    </div>
+    <div class="compare-location" id="compare-location"></div>
+    <div class="compare-description" id="compare-description"></div>
+    <div class="compare-toolbox">
+      <span class="popup-panel-icon popup-panel-icon-add" id="compare-icon-add"></span>
+      <span class="popup-panel-icon popup-panel-icon-remove" id="compare-icon-remove"></span>
+      <span class="popup-panel-icon popup-panel-icon-close" id="compare-icon-close"></span>
+    </div>
+  </div>
+
 
 
   <script src="lib/d3/d3.v3.min.js"></script>
@@ -109,12 +131,13 @@
   <script language="Javascript" src="lib/datamaps/datamaps.world.min.js"></script>
   <script language="Javascript" src="js/country.data.js"></script>
   <script language="Javascript" src="js/link.data.js"></script>
-  <script language="Javascript" src="js/worldmap.js"></script>
 
+  <script language="Javascript" src="js/worldmap.js"></script>
   <script language="Javascript" src="js/panel.js"></script>
   <script language="Javascript" src="js/sidebar.js"></script>
   <script language="Javascript" src="js/sidebar.link.chart.js"></script>
-  <script language="Javascript" src="js/panel.chart.js"></script>
 
+  <script language="Javascript" src="js/panel.info.chart.js"></script>
+  <script language="Javascript" src="js/panel.compare.chart.js"></script>
 </body>
 </html>

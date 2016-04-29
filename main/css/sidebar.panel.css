@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 22:08:47
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 22:55:22
+* @Last Modified time: 2016-04-29 02:09:55
 */
 
 .midmask {
@@ -46,7 +46,7 @@
 }
 
 .sidebar-panel-link {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 1.0);
   width: 400px;
   height: 100%;
   z-index: 10;
@@ -69,7 +69,7 @@
   width: 1085px;
   height: 100%;
   z-index: -1;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.8);
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
