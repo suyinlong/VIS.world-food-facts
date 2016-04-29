@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 11:43:33
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 11:57:32
+* @Last Modified time: 2016-04-29 17:21:18
 */
 
 var dataset_length = 10;
@@ -121,7 +121,209 @@ dataset_normalized_GBR = [0.3597168597177135, 0.5362923865686842, 0.355834900221
 dataset_normalized_USA = [0.6230309614355515, 0.5628179604907159, 0.3438989951894487, 0.5775939878744326, 0.3533111869998248, 0.3000912631560955, 0.21201855712120243, 0.23089531610003608, 0.23080565333656633, 0.18278963414634852];
 
 var countryInfo = {
+    'ALB': {
+        'DAT': dataset_normalized_ALB,
+        'ORI': dataset_original_ALB
+    },
+    'AND': {
+        'DAT': dataset_normalized_AND,
+        'ORI': dataset_original_AND
+    },
+    'ARG': {
+        'DAT': dataset_normalized_ARG,
+        'ORI': dataset_original_ARG
+    },
+    'AUS': {
+        'DAT': dataset_normalized_AUS,
+        'ORI': dataset_original_AUS
+    },
+    'AUT': {
+        'DAT': dataset_normalized_AUT,
+        'ORI': dataset_original_AUT
+    },
+    'BEL': {
+        'DAT': dataset_normalized_BEL,
+        'ORI': dataset_original_BEL
+    },
+    'BRA': {
+        'DAT': dataset_normalized_BRA,
+        'ORI': dataset_original_BRA
+    },
+    'KHM': {
+        'DAT': dataset_normalized_KHM,
+        'ORI': dataset_original_KHM
+    },
+    'CAN': {
+        'DAT': dataset_normalized_CAN,
+        'ORI': dataset_original_CAN
+    },
+    'CHL': {
+        'DAT': dataset_normalized_CHL,
+        'ORI': dataset_original_CHL
+    },
     'CHN': {
+        'DAT': dataset_normalized_CHN,
+        'ORI': dataset_original_CHN
+    },
+    'CUB': {
+        'DAT': dataset_normalized_CUB,
+        'ORI': dataset_original_CUB
+    },
+    'CZE': {
+        'DAT': dataset_normalized_CZE,
+        'ORI': dataset_original_CZE
+    },
+    'DNK': {
+        'DAT': dataset_normalized_DNK,
+        'ORI': dataset_original_DNK
+    },
+    'FIN': {
+        'DAT': dataset_normalized_FIN,
+        'ORI': dataset_original_FIN
+    },
+    'FRA': {
+        'DAT': dataset_normalized_FRA,
+        'ORI': dataset_original_FRA
+    },
+    'GUF': {
+        'DAT': dataset_normalized_GUF,
+        'ORI': dataset_original_GUF
+    },
+    'DEU': {
+        'DAT': dataset_normalized_DEU,
+        'ORI': dataset_original_DEU
+    },
+    'GRC': {
+        'DAT': dataset_normalized_GRC,
+        'ORI': dataset_original_GRC
+    },
+    'GLP': {
+        'DAT': dataset_normalized_GLP,
+        'ORI': dataset_original_GLP
+    },
+    'HKG': {
+        'DAT': dataset_normalized_HKG,
+        'ORI': dataset_original_HKG
+    },
+    'HUN': {
+        'DAT': dataset_normalized_HUN,
+        'ORI': dataset_original_HUN
+    },
+    'IND': {
+        'DAT': dataset_normalized_IND,
+        'ORI': dataset_original_IND
+    },
+    'IRL': {
+        'DAT': dataset_normalized_IRL,
+        'ORI': dataset_original_IRL
+    },
+    'ISR': {
+        'DAT': dataset_normalized_ISR,
+        'ORI': dataset_original_ISR
+    },
+    'ITA': {
+        'DAT': dataset_normalized_ITA,
+        'ORI': dataset_original_ITA
+    },
+    'LUX': {
+        'DAT': dataset_normalized_LUX,
+        'ORI': dataset_original_LUX
+    },
+    'MLT': {
+        'DAT': dataset_normalized_MLT,
+        'ORI': dataset_original_MLT
+    },
+    'MTQ': {
+        'DAT': dataset_normalized_MTQ,
+        'ORI': dataset_original_MTQ
+    },
+    'MAR': {
+        'DAT': dataset_normalized_MAR,
+        'ORI': dataset_original_MAR
+    },
+    'NLD': {
+        'DAT': dataset_normalized_NLD,
+        'ORI': dataset_original_NLD
+    },
+    'NZL': {
+        'DAT': dataset_normalized_NZL,
+        'ORI': dataset_original_NZL
+    },
+    'NOR': {
+        'DAT': dataset_normalized_NOR,
+        'ORI': dataset_original_NOR
+    },
+    'POL': {
+        'DAT': dataset_normalized_POL,
+        'ORI': dataset_original_POL
+    },
+    'PRT': {
+        'DAT': dataset_normalized_PRT,
+        'ORI': dataset_original_PRT
+    },
+    'ROU': {
+        'DAT': dataset_normalized_ROU,
+        'ORI': dataset_original_ROU
+    },
+    'RUS': {
+        'DAT': dataset_normalized_RUS,
+        'ORI': dataset_original_RUS
+    },
+    'SPM': {
+        'DAT': dataset_normalized_SPM,
+        'ORI': dataset_original_SPM
+    },
+    'SGP': {
+        'DAT': dataset_normalized_SGP,
+        'ORI': dataset_original_SGP
+    },
+    'SVN': {
+        'DAT': dataset_normalized_SVN,
+        'ORI': dataset_original_SVN
+    },
+    'ZAF': {
+        'DAT': dataset_normalized_ZAF,
+        'ORI': dataset_original_ZAF
+    },
+    'KOR': {
+        'DAT': dataset_normalized_KOR,
+        'ORI': dataset_original_KOR
+    },
+    'ESP': {
+        'DAT': dataset_normalized_ESP,
+        'ORI': dataset_original_ESP
+    },
+    'SWE': {
+        'DAT': dataset_normalized_SWE,
+        'ORI': dataset_original_SWE
+    },
+    'SWZ': {
+        'DAT': dataset_normalized_SWZ,
+        'ORI': dataset_original_SWZ
+    },
+    'TWN': {
+        'DAT': dataset_normalized_TWN,
+        'ORI': dataset_original_TWN
+    },
+    'THA': {
+        'DAT': dataset_normalized_THA,
+        'ORI': dataset_original_THA
+    },
+    'TUN': {
+        'DAT': dataset_normalized_TUN,
+        'ORI': dataset_original_TUN
+    },
+    'GBR': {
+        'DAT': dataset_normalized_GBR,
+        'ORI': dataset_original_GBR
+    },
+    'USA': {
+        'DAT': dataset_normalized_USA,
+        'ORI': dataset_original_USA
+    },
+};
+/*
+'CHN': {
         'LAB': 'China, ASIA',
         'PIC': "images/CHN.jpg",
         'DES': "<h1>Note</h1>According to the United Nations' Food and Agriculture Organization, China's per capita food consumption has increased from less than 1700 kcal in 1960 to 2570 kcal per day in 1995.",
@@ -142,6 +344,4 @@ var countryInfo = {
         'DAT': dataset_normalized_FRA,
         'ORI': dataset_original_FRA
     },
-
-};
-
+*/

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 22:08:47
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 02:09:55
+* @Last Modified time: 2016-04-29 19:06:01
 */
 
 .midmask {
@@ -25,7 +25,7 @@
   line-height: 1.5;
   transition: all 0.15s ease;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar-panel section {
@@ -40,9 +40,16 @@
   box-shadow: 1px 1px 5px 5px rgba(128, 128, 128, 0.5);
 }
 
+.sidebar-panel-body h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
 .sidebar-panel-body h3 {
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .sidebar-panel-link {

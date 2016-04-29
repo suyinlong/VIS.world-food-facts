@@ -56,14 +56,14 @@
         <h1>Link between countries</h1>
         <h3>Type</h3>
         <a href="#" onclick="showTreeGraph(link_dataset_pca);">PCA</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_euclidean);">MDS - Euclidean</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_cosine);">MDS - Cosine</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_correlation);">MDS - Correlation</a><br/><a href="#" onclick="showTreeGraph(link_dataset_isomap);">ISOMAP</a>
+        <h3>Dimension</h3>
+        Now is fixed @ 10.
+        <h3>Play speed</h3>
+        Now is fixed @ 100.
         </div>
         <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
           <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
         </section>
-
-        <!-- <div class="sidebar-panel-sub" id="sidebar-panel-sub">
-          <div class="sidebar-panel-sub-chart" id="sidebar-panel-sub-chart"></div>
-        </div> -->
       </section>
     </div>
 
@@ -82,6 +82,8 @@
           <span class="legend-view-item" id="legend-view-item-salt">Salt</span>
           <span class="legend-view-item" id="legend-view-item-sodium">Sodium</span>
           <span class="legend-view-item" id="legend-view-item-alcohol">Alcohol</span>
+          <span class="legend-view-autoplay" id="legend-view-autoplay">Auto play</span>
+          <span class="legend-view-color legend-view-color-red"></span>
         </div>
       </div>
 

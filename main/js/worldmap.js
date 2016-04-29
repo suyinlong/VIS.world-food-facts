@@ -2,8 +2,28 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-26 17:42:43
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 15:48:40
+* @Last Modified time: 2016-04-29 18:56:05
 */
+
+var worldmap_color_pairs = [
+    { a: d3.rgb("Pink"), b: d3.rgb("Crimson")},
+    { a: d3.rgb("LightCyan"), b: d3.rgb("MidnightBlue")},
+    { a: d3.rgb("LightGreen"), b: d3.rgb("DarkGreen")},
+    { a: d3.rgb("LightYellow"), b: d3.rgb("DarkGoldenrod")},
+];
+
+var worldmap_color_index = 0;
+var worldmap_colors;
+
+var worldmap_duration = 10;
+var worldmap_update_timer;
+
+var worldmap_autoplay_time = 3000;
+var worldmap_autoplay_on = 0;
+var worldmap_autoplay_timer;
+
+var worldmap_legend_view = 0;
+var worldmap_legend_view_items = ['legend-view-item-additives', 'legend-view-item-energy', 'legend-view-item-fat', 'legend-view-item-carbohydrates', 'legend-view-item-sugars', 'legend-view-item-fiber', 'legend-view-item-proteins', 'legend-view-item-salt', 'legend-view-item-sodium', 'legend-view-item-alcohol']
 
 var map = new Datamap({
     scope: 'world',
@@ -11,22 +31,18 @@ var map = new Datamap({
     projection: 'mercator',
     height: 700,
     fills: {
-        defaultFill: '#999999',
-        available1: '#f0af0a',
-        available2: 'lightskyblue',
-        available3: 'tomato'
+        defaultFill: '#FFFFFF',
     },
-    data: {
-        USA: {fillKey: 'available1'},
-        CHN: {fillKey: 'available3'},
-        FRA: {fillKey: 'available2'}
+    geographyConfig: {
+        borderColor: '#333333',
+        borderOpacity: 1.0,
     },
     done: function(datamap) {
-        callback_map(datamap);
+        callbackMap(datamap);
     }
 });
 
-function callback_map(datamap) {
+function callbackMap(datamap) {
     datamap.svg.selectAll('.datamaps-subunit')
         .on('click', function(geography) {
             //alert(geography.properties.name);
@@ -34,43 +50,100 @@ function callback_map(datamap) {
         });
 }
 
-function update_map(attr) {
-    alert(attr);
-    var colors = d3.scale.category20();
-    map.updateChoropleth({
-        CHN: colors(Math.random() * 100),
-        FRA: colors(Math.random() * 1000),
-        USA: colors(Math.random() * 10000)
-    });
+function fillMapRegion(i, attr) {
+    countryName = country_label[i];
+    if (countryInfo[countryName]) {
+        d = countryInfo[countryName]['DAT'][attr];
+        item = {};
+        item[countryName] = worldmap_colors[worldmap_color_index](d);
+        map.updateChoropleth(item);
+    }
+
+    if (i < country_label.length)
+        worldmap_update_timer = setTimeout(fillMapRegion, worldmap_duration, i + 1, attr);
 }
 
+function updateMap(attr) {
+    clearTimeout(worldmap_update_timer);
+    worldmap_legend_view = attr;
+
+    for (i = 0; i < worldmap_legend_view_items.length; i++) {
+        d3.select("#" + worldmap_legend_view_items[i]).attr("class", "legend-view-item");
+    }
+    d3.select("#" + worldmap_legend_view_items[attr]).attr("class", "legend-view-item legend-view-item-selected");
+    fillMapRegion(0, attr);
+}
+
+function updateMapNextAttribute() {
+    worldmap_legend_view = (worldmap_legend_view + 1) % worldmap_legend_view_items.length;
+    updateMap(worldmap_legend_view);
+}
+
+function switchAutoplay() {
+    if (worldmap_autoplay_on == 1) {
+        worldmap_autoplay_on = 0;
+        clearInterval(worldmap_autoplay_timer);
+        d3.select("#legend-view-autoplay")
+            .attr("class", "legend-view-autoplay");
+    } else {
+        worldmap_autoplay_on = 1;
+        worldmap_autoplay_timer =  setInterval(updateMapNextAttribute, worldmap_autoplay_time);
+        d3.select("#legend-view-autoplay")
+            .attr("class", "legend-view-autoplay selected");
+    }
+}
+
+
+
+function initWorldMap() {
+    worldmap_colors = [];
+    for (i = 0; i < worldmap_color_pairs.length; i++) {
+        worldmap_colors.push(d3.interpolate(worldmap_color_pairs[i].a, worldmap_color_pairs[i].b));
+    }
+
+    worldmap_color_index = 0;
+    worldmap_legend_view = 0;
+    updateMap(worldmap_legend_view);
+    switchAutoplay();
+}
+
+
+
+
 d3.select("#legend-view-item-additives").on("click", function() {
-    update_map('ADD');
+    updateMap(0);
 });
 d3.select("#legend-view-item-energy").on("click", function() {
-    update_map('ENE');
+    updateMap(1);
 });
 d3.select("#legend-view-item-fat").on("click", function() {
-    update_map('FAT');
+    updateMap(2);
 });
 d3.select("#legend-view-item-carbohydrates").on("click", function() {
-    update_map('CAR');
+    updateMap(3);
 });
 d3.select("#legend-view-item-sugars").on("click", function() {
-    update_map('SUG');
+    updateMap(4);
 });
 d3.select("#legend-view-item-fiber").on("click", function() {
-    update_map('FIB');
+    updateMap(5);
 });
 d3.select("#legend-view-item-proteins").on("click", function() {
-    update_map('PRO');
+    updateMap(6);
 });
 d3.select("#legend-view-item-salt").on("click", function() {
-    update_map('SAL');
+    updateMap(7);
 });
 d3.select("#legend-view-item-sodium").on("click", function() {
-    update_map('SOD');
+    updateMap(8);
 });
 d3.select("#legend-view-item-alcohol").on("click", function() {
-    update_map('ALC');
+    updateMap(9);
 });
+
+d3.select("#legend-view-autoplay").on("click", function() {
+    switchAutoplay();
+})
+
+
+initWorldMap();

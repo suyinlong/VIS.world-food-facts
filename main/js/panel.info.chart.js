@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-29 00:52:38
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 14:07:31
+* @Last Modified time: 2016-04-29 14:51:21
 */
 
 var info_duration = 500;
@@ -62,7 +62,7 @@ function info_initPieChart() {
         .innerRadius(info_pie_innerRadius);
     info_hover_arc = d3.svg.arc()
         .outerRadius(info_pie_outerRadius + 35)
-        .innerRadius(info_pie_innerRadius + 15);
+        .innerRadius(info_pie_innerRadius - 15);
 
     info_pie_g = info_pie_svg.append("g")
         .attr("id", "pieArcGroup")
@@ -177,7 +177,13 @@ function info_initBarChart() {
         .attr("fill", function(d, i) {
             return info_barColor(d, i);
         })
-        .attr("class", "info-body-data-bar");
+        .attr("class", "info-body-data-bar")
+        .on("mouseover", function(d, i) {
+            d3.select(this).transition().duration(info_duration / 2).attr("fill", "orange");
+        })
+        .on("mouseout", function(d, i) {
+            d3.select(this).transition().duration(info_duration / 2).attr("fill", info_barColor(d, i));
+        });
 
     info_bar_world_g.selectAll("rect")
         .data(dataset_normalized_world)
