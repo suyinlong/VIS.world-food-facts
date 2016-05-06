@@ -2,48 +2,60 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-29 00:52:38
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 14:51:21
+* @Last Modified time: 2016-05-06 14:01:26
 */
 
+// all animation duration
 var info_duration = 500;
 
+// current country id
+var info_id;
+
+// dataset setting: length, colors, labels, index (to dataset)
 var info_pie_dataset_length = 5;
 var info_pie_colors = ['lightskyblue', 'gold', 'tomato', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
 var info_pie_dataset_label = ['Fat', 'Carbohydrates', 'Sugars', 'Fiber', 'Proteins'];
 var info_pie_dataset_index = [2, 3, 4, 5, 6];
 
+// pie chart setting: width, height, frame, pie outter radius, pie inner radius
 var info_pie_width = 500;
 var info_pie_height = 500;
 var info_pie_frame = 45;
 var info_pie_outerRadius = info_pie_width / 2.5;
 var info_pie_innerRadius = info_pie_width / 4;
 
+// fixed pie transform -> move to center
 var info_pie_transform = "translate(" + (info_pie_width / 2 + info_pie_frame) + ", " + (info_pie_height / 2 + info_pie_frame) + ")";
 
+// pie chart layout, arc wrapper and hover arc wrapper
 var info_pie;
 var info_arc;
 var info_hover_arc;
 
+// bar chart dataset labels
 var info_bar_dataset_label = ['Additives', 'Energy', 'Fat', 'Carbohydrates', 'Sugars', 'Fiber', 'Proteins', 'Salt', 'Sodium', 'Alcohol'];
 
+// bar chart setting: width, height, frame, width scaler
 var info_bar_width = 380;
 var info_bar_height = 510;
 var info_bar_frame = 20;
 var info_bar_scaleW;
 
+// bar chart transform -> move to spare some space
 var info_bar_transform = "translate(" + info_bar_frame + ", " + (info_bar_frame + 10) + ")";
 
-
+// svg group def
 var info_pie_svg, info_pie_g, info_pie_arcs;
 var info_bar_svg, info_bar_g, info_bar_data_g;
 
 
-
+// clear info svg layer
 function info_clearSvg(id) {
     d3.select("#" + id)
         .selectAll("*").remove();
 }
 
+// make new info svg
 function info_makeSvg(id, width, height, frame) {
     info_clearSvg();
     var newSvg = d3.select("#" + id)
@@ -53,6 +65,7 @@ function info_makeSvg(id, width, height, frame) {
     return newSvg;
 }
 
+// init the pie chart to world original dataset
 function info_initPieChart() {
     info_pie_svg = info_makeSvg("info-body-chart", info_pie_width, info_pie_height, info_pie_frame);
 
@@ -107,6 +120,7 @@ function info_initPieChart() {
     }
 }
 
+// make/update pie chart
 function info_makePieChart(dataset) {
     info_pie_arcs = info_pie_arcs.data(info_pie(dataset));
     info_pie_arcs.transition().duration(info_duration).attrTween("d", info_arcTween);
@@ -114,6 +128,7 @@ function info_makePieChart(dataset) {
         .attr("dh", info_hover_arc);
 }
 
+// pie chart update animation
 function info_arcTween(a) {
     var i = d3.interpolate(this.do, a);
     this.do = i(0);
@@ -122,6 +137,7 @@ function info_arcTween(a) {
     };
 }
 
+// init bar chart to world original dataset
 function info_initBarChart() {
     info_bar_svg = info_makeSvg("info-body-data", info_bar_width, info_bar_height, info_bar_frame);
     info_bar_back_g = info_bar_svg.append("g")
@@ -210,6 +226,7 @@ function info_initBarChart() {
 
 }
 
+// make/update bar chart
 function info_makeBarChart(label, ori_dataset, nor_dataset) {
     info_bar_g.selectAll("rect").data(nor_dataset).transition()
         .duration(info_duration)
@@ -227,6 +244,8 @@ function info_makeBarChart(label, ori_dataset, nor_dataset) {
     $('info-country-label').innerHTML = label + " .vs. World";
 }
 
+// bar chart color picker
+// set color according to the world average
 function info_barColor(d, i) {
     world_avg = dataset_normalized_world[i];
     if (d >= world_avg - 0.2 && d <= world_avg + 0.2)
@@ -237,6 +256,9 @@ function info_barColor(d, i) {
         return "orangered";
 }
 
+// get pie dataset
+// we only use 5 attributes out of 10 attributes
+// so this function return those 5 attrs
 function info_makePieDataset(dataset) {
     var pie_dataset = [];
     for (i = 0; i < info_pie_dataset_index.length; i++)
@@ -244,12 +266,13 @@ function info_makePieDataset(dataset) {
     return pie_dataset;
 }
 
+// make all panel charts
 function info_makeAll(id) {
+    info_id = id;
     var pie_dataset = info_makePieDataset(countryInfo[id]['ORI']);
     info_makePieChart(pie_dataset);
     info_makeBarChart(countryInfo[id]['LAB'], countryInfo[id]['ORI'], countryInfo[id]['DAT']);
 }
-
 
 // show info panel datatip
 function info_showPanelDatatip(id, text) {
@@ -265,13 +288,20 @@ function info_hidePanelDatatip() {
     info_datatip.attr("class", "popup-panel-tooltip n hidden");
 }
 
+function info_compare_doPanelAdd() {
+    compare_makeBarChart('empty', 'remove');
+    compare_makeBarChart('empty', 'remove');
+    compare_makeBarChart('empty', 'remove');
+    compare_makeBarChart(info_id, 'add');
+    div_popup_panel_compare_show_action = 'add';
+    hidePopupPanel();
+    div_popup_panel = div_compare;
+}
+
 // now create new object and register event listener
 var info_datatip = d3.select("body")
         .append("div")
         .attr("class", "popup-panel-tooltip n hidden");
-
-
-
 
 // event for toolbox icons
 d3.select("#info-icon-location")
@@ -286,7 +316,7 @@ d3.select("#info-icon-location")
     });
 d3.select("#info-icon-add")
     .on("click", function() {
-        compare_doPanelAdd();
+        info_compare_doPanelAdd();
     })
     .on("mouseover", function() {
         showPanelTooltip("info-icon-add", "Add new comparing country");
@@ -316,6 +346,6 @@ d3.select("#info-icon-close")
     });
 
 
-
+info_id = 'world';
 info_initPieChart();
 info_initBarChart();

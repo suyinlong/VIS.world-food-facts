@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 16:30:28
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 14:05:03
+* @Last Modified time: 2016-05-06 12:36:55
 */
 
 var div_topmask;
@@ -28,11 +28,16 @@ function showPopupPanel(id) {
     name = div_popup_panel.attr("id");
     // show mask
     div_topmask.attr("class", "topmask visible");
-    // use resizing css class
-    div_popup_panel.attr("class", "popup-panel resizing-" + name + " visible");
-    // start animation, 0 = enter
-    div_popup_panel_transition = -2;
-    alphaPopupPanel(id, 0);
+    // show panel
+    div_popup_panel.attr("class", "popup-panel " + name + " visible");
+    // load panel data
+    if (checkCountryData(id)) {
+        if (div_popup_panel == div_info)
+            setTimeout(info_makeAll, 500, id);
+        else if (div_popup_panel = div_compare)
+            setTimeout(compare_makeBarChart, 500, id, div_popup_panel_compare_show_action);
+    }
+    div_popup_panel_compare_show_action = 'change';
 }
 
 // hide Popup Panel
@@ -40,59 +45,8 @@ function hidePopupPanel() {
     name = div_popup_panel.attr("id");
     // hide mask
     div_topmask.attr("class", "topmask hidden");
-    // use resizing css class
-    div_popup_panel.attr("class", "popup-panel resizing-" + name + " visible");
-    // start animation, 1 = exit
-    div_popup_panel_transition = -2;
-    alphaPopupPanel('', null, 1);
-}
-
-// enter/exit animation of Popup Panel
-// type: 0 = enter, 1 = exit
-//
-// State 0: Left-bottom minimized
-// State 1: Center popup panel
-function alphaPopupPanel(id, type) {
-    name = div_popup_panel.attr("id");
-    shadow_name = "shadow-" + name;
-
-    div_popup_panel_transition += 2;
-
-    if (type == 0)
-        k = div_popup_panel_transition / 100;
-    else
-        k = 1 - div_popup_panel_transition / 100;
-
-    // just use shadow-popup-panel to help us accquire the auto margin adjustment
-    h = document.body.clientHeight / 2;
-    _left = ($(shadow_name).offsetLeft + 480) * k - 480;
-    _top = ($(shadow_name).offsetTop - 250 - h) * k + 250 + h;
-
-    scale = "scale(" + k + ", " + k + ")";
-
-    div_popup_panel.attr("style", "opacity: " + k + "; transform: " + scale + "; left: " + _left + "px; top: " + _top + "px;");
-
-    if (div_popup_panel_transition < 100)
-        // continue animation
-        setTimeout(alphaPopupPanel, 10, id, type);
-    else {
-        // finish animation, restore the css class and style attributes
-        if (type == 0) {
-            div_popup_panel.attr("class", "popup-panel " + name + " visible")
-                .attr("style", "");
-            if (checkCountryData(id)) {
-                if (div_popup_panel == div_info)
-                    info_makeAll(id);
-                else if (div_popup_panel = div_compare)
-                    compare_makeBarChart(id, div_popup_panel_compare_show_action);
-            }
-            div_popup_panel_compare_show_action = 'change';
-        } else {
-            div_popup_panel.attr("class", "popup-panel " + name + " hidden")
-                .attr("style", "");
-        }
-    }
-
+    // hide panel
+    div_popup_panel.attr("class", "popup-panel " + name + " hidden");
 }
 
 function checkCountryData(id) {

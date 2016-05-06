@@ -2,116 +2,187 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 14:05:44
+* @Last Modified time: 2016-05-06 13:59:54
 */
 
-var colorPicker = ['#2375F3', 'lightskyblue', 'gold', 'tomato', 'lightslategray', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
+// all animation duration
+var compare_duration = 500;
+
+// compare contry id, old count, current count and current index
+var compare_id = ['', '', ''];
+var compare_oldCountryCount, compare_countryCount, compare_currentIndex;
+
+// dataset setting: colors
+//var colorPicker = ['#2375F3', 'lightskyblue', 'gold', 'tomato', 'lightslategray', 'aqua', 'limegreen', 'darkorange', 'khaki', 'salmon'];
 var compare_colorPicker = ['tomato', 'gold', 'lightskyblue'];
 
-var compare_width = 580;
-var compare_height = 470;
-var compare_frame = 10;
-
-var compare_barPadding = 10;
-
-var compare_oldCountryCount, compare_countryCount, compare_currentIndex;
+// bar chart setting: width, height, frame, padding, Y scaler
+var compare_bar_width = 940;
+var compare_bar_height = 570;
+var compare_bar_frame = 30;
+var compare_bar_padding = 10;
 var compare_scaleY;
-var compare_svg, compare_defs, compare_g0, compare_g1, compare_g2, compare_g3, compare_t;
 
-function compare_clearSvg() {
-    d3.select("#compare-chart")
+// leg chart setting: width, height, frame
+var compare_leg_width = 160;
+var compare_leg_height = 550;
+var compare_leg_frame = 20;
+
+// svg group def
+var compare_bar_svg, compare_bar_defs, compare_bar_g0, compare_bar_g1, compare_bar_g2, compare_bar_g3, compare_bar_t;
+var compare_leg_svg, compare_leg_g;
+
+// clear compare svg layer
+function compare_clearSvg(id) {
+    d3.select("#" + id)
         .selectAll("*").remove();
 }
 
-function compare_makeSvg() {
-    compare_clearSvg();
-    var newSvg = d3.select("#compare-chart")
+// make new compare svg
+function compare_makeSvg(id, width, height, frame) {
+    compare_clearSvg(id);
+    var newSvg = d3.select("#" + id)
         .append("svg")
-        .attr("width", compare_width + 2 * compare_frame)
-        .attr("height", compare_height + 2 * compare_frame);
+        .attr("width", width + 2 * frame)
+        .attr("height", height + 2 * frame);
     return newSvg;
 }
 
+// make grid on bar chart
 function compare_makeGrid() {
-    var grid = compare_svg.append("g")
+    var grid = compare_bar_svg.append("g")
         .attr("id", "grid")
         .attr("stroke", "#f0f0f0");
     grid.append("line")
-        .attr("x1", compare_frame)
-        .attr("x2", compare_width + compare_frame)
-        .attr("y1", compare_frame)
-        .attr("y2", compare_frame)
+        .attr("x1", compare_bar_frame)
+        .attr("x2", compare_bar_width + compare_bar_frame)
+        .attr("y1", compare_bar_frame)
+        .attr("y2", compare_bar_frame)
         .attr("class", "compare-chart-grid");
     grid.append("line")
-        .attr("x1", compare_frame)
-        .attr("x2", compare_width + compare_frame)
-        .attr("y1", compare_frame + compare_height / 4)
-        .attr("y2", compare_frame + compare_height / 4)
+        .attr("x1", compare_bar_frame)
+        .attr("x2", compare_bar_width + compare_bar_frame)
+        .attr("y1", compare_bar_frame + compare_bar_height / 4)
+        .attr("y2", compare_bar_frame + compare_bar_height / 4)
         .attr("class", "compare-chart-grid");
     grid.append("line")
-        .attr("x1", compare_frame)
-        .attr("x2", compare_width + compare_frame)
-        .attr("y1", compare_frame + compare_height / 2)
-        .attr("y2", compare_frame + compare_height / 2)
+        .attr("x1", compare_bar_frame)
+        .attr("x2", compare_bar_width + compare_bar_frame)
+        .attr("y1", compare_bar_frame + compare_bar_height / 2)
+        .attr("y2", compare_bar_frame + compare_bar_height / 2)
         .attr("class", "compare-chart-grid");
     grid.append("line")
-        .attr("x1", compare_frame)
-        .attr("x2", compare_width + compare_frame)
-        .attr("y1", compare_frame + 3 * compare_height / 4)
-        .attr("y2", compare_frame + 3 * compare_height / 4)
+        .attr("x1", compare_bar_frame)
+        .attr("x2", compare_bar_width + compare_bar_frame)
+        .attr("y1", compare_bar_frame + 3 * compare_bar_height / 4)
+        .attr("y2", compare_bar_frame + 3 * compare_bar_height / 4)
         .attr("class", "compare-chart-grid");
     grid.append("line")
-        .attr("x1", compare_frame)
-        .attr("x2", compare_width + compare_frame)
-        .attr("y1", compare_height + compare_frame)
-        .attr("y2", compare_height + compare_frame)
+        .attr("x1", compare_bar_frame)
+        .attr("x2", compare_bar_width + compare_bar_frame)
+        .attr("y1", compare_bar_height + compare_bar_frame)
+        .attr("y2", compare_bar_height + compare_bar_frame)
         .attr("class", "compare-chart-grid");
 }
 
+// init compare panel chart
 function compare_initPanelChart() {
     compare_scaleY = d3.scale.linear()
         .domain([0, 1])
-        .range([0, compare_height]);
+        .range([0, compare_bar_height]);
 
-    compare_svg = compare_makeSvg();
+    compare_bar_svg = compare_makeSvg("compare-body-chart", compare_bar_width, compare_bar_height, compare_bar_frame);
     compare_makeGrid();
-    compare_defs = compare_svg.append("defs");
-    compare_g0 = compare_svg.append("g")
+    compare_bar_defs = compare_bar_svg.append("defs");
+    compare_bar_g0 = compare_bar_svg.append("g")
         .attr("id", "mainLine");
-    compare_g1 = compare_svg.append("g")
+    compare_bar_g1 = compare_bar_svg.append("g")
         .attr("id", "mainBar1");
-    compare_g2 = compare_svg.append("g")
+    compare_bar_g2 = compare_bar_svg.append("g")
         .attr("id", "mainBar2");
-    compare_g3 = compare_svg.append("g")
+    compare_bar_g3 = compare_bar_svg.append("g")
         .attr("id", "mainBar3");
-    compare_t = compare_svg.append("g")
+    compare_bar_t = compare_bar_svg.append("g")
         .attr("id", "text");
 
     compare_oldCountryCount = 0;
     compare_countryCount = 0;
     compare_currentIndex = 0;
+    compare_id = ['', '', ''];
 
     compare_initLineChart();
     compare_initBarChart();
+    compare_initXLegend();
+    compare_makeGLegend();
 }
 
+// X axis legends
+function compare_initXLegend() {
+    for (i = 0; i < dataset_label.length; i++) {
+        tx = i * ((compare_bar_width + compare_bar_padding) / dataset_normalized_world.length) + compare_bar_frame + ((compare_bar_width + compare_bar_padding) / dataset_normalized_world.length - compare_bar_padding) / 2;
+        compare_bar_t.append("text")
+            .attr("x", tx)
+            .attr("y", 620)
+            .attr("text-anchor", "middle")
+            .text(dataset_label[i]);
+    }
+}
+
+function compare_makeGLegend() {
+    compare_leg_svg = compare_makeSvg("compare-body-data", compare_leg_width, compare_leg_height, compare_leg_frame);
+    compare_leg_g = compare_leg_svg.append("g")
+        .attr("id", "legendGroup")
+        .attr("transform", "translate(10, 200)");
+    compare_leg_g.append("circle")
+        .attr("cx", 20)
+        .attr("cy", 20)
+        .attr("r", 10)
+        .attr("fill", "#ffd800");
+    compare_leg_g.append("rect")
+        .attr("x", 0)
+        .attr("y", 18)
+        .attr("width", 40)
+        .attr("height", 4)
+        .attr("fill", "#ffd800");
+    compare_leg_g.append("text")
+        .attr("x", 50)
+        .attr("y", 26)
+        .text("World Average");
+
+    for (i = 0; i < compare_countryCount; i++) {
+        compare_leg_g.append("rect")
+            .attr("fill", compare_colorPicker[i])
+            .attr("stroke", "black")
+            .attr("stroke-width", "1px")
+            .attr("x", 12)
+            .attr("y", 70 + 30 * i)
+            .attr("width", 15)
+            .attr("height", 15);
+        compare_leg_g.append("text")
+            .attr("x", 50)
+            .attr("y", 82 + 30 * i)
+            .text(compare_id[i]);
+    }
+}
+
+// init line chart -> world average dataset
 function compare_initLineChart() {
     var dots = [];
     for (i = 0; i < dataset_normalized_world.length; i++) {
-        dx = i * ((compare_width + compare_barPadding) / dataset_normalized_world.length) + compare_frame + ((compare_width + compare_barPadding) / dataset_normalized_world.length - compare_barPadding) / 2;
-        dy = compare_height - compare_scaleY(dataset_normalized_world[i]) + compare_frame;
+        dx = i * ((compare_bar_width + compare_bar_padding) / dataset_normalized_world.length) + compare_bar_frame + ((compare_bar_width + compare_bar_padding) / dataset_normalized_world.length - compare_bar_padding) / 2;
+        dy = compare_bar_height - compare_scaleY(dataset_normalized_world[i]) + compare_bar_frame;
         dots.push({ x: dx, y: dy });
     }
 
     for (i = 0; i < dots.length - 1; i++) {
-        compare_g0.append("path")
+        compare_bar_g0.append("path")
             .attr("stroke", "#ffd800")
             .attr("stroke-width", "5px")
             .attr("fill", "none")
             .attr("d", "M" + dots[i].x + "," + dots[i].y + "L" + dots[i+1].x + "," + dots[i+1].y);
     }
     for (i = 0; i < dots.length; i++) {
-        compare_g0.append("circle")
+        compare_bar_g0.append("circle")
             .attr("cx", dots[i].x)
             .attr("cy", dots[i].y)
             .attr("r", 10)
@@ -125,14 +196,16 @@ function compare_initLineChart() {
     }
 }
 
+// make 3 groups of bars
 function compare_initBarChart() {
     compare_makeBarGroup(1, dataset_length);
     compare_makeBarGroup(2, dataset_length);
     compare_makeBarGroup(3, dataset_length);
 }
 
+// make one group of bars
 function compare_makeBarGroup(group, length) {
-    var g = group == 1 ? compare_g1 : (group == 2 ? compare_g2 : compare_g3);
+    var g = group == 1 ? compare_bar_g1 : (group == 2 ? compare_bar_g2 : compare_bar_g3);
 
     barColor = compare_colorPicker[group - 1];
     ct = d3.hsl(barColor);
@@ -140,7 +213,7 @@ function compare_makeBarGroup(group, length) {
         barStopColor = ct.brighter().brighter().toString();
     else
         barStopColor = ct.darker().darker().toString();
-    lg = compare_defs.append("linearGradient")
+    lg = compare_bar_defs.append("linearGradient")
         .attr("id", "lg_g" + group)
         .attr("x1", "50%")
         .attr("y1", "50%")
@@ -156,12 +229,12 @@ function compare_makeBarGroup(group, length) {
     for (i = 0; i < length; i++) {
         d = 0; // should be 0
 
-        barX = i * ((compare_width + compare_barPadding) / length) + compare_frame;
-        barY = compare_height - compare_scaleY(d) + compare_frame;
-        barWidth = (compare_width + compare_barPadding) / length - compare_barPadding;
+        barX = i * ((compare_bar_width + compare_bar_padding) / length) + compare_bar_frame;
+        barY = compare_bar_height - compare_scaleY(d) + compare_bar_frame;
+        barWidth = (compare_bar_width + compare_bar_padding) / length - compare_bar_padding;
         barHeight = compare_scaleY(d);
 
-        f = compare_defs.append("filter")
+        f = compare_bar_defs.append("filter")
             .attr("id", "f_g" + group + "n" + i)
             .attr("x", 0)
             .attr("y", 0)
@@ -211,10 +284,11 @@ function compare_makeBarGroup(group, length) {
     }
 }
 
+// update bar X and width (when add/remove countries)
 function compare_adjustBarXAndWidth(g, group, length, delay) {
     for (i = 0; i < length; i++) {
-        barX = i * ((compare_width + compare_barPadding) / length) + compare_frame;
-        barWidth = (compare_width + compare_barPadding) / length - compare_barPadding;
+        barX = i * ((compare_bar_width + compare_bar_padding) / length) + compare_bar_frame;
+        barWidth = (compare_bar_width + compare_bar_padding) / length - compare_bar_padding;
         barWidth = barWidth / compare_countryCount;
         barX += (group - 1) * barWidth;
 
@@ -224,41 +298,48 @@ function compare_adjustBarXAndWidth(g, group, length, delay) {
             .duration(500)
             .attr("x", barX)
             .attr("width", barWidth);
-        compare_defs.select("#" + rect.attr("pointlight"))
+        compare_bar_defs.select("#" + rect.attr("pointlight"))
             .transition()
             .delay(delay)
             .attr("x", barX + barWidth / 2);
     }
 }
 
+// update bar X and width in sequence
 function compare_updateBarChartPosition(length, delay) {
     // updateBarChartPosition: Country 1
-    compare_adjustBarXAndWidth(compare_g1, 1, length, delay);
+    compare_adjustBarXAndWidth(compare_bar_g1, 1, length, delay);
 
     // updateBarChartPosition: Country 2
     if (compare_countryCount >= 2)
-        compare_adjustBarXAndWidth(compare_g2, 2, length, delay);
+        compare_adjustBarXAndWidth(compare_bar_g2, 2, length, delay);
 
     // updateBarChartPosition: Country 3
     if (compare_countryCount >= 3)
-        compare_adjustBarXAndWidth(compare_g3, 3, length, delay);
+        compare_adjustBarXAndWidth(compare_bar_g3, 3, length, delay);
 
     compare_oldCountryCount = compare_countryCount;
 }
 
+// update bar chart values
 function compare_updateBarChartValue(group, id, dataset, delay) {
-    var g = group == 1 ? compare_g1 : (group == 2 ? compare_g2 : compare_g3);
+    var g = group == 1 ? compare_bar_g1 : (group == 2 ? compare_bar_g2 : compare_bar_g3);
+    compare_id[group - 1] = id;
     var d, l;
     for (i = 0; i < dataset.length; i++) {
         d = dataset[i];
         l = dataset_label[i];
+        if (countryInfo[id])
+            ori_d = countryInfo[id]['ORI'][i];
+        else
+            ori_d = 0;
 
-        barY = compare_height - compare_scaleY(d) + compare_frame;
+        barY = compare_bar_height - compare_scaleY(d) + compare_bar_frame;
         barHeight = compare_scaleY(d);
 
         rect = g.select("#rect_g" + group + "n" + i);
         rect.attr("label", l)
-            .attr("d", d)
+            .attr("d", ori_d)
             .on("mouseover", function() {
                 compare_loadCountryData(id);
                 compare_showBarDatatip(d3.select(this), id);
@@ -270,11 +351,11 @@ function compare_updateBarChartValue(group, id, dataset, delay) {
             });
         rect.transition()
             .delay(delay)
-            .duration(500)
+            .duration(compare_duration)
             .attr("y", barY)
             .attr("height", barHeight);
 
-        compare_defs.select("#" + rect.attr("pointlight"))
+        compare_bar_defs.select("#" + rect.attr("pointlight"))
             .transition()
             .delay(delay)
             .attr("y", barY - 80);
@@ -284,9 +365,8 @@ function compare_updateBarChartValue(group, id, dataset, delay) {
 
 // show panel chart tooltip (only for bars)
 function compare_showBarDatatip(rect, id) {
-
-    _left = parseFloat($('shadow-compare').offsetLeft) + parseFloat(rect.attr("x")) + parseFloat(rect.attr("width") / 2) - 60 + 5;
-    _top = parseFloat($('shadow-compare').offsetTop) + parseFloat(rect.attr("y")) - 80;
+    _left = parseFloat($('compare').offsetLeft) + parseFloat(rect.attr("x")) + parseFloat(rect.attr("width") / 2) - 60;
+    _top = parseFloat($('compare').offsetTop) + parseFloat(rect.attr("y")) - 10;
     panel_compare_chart_datatip.html(id + "<br/><strong>" + rect.attr("label") + "</strong><br/>" + parseFloat(rect.attr("d")).toFixed(2))
         .style("left", _left + "px")
         .style("top", _top + "px")
@@ -296,16 +376,14 @@ function compare_showBarDatatip(rect, id) {
 // load country data to the panel
 function compare_loadCountryData(id) {
     cInfo = countryInfo[id];
-    if (cInfo) {
-        d3.select(".compare-picture")
-            .attr("style", "background-image: url(" + cInfo['PIC'] + ");");
-        $("compare-location").innerHTML = cInfo['LAB'];
-        $("compare-description").innerHTML = cInfo['DES'];
+    if (cInfo)
         return cInfo['DAT'];
-    }
     return cInfo;
 }
 
+// main function for bar chart
+// id = country id
+// op = operation ['add', 'change', 'remove']
 function compare_makeBarChart(id, op) {
     if (compare_loadCountryData(id))
         dataset = countryInfo[id]['DAT'];
@@ -333,6 +411,7 @@ function compare_makeBarChart(id, op) {
         if (compare_countryCount > 0)
             compare_updateBarChartPosition(dataset.length, 500);
     }
+    compare_makeGLegend();
 }
 
 // panel action: add comparing country
@@ -343,7 +422,7 @@ function compare_doPanelAdd() {
 
 // panel action: remove comaring country
 function compare_doPanelRemove() {
-    compare_makeBarChart('empty', 'remove', dataset_10_empty);
+    compare_makeBarChart('empty', 'remove');
 }
 
 // panel action: close panel

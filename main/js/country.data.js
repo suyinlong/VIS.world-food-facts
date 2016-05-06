@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 11:43:33
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 17:21:18
+* @Last Modified time: 2016-05-06 12:06:38
 */
 
 var dataset_length = 10;
@@ -121,6 +121,7 @@ dataset_normalized_GBR = [0.3597168597177135, 0.5362923865686842, 0.355834900221
 dataset_normalized_USA = [0.6230309614355515, 0.5628179604907159, 0.3438989951894487, 0.5775939878744326, 0.3533111869998248, 0.3000912631560955, 0.21201855712120243, 0.23089531610003608, 0.23080565333656633, 0.18278963414634852];
 
 var countryInfo = {
+
     'ALB': {
         'DAT': dataset_normalized_ALB,
         'ORI': dataset_original_ALB
