@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 01:22:30
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-06 13:59:54
+* @Last Modified time: 2016-05-06 15:57:00
 */
 
 // all animation duration
@@ -150,6 +150,7 @@ function compare_makeGLegend() {
         .text("World Average");
 
     for (i = 0; i < compare_countryCount; i++) {
+        leg_countryName = countryInfo[compare_id[i]]['LAB'];
         compare_leg_g.append("rect")
             .attr("fill", compare_colorPicker[i])
             .attr("stroke", "black")
@@ -161,7 +162,7 @@ function compare_makeGLegend() {
         compare_leg_g.append("text")
             .attr("x", 50)
             .attr("y", 82 + 30 * i)
-            .text(compare_id[i]);
+            .text(leg_countryName);
     }
 }
 

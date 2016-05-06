@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-26 17:42:43
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-29 18:56:05
+* @Last Modified time: 2016-05-06 15:51:28
 */
 
 var worldmap_color_pairs = [
@@ -25,6 +25,8 @@ var worldmap_autoplay_timer;
 var worldmap_legend_view = 0;
 var worldmap_legend_view_items = ['legend-view-item-additives', 'legend-view-item-energy', 'legend-view-item-fat', 'legend-view-item-carbohydrates', 'legend-view-item-sugars', 'legend-view-item-fiber', 'legend-view-item-proteins', 'legend-view-item-salt', 'legend-view-item-sodium', 'legend-view-item-alcohol']
 
+var worldmap_attr = 0;
+
 var map = new Datamap({
     scope: 'world',
     element: document.getElementById("map-view"),
@@ -36,6 +38,16 @@ var map = new Datamap({
     geographyConfig: {
         borderColor: '#333333',
         borderOpacity: 1.0,
+        popupTemplate: function(geography, data) {
+            var tip = '<div class="map-tip"><strong>' + geography.properties.name + '</strong>';
+
+            if (countryInfo[geography.id]) {
+                tip += '<br/>' + dataset_label[worldmap_attr] + ': ';
+                tip += countryInfo[geography.id]['DAT'][worldmap_attr].toFixed(2);
+            }
+            tip += '</div>';
+            return tip;
+        }
     },
     done: function(datamap) {
         callbackMap(datamap);
@@ -48,6 +60,7 @@ function callbackMap(datamap) {
             //alert(geography.properties.name);
             clickMapPopup(geography.id);
         });
+
 }
 
 function fillMapRegion(i, attr) {
@@ -65,6 +78,7 @@ function fillMapRegion(i, attr) {
 
 function updateMap(attr) {
     clearTimeout(worldmap_update_timer);
+    worldmap_attr = attr;
     worldmap_legend_view = attr;
 
     for (i = 0; i < worldmap_legend_view_items.length; i++) {

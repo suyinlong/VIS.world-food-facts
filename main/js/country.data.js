@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 11:43:33
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-06 12:06:38
+* @Last Modified time: 2016-05-06 15:21:23
 */
 
 var dataset_length = 10;
@@ -121,228 +121,259 @@ dataset_normalized_GBR = [0.3597168597177135, 0.5362923865686842, 0.355834900221
 dataset_normalized_USA = [0.6230309614355515, 0.5628179604907159, 0.3438989951894487, 0.5775939878744326, 0.3533111869998248, 0.3000912631560955, 0.21201855712120243, 0.23089531610003608, 0.23080565333656633, 0.18278963414634852];
 
 var countryInfo = {
-
+    'world': {
+        'DAT': dataset_normalized_world,
+        'ORI': dataset_original_world,
+        'LAB': 'World'
+    },
     'ALB': {
         'DAT': dataset_normalized_ALB,
-        'ORI': dataset_original_ALB
+        'ORI': dataset_original_ALB,
+        'LAB': 'Albania'
     },
     'AND': {
         'DAT': dataset_normalized_AND,
-        'ORI': dataset_original_AND
+        'ORI': dataset_original_AND,
+        'LAB': 'Andorra'
     },
     'ARG': {
         'DAT': dataset_normalized_ARG,
-        'ORI': dataset_original_ARG
+        'ORI': dataset_original_ARG,
+        'LAB': 'Argentina'
     },
     'AUS': {
         'DAT': dataset_normalized_AUS,
-        'ORI': dataset_original_AUS
+        'ORI': dataset_original_AUS,
+        'LAB': 'Australia'
     },
     'AUT': {
         'DAT': dataset_normalized_AUT,
-        'ORI': dataset_original_AUT
+        'ORI': dataset_original_AUT,
+        'LAB': 'Austria'
     },
     'BEL': {
         'DAT': dataset_normalized_BEL,
-        'ORI': dataset_original_BEL
+        'ORI': dataset_original_BEL,
+        'LAB': 'Belgium'
     },
     'BRA': {
         'DAT': dataset_normalized_BRA,
-        'ORI': dataset_original_BRA
+        'ORI': dataset_original_BRA,
+        'LAB': 'Brazil'
     },
     'KHM': {
         'DAT': dataset_normalized_KHM,
-        'ORI': dataset_original_KHM
+        'ORI': dataset_original_KHM,
+        'LAB': 'Cambodia'
     },
     'CAN': {
         'DAT': dataset_normalized_CAN,
-        'ORI': dataset_original_CAN
+        'ORI': dataset_original_CAN,
+        'LAB': 'Canada'
     },
     'CHL': {
         'DAT': dataset_normalized_CHL,
-        'ORI': dataset_original_CHL
+        'ORI': dataset_original_CHL,
+        'LAB': 'Chile'
     },
     'CHN': {
         'DAT': dataset_normalized_CHN,
-        'ORI': dataset_original_CHN
+        'ORI': dataset_original_CHN,
+        'LAB': 'China'
     },
     'CUB': {
         'DAT': dataset_normalized_CUB,
-        'ORI': dataset_original_CUB
+        'ORI': dataset_original_CUB,
+        'LAB': 'Cuba'
     },
     'CZE': {
         'DAT': dataset_normalized_CZE,
-        'ORI': dataset_original_CZE
+        'ORI': dataset_original_CZE,
+        'LAB': 'Czech Republic'
     },
     'DNK': {
         'DAT': dataset_normalized_DNK,
-        'ORI': dataset_original_DNK
+        'ORI': dataset_original_DNK,
+        'LAB': 'Denmark'
     },
     'FIN': {
         'DAT': dataset_normalized_FIN,
-        'ORI': dataset_original_FIN
+        'ORI': dataset_original_FIN,
+        'LAB': 'Finland'
     },
     'FRA': {
         'DAT': dataset_normalized_FRA,
-        'ORI': dataset_original_FRA
+        'ORI': dataset_original_FRA,
+        'LAB': 'France'
     },
     'GUF': {
         'DAT': dataset_normalized_GUF,
-        'ORI': dataset_original_GUF
+        'ORI': dataset_original_GUF,
+        'LAB': 'French Guiana'
     },
     'DEU': {
         'DAT': dataset_normalized_DEU,
-        'ORI': dataset_original_DEU
+        'ORI': dataset_original_DEU,
+        'LAB': 'Germany'
     },
     'GRC': {
         'DAT': dataset_normalized_GRC,
-        'ORI': dataset_original_GRC
+        'ORI': dataset_original_GRC,
+        'LAB': 'Greece'
     },
     'GLP': {
         'DAT': dataset_normalized_GLP,
-        'ORI': dataset_original_GLP
+        'ORI': dataset_original_GLP,
+        'LAB': 'Guadeloupe'
     },
     'HKG': {
         'DAT': dataset_normalized_HKG,
-        'ORI': dataset_original_HKG
+        'ORI': dataset_original_HKG,
+        'LAB': 'Hong Kong'
     },
     'HUN': {
         'DAT': dataset_normalized_HUN,
-        'ORI': dataset_original_HUN
+        'ORI': dataset_original_HUN,
+        'LAB': 'Hungary'
     },
     'IND': {
         'DAT': dataset_normalized_IND,
-        'ORI': dataset_original_IND
+        'ORI': dataset_original_IND,
+        'LAB': 'India'
     },
     'IRL': {
         'DAT': dataset_normalized_IRL,
-        'ORI': dataset_original_IRL
+        'ORI': dataset_original_IRL,
+        'LAB': 'Ireland'
     },
     'ISR': {
         'DAT': dataset_normalized_ISR,
-        'ORI': dataset_original_ISR
+        'ORI': dataset_original_ISR,
+        'LAB': 'Israel'
     },
     'ITA': {
         'DAT': dataset_normalized_ITA,
-        'ORI': dataset_original_ITA
+        'ORI': dataset_original_ITA,
+        'LAB': 'Italy'
     },
     'LUX': {
         'DAT': dataset_normalized_LUX,
-        'ORI': dataset_original_LUX
+        'ORI': dataset_original_LUX,
+        'LAB': 'Luxembourg'
     },
     'MLT': {
         'DAT': dataset_normalized_MLT,
-        'ORI': dataset_original_MLT
+        'ORI': dataset_original_MLT,
+        'LAB': 'Malta'
     },
     'MTQ': {
         'DAT': dataset_normalized_MTQ,
-        'ORI': dataset_original_MTQ
+        'ORI': dataset_original_MTQ,
+        'LAB': 'Martinique'
     },
     'MAR': {
         'DAT': dataset_normalized_MAR,
-        'ORI': dataset_original_MAR
+        'ORI': dataset_original_MAR,
+        'LAB': 'Morocco'
     },
     'NLD': {
         'DAT': dataset_normalized_NLD,
-        'ORI': dataset_original_NLD
+        'ORI': dataset_original_NLD,
+        'LAB': 'Netherlands'
     },
     'NZL': {
         'DAT': dataset_normalized_NZL,
-        'ORI': dataset_original_NZL
+        'ORI': dataset_original_NZL,
+        'LAB': 'New Zealand'
     },
     'NOR': {
         'DAT': dataset_normalized_NOR,
-        'ORI': dataset_original_NOR
+        'ORI': dataset_original_NOR,
+        'LAB': 'Norway'
     },
     'POL': {
         'DAT': dataset_normalized_POL,
-        'ORI': dataset_original_POL
+        'ORI': dataset_original_POL,
+        'LAB': 'Poland'
     },
     'PRT': {
         'DAT': dataset_normalized_PRT,
-        'ORI': dataset_original_PRT
+        'ORI': dataset_original_PRT,
+        'LAB': 'Portugal'
     },
     'ROU': {
         'DAT': dataset_normalized_ROU,
-        'ORI': dataset_original_ROU
+        'ORI': dataset_original_ROU,
+        'LAB': 'Romania'
     },
     'RUS': {
         'DAT': dataset_normalized_RUS,
-        'ORI': dataset_original_RUS
+        'ORI': dataset_original_RUS,
+        'LAB': 'Russia'
     },
     'SPM': {
         'DAT': dataset_normalized_SPM,
-        'ORI': dataset_original_SPM
+        'ORI': dataset_original_SPM,
+        'LAB': 'Saint Pierre and Miquelon'
     },
     'SGP': {
         'DAT': dataset_normalized_SGP,
-        'ORI': dataset_original_SGP
+        'ORI': dataset_original_SGP,
+        'LAB': 'Singapore'
     },
     'SVN': {
         'DAT': dataset_normalized_SVN,
-        'ORI': dataset_original_SVN
+        'ORI': dataset_original_SVN,
+        'LAB': 'Slovenia'
     },
     'ZAF': {
         'DAT': dataset_normalized_ZAF,
-        'ORI': dataset_original_ZAF
+        'ORI': dataset_original_ZAF,
+        'LAB': 'South Africa'
     },
     'KOR': {
         'DAT': dataset_normalized_KOR,
-        'ORI': dataset_original_KOR
+        'ORI': dataset_original_KOR,
+        'LAB': 'South Korea'
     },
     'ESP': {
         'DAT': dataset_normalized_ESP,
-        'ORI': dataset_original_ESP
+        'ORI': dataset_original_ESP,
+        'LAB': 'Spain'
     },
     'SWE': {
         'DAT': dataset_normalized_SWE,
-        'ORI': dataset_original_SWE
+        'ORI': dataset_original_SWE,
+        'LAB': 'Sweden'
     },
     'SWZ': {
         'DAT': dataset_normalized_SWZ,
-        'ORI': dataset_original_SWZ
+        'ORI': dataset_original_SWZ,
+        'LAB': 'Swaziland'
     },
     'TWN': {
         'DAT': dataset_normalized_TWN,
-        'ORI': dataset_original_TWN
+        'ORI': dataset_original_TWN,
+        'LAB': 'Taiwan'
     },
     'THA': {
         'DAT': dataset_normalized_THA,
-        'ORI': dataset_original_THA
+        'ORI': dataset_original_THA,
+        'LAB': 'Thailand'
     },
     'TUN': {
         'DAT': dataset_normalized_TUN,
-        'ORI': dataset_original_TUN
+        'ORI': dataset_original_TUN,
+        'LAB': 'Tunisia'
     },
     'GBR': {
         'DAT': dataset_normalized_GBR,
-        'ORI': dataset_original_GBR
+        'ORI': dataset_original_GBR,
+        'LAB': 'United Kingdom'
     },
     'USA': {
         'DAT': dataset_normalized_USA,
-        'ORI': dataset_original_USA
+        'ORI': dataset_original_USA,
+        'LAB': 'United States of America'
     },
 };
-/*
-'CHN': {
-        'LAB': 'China, ASIA',
-        'PIC': "images/CHN.jpg",
-        'DES': "<h1>Note</h1>According to the United Nations' Food and Agriculture Organization, China's per capita food consumption has increased from less than 1700 kcal in 1960 to 2570 kcal per day in 1995.",
-        'DAT': dataset_normalized_CHN,
-        'ORI': dataset_original_CHN
-    },
-    'USA': {
-        'LAB': 'USA, North America',
-        'PIC': "images/USA.jpg",
-        'DES': "<h1>Note</h1>Some food facts",
-        'DAT': dataset_normalized_USA,
-        'ORI': dataset_original_USA
-    },
-    'FRA': {
-        'LAB': 'FRANCE, Euro',
-        'PIC': "images/FRA.jpg",
-        'DES': "<h1>Note</h1>Some food facts",
-        'DAT': dataset_normalized_FRA,
-        'ORI': dataset_original_FRA
-    },
-*/
