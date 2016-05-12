@@ -55,12 +55,25 @@
         <div class="sidebar-panel-body">
         <h1>Link between countries</h1>
         <h3>Type</h3>
-        <a href="#" onclick="showTreeGraph(link_dataset_pca);">PCA</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_euclidean);">MDS - Euclidean</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_cosine);">MDS - Cosine</a><br/><a href="#" onclick="showTreeGraph(link_dataset_mds_correlation);">MDS - Correlation</a><br/><a href="#" onclick="showTreeGraph(link_dataset_isomap);">ISOMAP</a>
+        <ul>
+          <li class="sidebar-panel-link-type-pca" id="sidebar-panel-link-type-pca">PCA</li>
+        </ul>
+        <ul>
+          <li class="sidebar-panel-link-type-mds-euclidean" id="sidebar-panel-link-type-mds-euclidean">MDS<br/>Euclidean</li>
+          <li class="sidebar-panel-link-type-mds-cosine" id="sidebar-panel-link-type-mds-cosine">MDS<br/>Cosine</li>
+          <li class="sidebar-panel-link-type-mds-correlation" id="sidebar-panel-link-type-mds-correlation">MDS<br/>Correlation</li>
+        </ul>
+        <ul>
+          <li class="sidebar-panel-link-type-isomap" id="sidebar-panel-link-type-isomap">ISOMAP</li>
+        </ul>
         <h3>Dimension</h3>
         Now is fixed @ 10.
         <h3>Play speed</h3>
         Now is fixed @ 100.
         </div>
+        <footer>
+          <button id="sidebar-panel-link-button">OK</button>
+        </footer>
       </section>
       <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
           <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
@@ -72,11 +85,11 @@
           <a href="#" onclick="browse_setCountry('China');">China</a><br/>
           <a href="#" onclick="browse_setCountry('Germany');">Germany</a><br/>
           <h3>Category</h3>
-          <a href="#" onclick="browse_setCategory('Sugary snacks');">Sugary snacks</a><br/>
-          <a href="#" onclick="browse_setCategory('Plant-based foods and beverages');">Plant-based foods and beverages</a><br/>
-          <h3>Result</h3>
-          <a href="#" onclick="browse_query();">Query</a>
+          <div class="browse-category" id="browse-category"></div>
         </div>
+        <footer>
+          <button id="sidebar-panel-browse-button">Query</button>
+        </footer>
       </section>
       <section class="sidebar-panel-browse-sub hidden" id="sidebar-panel-browse-sub">
       </section>

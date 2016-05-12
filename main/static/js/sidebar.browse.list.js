@@ -2,13 +2,56 @@
 * @Author: Yinlong Su
 * @Date:   2016-05-11 19:51:57
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-11 22:15:46
+* @Last Modified time: 2016-05-12 00:55:12
 */
 
 var browse_queryaddress = '/query';
 
 var browse_country = 'all';
 var browse_category = 'all';
+
+var browse_category_data = [
+    {
+        'css': 'browse-category-01',
+        'label': 'Plant-based foods and beverages'
+    },
+    {
+        'css': 'browse-category-02',
+        'label': 'Sugary snacks'
+    },
+    {
+        'css': 'browse-category-03',
+        'label': 'Beverages'
+    },
+    {
+        'css': 'browse-category-04',
+        'label': 'Dairies'
+    },
+    {
+        'css': 'browse-category-05',
+        'label': 'Groceries'
+    },
+    {
+        'css': 'browse-category-06',
+        'label': 'Meats'
+    },
+    {
+        'css': 'browse-category-07',
+        'label': 'Meals'
+    },
+    {
+        'css': 'browse-category-08',
+        'label': 'Fruit'
+    },
+    {
+        'css': 'browse-category-09',
+        'label': 'Desserts'
+    },
+    {
+        'css': 'browse-category-10',
+        'label': 'Seafood'
+    },
+];
 
 var browse_image_width = 150;
 var browse_image_height = 150;
@@ -21,8 +64,15 @@ function browse_setCountry(country) {
     browse_country = country;
 }
 
-function browse_setCategory(category) {
+function browse_setCategory(category, element) {
     browse_category = category;
+
+    for (i = 0; i < browse_category_data.length; i++) {
+        d3.select("#" + browse_category_data[i]['css'])
+            .attr("class", browse_category_data[i]['css']);
+    }
+    d3.select("#" + element)
+        .attr("class", element + " selected");
 }
 function browse_showHideDetails(idx) {
     sectionName = "sidebar-panel-browse-sub-body-section-" + idx;
@@ -100,3 +150,25 @@ function browse_query() {
 
 
 }
+
+function browse_initCategory() {
+    var ul = d3.select("#browse-category")
+        .append("ul");
+    for (i = 0; i < browse_category_data.length; i++) {
+        var li = ul.append("li")
+            .attr("class", browse_category_data[i]['css'])
+            .attr("label", browse_category_data[i]['label'])
+            .attr("id", browse_category_data[i]['css']);
+        li.on("click", function() {
+            browse_setCategory(d3.select(this).attr("label"), d3.select(this).attr("id"));
+        });
+    }
+}
+
+d3.select("#sidebar-panel-browse-button")
+    .on("click", function() {
+        browse_query();
+    });
+
+browse_initCategory();
+browse_setCategory('Plant-based foods and beverages', 'browse-category-01');

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-11 22:21:35
+* @Last Modified time: 2016-05-11 23:29:02
 */
 
 function $(id) { return document.getElementById(id); }
@@ -41,9 +41,9 @@ function hideSidebarTooltip() {
     sidebar_tooltip.attr("class", "sidebar-tooltip n hidden");
 }
 
-function showTreeGraph(dataset) {
+function showTreeGraph() {
     showSidebarSection("sidebar-panel-link-sub");
-    link_makeTreeGraph(dataset);
+    link_showTreeGraph();
 }
 
 // now create new object and register event listener

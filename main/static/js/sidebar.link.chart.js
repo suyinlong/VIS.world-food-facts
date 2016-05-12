@@ -2,13 +2,14 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 10:52:12
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-04-28 22:48:06
+* @Last Modified time: 2016-05-11 23:38:18
 */
 
 var link_width = 980;
 var link_height = 800;
 var link_frame = 50;
 
+var link_type = 'PCA';
 var link_duration = 100;
 
 var link_svg;
@@ -160,3 +161,63 @@ function link_makeTreeGraph(dataset) {
     }
 
 }
+
+function link_setType(type, element) {
+    link_type = type;
+
+    d3.select("#sidebar-panel-link-type-pca")
+        .attr("class", "sidebar-panel-link-type-pca");
+    d3.select("#sidebar-panel-link-type-mds-euclidean")
+        .attr("class", "sidebar-panel-link-type-mds-euclidean");
+    d3.select("#sidebar-panel-link-type-mds-cosine")
+        .attr("class", "sidebar-panel-link-type-mds-cosine");
+    d3.select("#sidebar-panel-link-type-mds-correlation")
+        .attr("class", "sidebar-panel-link-type-mds-correlation");
+    d3.select("#sidebar-panel-link-type-isomap")
+        .attr("class", "sidebar-panel-link-type-isomap");
+
+    d3.select("#" + element)
+        .attr("class", element + " selected");
+}
+
+function link_showTreeGraph() {
+    if (link_type == 'PCA')
+        link_makeTreeGraph(link_dataset_pca);
+    else if (link_type == 'MDS - Euclidean')
+        link_makeTreeGraph(link_dataset_mds_euclidean);
+    else if (link_type == 'MDS - Cosine')
+        link_makeTreeGraph(link_dataset_mds_cosine);
+    else if (link_type == 'MDS - Correlation')
+        link_makeTreeGraph(link_dataset_mds_correlation);
+    else if (link_type == 'ISOMAP')
+        link_makeTreeGraph(link_dataset_isomap);
+}
+
+d3.select("#sidebar-panel-link-type-pca")
+    .on("click", function() {
+        link_setType('PCA', 'sidebar-panel-link-type-pca');
+    });
+d3.select("#sidebar-panel-link-type-mds-euclidean")
+    .on("click", function() {
+        link_setType('MDS - Euclidean', 'sidebar-panel-link-type-mds-euclidean');
+    });
+d3.select("#sidebar-panel-link-type-mds-cosine")
+    .on("click", function() {
+        link_setType('MDS - Cosine', 'sidebar-panel-link-type-mds-cosine');
+    });
+d3.select("#sidebar-panel-link-type-mds-correlation")
+    .on("click", function() {
+        link_setType('MDS - Correlation', 'sidebar-panel-link-type-mds-correlation');
+    });
+d3.select("#sidebar-panel-link-type-isomap")
+    .on("click", function() {
+        link_setType('ISOMAP', 'sidebar-panel-link-type-isomap');
+    });
+
+
+d3.select("#sidebar-panel-link-button")
+    .on("click", function() {
+        showTreeGraph();
+    });
+
+link_setType('PCA', 'sidebar-panel-link-type-pca');
