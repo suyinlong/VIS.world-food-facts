@@ -5,9 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-
 
   <link href="./static/css/main.css" rel="stylesheet" type="text/css">
   <link href="./static/css/sidebar.css" rel="stylesheet" type="text/css">
@@ -82,16 +80,27 @@
         <div class="sidebar-panel-body">
           <h1>Browse</h1>
           <h3>Country</h3>
-          <a href="#" onclick="browse_setCountry('China');">China</a><br/>
-          <a href="#" onclick="browse_setCountry('Germany');">Germany</a><br/>
+          <div class="browse-country" id="browse-country"></div>
+          <span id="browse-country-text"></span>
           <h3>Category</h3>
           <div class="browse-category" id="browse-category"></div>
+          <span id="browse-category-text"></span>
         </div>
         <footer>
           <button id="sidebar-panel-browse-button">Query</button>
         </footer>
       </section>
       <section class="sidebar-panel-browse-sub hidden" id="sidebar-panel-browse-sub">
+      </section>
+      <section class="sidebar-panel-judge hidden" id="sidebar-panel-judge">
+        <div class="sidebar-panel-body">
+          <h1>Judge</h1>
+          <h3>Target Country</h3>
+          <img src="./static/images/020/001.gif"/><img src="./static/images/020/002.gif"/><img src="./static/images/020/003.gif"/>
+          <h3>Compare Result</h3>
+
+
+        </div>
       </section>
     </div>
 

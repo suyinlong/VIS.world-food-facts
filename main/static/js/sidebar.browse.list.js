@@ -2,10 +2,11 @@
 * @Author: Yinlong Su
 * @Date:   2016-05-11 19:51:57
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 00:55:12
+* @Last Modified time: 2016-05-12 11:42:58
 */
 
 var browse_queryaddress = '/query';
+var browse_flagaddress = './static/images/flags/';
 
 var browse_country = 'all';
 var browse_category = 'all';
@@ -60,8 +61,17 @@ var browse_details_columns = ['brands', 'origins', 'manufacturing_places', 'labe
 
 function $(id) { return document.getElementById(id); }
 
-function browse_setCountry(country) {
+function browse_setCountry(country, element) {
     browse_country = country;
+
+    for (i = 0; i < country_label.length; i++) {
+        d3.select("#browse-country-" + i)
+            .attr("class", "");
+    }
+    d3.select("#" + element)
+        .attr("class", "selected");
+
+    $('browse-country-text').innerHTML = "Current: " + country;
 }
 
 function browse_setCategory(category, element) {
@@ -73,7 +83,10 @@ function browse_setCategory(category, element) {
     }
     d3.select("#" + element)
         .attr("class", element + " selected");
+
+    $('browse-category-text').innerHTML = "Current: " + category;
 }
+
 function browse_showHideDetails(idx) {
     sectionName = "sidebar-panel-browse-sub-body-section-" + idx;
     section = d3.select("#" + sectionName);
@@ -147,8 +160,21 @@ function browse_query() {
     fetchResponse.then((res) => res.json()).then(function(res) {
         browse_update(res);
     });
+}
 
-
+function browse_initCountry() {
+    var ul = d3.select("#browse-country")
+        .append("ul");
+    for (i = 0; i < country_label.length; i++) {
+        var li = ul.append("li")
+            .attr("label", countryInfo[country_label[i]]['LAB'])
+            .attr("title", countryInfo[country_label[i]]['LAB'])
+            .attr("id", "browse-country-" + i)
+            .attr("style", "background-image: url(" + browse_flagaddress + countryInfo[country_label[i]]['FLG'] + ");");
+        li.on("click", function() {
+            browse_setCountry(d3.select(this).attr("label"), d3.select(this).attr("id"));
+        });
+    }
 }
 
 function browse_initCategory() {
@@ -158,6 +184,7 @@ function browse_initCategory() {
         var li = ul.append("li")
             .attr("class", browse_category_data[i]['css'])
             .attr("label", browse_category_data[i]['label'])
+            .attr("title", browse_category_data[i]['label'])
             .attr("id", browse_category_data[i]['css']);
         li.on("click", function() {
             browse_setCategory(d3.select(this).attr("label"), d3.select(this).attr("id"));
@@ -170,5 +197,7 @@ d3.select("#sidebar-panel-browse-button")
         browse_query();
     });
 
+browse_initCountry();
 browse_initCategory();
 browse_setCategory('Plant-based foods and beverages', 'browse-category-01');
+browse_setCountry('United States of America', 'browse-country-49');

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-11 23:29:02
+* @Last Modified time: 2016-05-12 10:44:45
 */
 
 function $(id) { return document.getElementById(id); }
@@ -13,6 +13,21 @@ var div_sidebar_panel;
 function showSidebarSection(className) {
     div_midmask.attr("class", "midmask visible");
     div_sidebar_panel.attr("class", "sidebar-panel visible");
+    if (className == 'sidebar-panel-link' || className == 'sidebar-panel-link-sub') {
+        d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
+        d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
+        d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
+    }
+    else if (className == 'sidebar-panel-browse' || className == 'sidebar-panel-browse-sub') {
+        d3.select(".sidebar-panel-link-sub").attr("class", "sidebar-panel-link-sub hidden");
+        d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
+        d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
+    } else if (className == 'sidebar-panel-judge') {
+        d3.select(".sidebar-panel-link-sub").attr("class", "sidebar-panel-link-sub hidden");
+        d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
+        d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
+        d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
+    }
     d3.select("." + className)
         .attr("class", className + " visible");
 }
@@ -25,6 +40,7 @@ function hideSidebarSection() {
     d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
     d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
     d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
+    d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
 }
 
 // show sidebar tooltip
@@ -125,7 +141,7 @@ d3.select("#sidebar-list-button-browse")
 
 d3.select("#sidebar-list-button-judge")
     .on("click", function() {
-        //showPopupPanel('', null);
+        showSidebarSection('sidebar-panel-judge');
     })
     .on("mouseover", function() {
         showSidebarTooltip("sidebar-list-button-judge", "Balance my diet");

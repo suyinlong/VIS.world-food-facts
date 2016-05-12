@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 22:08:47
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 00:55:36
+* @Last Modified time: 2016-05-12 11:36:32
 */
 
 .midmask {
@@ -328,6 +328,35 @@
   height: auto;
 }
 
+.browse-country ul {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.browse-country li {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.browse-country li:hover {
+  background-position: 2px 1px;
+  outline: #666666 dashed 1px;
+}
+
+.browse-country li.selected {
+  outline: #666666 solid 1px;
+}
+
 .browse-category ul {
   list-style: none;
   margin-left: 0;
@@ -394,4 +423,22 @@
 
 .browse-category-10 {
   background-image: url(../images/category-10.png);
+}
+
+
+.sidebar-panel-judge {
+  background-color: rgba(255, 255, 255, 1.0);
+  width: 800px;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-panel-judge.hidden {
+  transform: translateX(-800px);
+}
+
+.sidebar-panel-judge.visible {
+  transform: none;
 }
