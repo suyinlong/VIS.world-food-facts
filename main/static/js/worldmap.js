@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-26 17:42:43
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-06 15:51:28
+* @Last Modified time: 2016-05-11 19:52:46
 */
 
 var worldmap_color_pairs = [

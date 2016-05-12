@@ -1,0 +1,1414 @@
+Eigen extraction
+
+# List of eigenvalues (column, country, normalized average)
+  additives_n Romania 0.0680473372781
+  additives_n Malta 0.0512820512821
+  additives_n Kuwait 0.115384615385
+  additives_n Sweden 0.00699300699301
+  additives_n United Kingdom 0.0484234234234
+  additives_n Iran 0.0
+  additives_n Norway 0.0604395604396
+  additives_n Hungary 0.0207100591716
+  additives_n Canada 0.0710560625815
+  additives_n France 0.0742469886629
+  additives_n Polska 0.0
+  additives_n Japan 0.0333333333333
+  additives_n Greece 0.042735042735
+  additives_n Estonia nan
+  additives_n Senegal 0.0737179487179
+  additives_n Israel 0.0384615384615
+  additives_n Argentina 0.0734265734266
+  additives_n Morocco 0.129807692308
+  additives_n Kazakhstan nan
+  additives_n Thailanda 0.0
+  additives_n Russia 0.00480769230769
+  additives_n Belize nan
+  additives_n South Korea 0.0769230769231
+  additives_n Mayotte 0.0
+  additives_n Cambodia 0.00854700854701
+  additives_n Spain 0.0357816864196
+  additives_n Albania 0.010989010989
+  additives_n Hawaii nan
+  additives_n Dominican Republic nan
+  additives_n Egypt 0.211538461538
+  additives_n South Africa 0.0664335664336
+  additives_n Bangladesh nan
+  additives_n Iraq 0.0576923076923
+  additives_n Kenya 0.0576923076923
+  additives_n An 0.0274725274725
+  additives_n Panama nan
+  additives_n Yemen nan
+  additives_n Switzerland 0.0660910518053
+  additives_n Tunisia 0.0863905325444
+  additives_n French Polynesia 0.0769230769231
+  additives_n Colombia 0.0192307692308
+  additives_n Syria nan
+  additives_n Luxembourg 0.0843195266272
+  additives_n New Zealand 0.102335164835
+  additives_n Hong Kong 0.0528846153846
+  additives_n Mongolia nan
+  additives_n China 0.0461538461538
+  additives_n Turkey 0.0115384615385
+  additives_n Philippines 0.0307692307692
+  additives_n Nederland 0.0
+  additives_n Lebanon 0.0230769230769
+  additives_n French Guiana 0.0690559440559
+  additives_n Belarus 0.0
+  additives_n Italy 0.0353490440196
+  additives_n Mauritius 0.0833333333333
+  additives_n Croatia nan
+  additives_n Qatar 0.169230769231
+  additives_n Irlande 0.0
+  additives_n Chile 0.134615384615
+  additives_n Sri Lanka 0.0
+  additives_n Georgia nan
+  additives_n Republic of the Congo nan
+  additives_n Armenia nan
+  additives_n Martinique 0.0594405594406
+  additives_n Slovakia nan
+  additives_n Malaysia 0.0384615384615
+  additives_n Cyprus 0.0
+  additives_n Czech Republic 0.0487179487179
+  additives_n Lithuania 0.0384615384615
+  additives_n Burundi nan
+  additives_n Guatemala nan
+  additives_n Mexico 0.0673076923077
+  additives_n Algeria 0.10989010989
+  additives_n Denmark 0.0612015721505
+  additives_n Germany 0.0299201235065
+  additives_n El Salvador nan
+  additives_n Cook Islands nan
+  additives_n Guadeloupe 0.0644171779141
+  additives_n European Union 0.115384615385
+  additives_n United Arab Emirates 0.0659340659341
+  additives_n Guinea nan
+  additives_n Mozambique nan
+  additives_n Macau nan
+  additives_n Azerbaijan nan
+  additives_n Monaco 0.192307692308
+  additives_n Australia 0.0222955678297
+  additives_n Brunei nan
+  additives_n Serbia 0.0769230769231
+  additives_n New Caledonia 0.0512820512821
+  additives_n Iceland 0.025641025641
+  additives_n Austria 0.0237906423473
+  additives_n Ukraine nan
+  additives_n Burkina Faso 0.0641025641026
+  additives_n Portugal 0.0703826630223
+  additives_n Gabon nan
+  additives_n Mali nan
+  additives_n Peru nan
+  additives_n Andorra 0.00769230769231
+  additives_n Vanuatu nan
+  additives_n Pakistan nan
+  additives_n Ghana nan
+  additives_n Saint Pierre and Miquelon 0.0935550935551
+  additives_n Finland 0.0160256410256
+  additives_n Ireland 0.0274725274725
+  additives_n Latvia nan
+  additives_n Tanzania nan
+  additives_n Togo 0.307692307692
+  additives_n Moldova nan
+  additives_n Poland 0.0888773388773
+  additives_n Venezuela 0.0
+  additives_n Aruba nan
+  additives_n Belgium 0.0725274725275
+  additives_n Brazil 0.0345721694036
+  additives_n Bahrain nan
+  additives_n Sint Maarten nan
+  additives_n Slovenia 0.00961538461538
+  additives_n United States 0.0838695525007
+  additives_n Singapore 0.0384615384615
+  additives_n Taiwan 0.0
+  additives_n Costa Rica nan
+  additives_n Cuba 0.0705128205128
+  additives_n Mauritania nan
+  additives_n Ecuador nan
+  additives_n Thailand 0.026525198939
+  additives_n Netherlands 0.0604395604396
+  additives_n Vietnam nan
+  additives_n Scotland 0.0480769230769
+  additives_n Indonesia 0.0817307692308
+  additives_n Democratic Republic of the Congo nan
+  additives_n Niger nan
+  additives_n Saudi Arabia 0.153846153846
+  additives_n Maldives nan
+  additives_n Bulgaria 0.0480769230769
+  additives_n Jordan nan
+  additives_n India 0.0769230769231
+  energy_100g Romania 0.368178620384
+  energy_100g Malta 0.20198355104
+  energy_100g Kuwait 0.0212868892114
+  energy_100g Sweden 0.284373488147
+  energy_100g United Kingdom 0.271129919673
+  energy_100g Iran nan
+  energy_100g Norway 0.339703273666
+  energy_100g Hungary 0.38017053701
+  energy_100g Canada 0.254224846938
+  energy_100g France 0.260390716028
+  energy_100g Polska 0.0486211901306
+  energy_100g Japan 0.250958282163
+  energy_100g Greece 0.277147380921
+  energy_100g Estonia nan
+  energy_100g Senegal 0.370812167392
+  energy_100g Israel 0.245202386712
+  energy_100g Argentina 0.22103289792
+  energy_100g Morocco 0.310165027146
+  energy_100g Kazakhstan nan
+  energy_100g Thailanda 0.253265602322
+  energy_100g Russia 0.380745041122
+  energy_100g Belize 0.0478955007257
+  energy_100g South Korea 0.369698435736
+  energy_100g Mayotte nan
+  energy_100g Cambodia 0.214713352685
+  energy_100g Spain 0.244586617151
+  energy_100g Albania 0.262119013062
+  energy_100g Hawaii nan
+  energy_100g Dominican Republic nan
+  energy_100g Egypt 0.275278180939
+  energy_100g South Africa 0.36176547207
+  energy_100g Bangladesh nan
+  energy_100g Iraq 0.0459603289792
+  energy_100g Kenya 0.0983551040155
+  energy_100g An 0.435091114336
+  energy_100g Panama nan
+  energy_100g Yemen nan
+  energy_100g Switzerland 0.271851744784
+  energy_100g Tunisia 0.383836690384
+  energy_100g French Polynesia 0.339320270924
+  energy_100g Colombia 0.0529753265602
+  energy_100g Syria nan
+  energy_100g Luxembourg 0.256037332688
+  energy_100g New Zealand 0.316224655847
+  energy_100g Hong Kong 0.183584300919
+  energy_100g Mongolia nan
+  energy_100g China 0.365908724399
+  energy_100g Turkey 0.269732704403
+  energy_100g Philippines 0.291001451379
+  energy_100g Nederland 0.671262699565
+  energy_100g Lebanon 0.292614094501
+  energy_100g French Guiana 0.219202336482
+  energy_100g Belarus nan
+  energy_100g Italy 0.295075089756
+  energy_100g Mauritius 0.388485728108
+  energy_100g Croatia nan
+  energy_100g Qatar 0.197073052733
+  energy_100g Irlande 0.387034349299
+  energy_100g Chile 0.24544428318
+  energy_100g Sri Lanka nan
+  energy_100g Georgia nan
+  energy_100g Republic of the Congo nan
+  energy_100g Armenia nan
+  energy_100g Martinique 0.122964038058
+  energy_100g Slovakia 0.0459603289792
+  energy_100g Malaysia nan
+  energy_100g Cyprus nan
+  energy_100g Czech Republic 0.176453797775
+  energy_100g Lithuania 0.345750685373
+  energy_100g Burundi nan
+  energy_100g Guatemala nan
+  energy_100g Mexico 0.233169189301
+  energy_100g Algeria 0.291787614901
+  energy_100g Denmark 0.302431806101
+  energy_100g Germany 0.264956523705
+  energy_100g El Salvador nan
+  energy_100g Cook Islands nan
+  energy_100g Guadeloupe 0.208607591077
+  energy_100g European Union 0.459603289792
+  energy_100g United Arab Emirates 0.241276608612
+  energy_100g Guinea nan
+  energy_100g Mozambique nan
+  energy_100g Macau nan
+  energy_100g Azerbaijan nan
+  energy_100g Monaco 0.439042089985
+  energy_100g Australia 0.247028554905
+  energy_100g Brunei nan
+  energy_100g Serbia 0.317771327205
+  energy_100g New Caledonia 0.243347847121
+  energy_100g Iceland nan
+  energy_100g Austria 0.263161648866
+  energy_100g Ukraine 0.462022254475
+  energy_100g Burkina Faso 0.0585389453314
+  energy_100g Portugal 0.277816295139
+  energy_100g Gabon nan
+  energy_100g Mali nan
+  energy_100g Peru nan
+  energy_100g Andorra 0.505563618771
+  energy_100g Vanuatu nan
+  energy_100g Pakistan nan
+  energy_100g Ghana nan
+  energy_100g Saint Pierre and Miquelon 0.259441521529
+  energy_100g Finland 0.440795839381
+  energy_100g Ireland 0.437651185293
+  energy_100g Latvia nan
+  energy_100g Tanzania nan
+  energy_100g Togo 0.0553942912433
+  energy_100g Moldova 0.532172230285
+  energy_100g Poland 0.225303739811
+  energy_100g Venezuela 0.0241896468312
+  energy_100g Aruba 0.483792936623
+  energy_100g Belgium 0.276545845561
+  energy_100g Brazil 0.313249953711
+  energy_100g Bahrain nan
+  energy_100g Sint Maarten nan
+  energy_100g Slovenia 0.402999516207
+  energy_100g United States 0.284540284815
+  energy_100g Singapore 0.146796599627
+  energy_100g Taiwan 0.0563014029995
+  energy_100g Costa Rica nan
+  energy_100g Cuba 0.28027600387
+  energy_100g Mauritania nan
+  energy_100g Ecuador nan
+  energy_100g Thailand 0.185970004838
+  energy_100g Netherlands 0.316911250874
+  energy_100g Vietnam nan
+  energy_100g Scotland 0.221800435414
+  energy_100g Indonesia 0.330108047089
+  energy_100g Democratic Republic of the Congo nan
+  energy_100g Niger nan
+  energy_100g Saudi Arabia 0.204765360426
+  energy_100g Maldives nan
+  energy_100g Bulgaria 0.329769392034
+  energy_100g Jordan nan
+  energy_100g India 0.123671383648
+  fat_100g Romania 0.136203185536
+  fat_100g Malta 0.0871287128713
+  fat_100g Kuwait 0.0
+  fat_100g Sweden 0.10004950495
+  fat_100g United Kingdom 0.139716786848
+  fat_100g Iran nan
+  fat_100g Norway 0.128382838284
+  fat_100g Hungary 0.235891089109
+  fat_100g Canada 0.105441486772
+  fat_100g France 0.128162942593
+  fat_100g Polska 0.0
+  fat_100g Japan 0.081199819982
+  fat_100g Greece 0.121242124212
+  fat_100g Estonia nan
+  fat_100g Senegal 0.175006188119
+  fat_100g Israel 0.137293729373
+  fat_100g Argentina 0.0653465346535
+  fat_100g Morocco 0.136908690869
+  fat_100g Kazakhstan nan
+  fat_100g Thailanda 0.20198019802
+  fat_100g Russia 0.249257425743
+  fat_100g Belize 0.0158415841584
+  fat_100g South Korea 0.13201320132
+  fat_100g Mayotte nan
+  fat_100g Cambodia 0.115445544554
+  fat_100g Spain 0.13167699339
+  fat_100g Albania 0.0617821782178
+  fat_100g Hawaii nan
+  fat_100g Dominican Republic nan
+  fat_100g Egypt 0.120297029703
+  fat_100g South Africa 0.284935262757
+  fat_100g Bangladesh nan
+  fat_100g Iraq 0.0
+  fat_100g Kenya 0.0346534653465
+  fat_100g An 0.168646864686
+  fat_100g Panama nan
+  fat_100g Yemen nan
+  fat_100g Switzerland 0.13218027624
+  fat_100g Tunisia 0.236997467189
+  fat_100g French Polynesia 0.132425742574
+  fat_100g Colombia 0.0264356435644
+  fat_100g Syria nan
+  fat_100g Luxembourg 0.146410891089
+  fat_100g New Zealand 0.131071107111
+  fat_100g Hong Kong 0.139851485149
+  fat_100g Mongolia nan
+  fat_100g China 0.131188118812
+  fat_100g Turkey 0.190585058506
+  fat_100g Philippines 0.049504950495
+  fat_100g Nederland 0.574257425743
+  fat_100g Lebanon 0.154207920792
+  fat_100g French Guiana 0.0875702351485
+  fat_100g Belarus nan
+  fat_100g Italy 0.120335714539
+  fat_100g Mauritius nan
+  fat_100g Croatia nan
+  fat_100g Qatar 0.144678217822
+  fat_100g Irlande 0.0584158415842
+  fat_100g Chile 0.0660066006601
+  fat_100g Sri Lanka nan
+  fat_100g Georgia nan
+  fat_100g Republic of the Congo nan
+  fat_100g Armenia nan
+  fat_100g Martinique 0.0789702970297
+  fat_100g Slovakia 0.0
+  fat_100g Malaysia nan
+  fat_100g Cyprus nan
+  fat_100g Czech Republic 0.0794059405941
+  fat_100g Lithuania 0.110891089109
+  fat_100g Burundi nan
+  fat_100g Guatemala nan
+  fat_100g Mexico 0.100072135785
+  fat_100g Algeria 0.154579207921
+  fat_100g Denmark 0.163016541175
+  fat_100g Germany 0.138446278136
+  fat_100g El Salvador nan
+  fat_100g Cook Islands nan
+  fat_100g Guadeloupe 0.0828671617162
+  fat_100g European Union 0.166336633663
+  fat_100g United Arab Emirates 0.112561881188
+  fat_100g Guinea nan
+  fat_100g Mozambique nan
+  fat_100g Macau nan
+  fat_100g Azerbaijan nan
+  fat_100g Monaco 0.153465346535
+  fat_100g Australia 0.109411078786
+  fat_100g Brunei nan
+  fat_100g Serbia 0.110396039604
+  fat_100g New Caledonia 0.127524752475
+  fat_100g Iceland nan
+  fat_100g Austria 0.0995651592186
+  fat_100g Ukraine 0.19801980198
+  fat_100g Burkina Faso 0.0039603960396
+  fat_100g Portugal 0.124067071223
+  fat_100g Gabon nan
+  fat_100g Mali nan
+  fat_100g Peru nan
+  fat_100g Andorra 0.29702970297
+  fat_100g Vanuatu nan
+  fat_100g Pakistan nan
+  fat_100g Ghana nan
+  fat_100g Saint Pierre and Miquelon 0.148223822382
+  fat_100g Finland 0.182425742574
+  fat_100g Ireland 0.392644978784
+  fat_100g Latvia nan
+  fat_100g Tanzania nan
+  fat_100g Togo nan
+  fat_100g Moldova 0.326732673267
+  fat_100g Poland 0.1207248272
+  fat_100g Venezuela 0.0
+  fat_100g Aruba 0.171287128713
+  fat_100g Belgium 0.140986502666
+  fat_100g Brazil 0.123802631579
+  fat_100g Bahrain nan
+  fat_100g Sint Maarten nan
+  fat_100g Slovenia 0.153465346535
+  fat_100g United States 0.13503021367
+  fat_100g Singapore 0.0712541254125
+  fat_100g Taiwan 0.0026402640264
+  fat_100g Costa Rica nan
+  fat_100g Cuba 0.163366336634
+  fat_100g Mauritania nan
+  fat_100g Ecuador nan
+  fat_100g Thailand 0.0720010422095
+  fat_100g Netherlands 0.125815020526
+  fat_100g Vietnam nan
+  fat_100g Scotland 0.0758415841584
+  fat_100g Indonesia 0.112211221122
+  fat_100g Democratic Republic of the Congo nan
+  fat_100g Niger nan
+  fat_100g Saudi Arabia 0.0882838283828
+  fat_100g Maldives nan
+  fat_100g Bulgaria 0.173544554455
+  fat_100g Jordan nan
+  fat_100g India 0.132920792079
+  carbohydrates_100g Romania 0.40518705036
+  carbohydrates_100g Malta 0.187050359712
+  carbohydrates_100g Kuwait 0.0474820143885
+  carbohydrates_100g Sweden 0.258561151079
+  carbohydrates_100g United Kingdom 0.202294213373
+  carbohydrates_100g Iran nan
+  carbohydrates_100g Norway 0.354436450839
+  carbohydrates_100g Hungary 0.228237410072
+  carbohydrates_100g Canada 0.223879256595
+  carbohydrates_100g France 0.200825141397
+  carbohydrates_100g Polska 0.0863309352518
+  carbohydrates_100g Japan 0.312829736211
+  carbohydrates_100g Greece 0.219744204636
+  carbohydrates_100g Estonia nan
+  carbohydrates_100g Senegal 0.324764803542
+  carbohydrates_100g Israel 0.191846522782
+  carbohydrates_100g Argentina 0.251676258993
+  carbohydrates_100g Morocco 0.289024780176
+  carbohydrates_100g Kazakhstan nan
+  carbohydrates_100g Thailanda 0.089928057554
+  carbohydrates_100g Russia 0.246803699897
+  carbohydrates_100g Belize 0.0345323741007
+  carbohydrates_100g South Korea 0.388489208633
+  carbohydrates_100g Mayotte nan
+  carbohydrates_100g Cambodia 0.172559095581
+  carbohydrates_100g Spain 0.178578080625
+  carbohydrates_100g Albania 0.264244604317
+  carbohydrates_100g Hawaii nan
+  carbohydrates_100g Dominican Republic nan
+  carbohydrates_100g Egypt 0.261510791367
+  carbohydrates_100g South Africa 0.14216934145
+  carbohydrates_100g Bangladesh nan
+  carbohydrates_100g Iraq 0.0805755395683
+  carbohydrates_100g Kenya 0.0863309352518
+  carbohydrates_100g An 0.464988009592
+  carbohydrates_100g Panama nan
+  carbohydrates_100g Yemen nan
+  carbohydrates_100g Switzerland 0.216721972422
+  carbohydrates_100g Tunisia 0.317117396991
+  carbohydrates_100g French Polynesia 0.29118705036
+  carbohydrates_100g Colombia 0.0492805755396
+  carbohydrates_100g Syria nan
+  carbohydrates_100g Luxembourg 0.166786570743
+  carbohydrates_100g New Zealand 0.275186396337
+  carbohydrates_100g Hong Kong 0.167176258993
+  carbohydrates_100g Mongolia nan
+  carbohydrates_100g China 0.316996402878
+  carbohydrates_100g Turkey 0.309610311751
+  carbohydrates_100g Philippines 0.439808153477
+  carbohydrates_100g Nederland 0.0791366906475
+  carbohydrates_100g Lebanon 0.0287769784173
+  carbohydrates_100g French Guiana 0.19769229862
+  carbohydrates_100g Belarus nan
+  carbohydrates_100g Italy 0.278688063634
+  carbohydrates_100g Mauritius nan
+  carbohydrates_100g Croatia nan
+  carbohydrates_100g Qatar 0.148201438849
+  carbohydrates_100g Irlande 0.540287769784
+  carbohydrates_100g Chile 0.143980815348
+  carbohydrates_100g Sri Lanka nan
+  carbohydrates_100g Georgia nan
+  carbohydrates_100g Republic of the Congo nan
+  carbohydrates_100g Armenia nan
+  carbohydrates_100g Martinique 0.136594724221
+  carbohydrates_100g Slovakia 0.0805755395683
+  carbohydrates_100g Malaysia nan
+  carbohydrates_100g Cyprus nan
+  carbohydrates_100g Czech Republic 0.153525179856
+  carbohydrates_100g Lithuania 0.370743405276
+  carbohydrates_100g Burundi nan
+  carbohydrates_100g Guatemala nan
+  carbohydrates_100g Mexico 0.241027749229
+  carbohydrates_100g Algeria 0.223920863309
+  carbohydrates_100g Denmark 0.215175442468
+  carbohydrates_100g Germany 0.187567508225
+  carbohydrates_100g El Salvador nan
+  carbohydrates_100g Cook Islands nan
+  carbohydrates_100g Guadeloupe 0.183380690406
+  carbohydrates_100g European Union 0.473021582734
+  carbohydrates_100g United Arab Emirates 0.193165467626
+  carbohydrates_100g Guinea nan
+  carbohydrates_100g Mozambique nan
+  carbohydrates_100g Macau nan
+  carbohydrates_100g Azerbaijan nan
+  carbohydrates_100g Monaco 0.492805755396
+  carbohydrates_100g Australia 0.214563538033
+  carbohydrates_100g Brunei nan
+  carbohydrates_100g Serbia 0.498920863309
+  carbohydrates_100g New Caledonia 0.218385291767
+  carbohydrates_100g Iceland nan
+  carbohydrates_100g Austria 0.264708341435
+  carbohydrates_100g Ukraine 0.479856115108
+  carbohydrates_100g Burkina Faso 0.0992805755396
+  carbohydrates_100g Portugal 0.24237036345
+  carbohydrates_100g Gabon nan
+  carbohydrates_100g Mali nan
+  carbohydrates_100g Peru nan
+  carbohydrates_100g Andorra 0.363309352518
+  carbohydrates_100g Vanuatu nan
+  carbohydrates_100g Pakistan nan
+  carbohydrates_100g Ghana nan
+  carbohydrates_100g Saint Pierre and Miquelon 0.21619945423
+  carbohydrates_100g Finland 0.440827338129
+  carbohydrates_100g Ireland 0.243525179856
+  carbohydrates_100g Latvia nan
+  carbohydrates_100g Tanzania nan
+  carbohydrates_100g Togo 0.0971223021583
+  carbohydrates_100g Moldova 0.352517985612
+  carbohydrates_100g Poland 0.161653318854
+  carbohydrates_100g Venezuela 0.136690647482
+  carbohydrates_100g Aruba 0.503597122302
+  carbohydrates_100g Belgium 0.222702555995
+  carbohydrates_100g Brazil 0.319705124789
+  carbohydrates_100g Bahrain nan
+  carbohydrates_100g Sint Maarten nan
+  carbohydrates_100g Slovenia 0.391366906475
+  carbohydrates_100g United States 0.254619220194
+  carbohydrates_100g Singapore 0.139928057554
+  carbohydrates_100g Taiwan 0.0410071942446
+  carbohydrates_100g Costa Rica nan
+  carbohydrates_100g Cuba 0.220683453237
+  carbohydrates_100g Mauritania nan
+  carbohydrates_100g Ecuador nan
+  carbohydrates_100g Thailand 0.193658273381
+  carbohydrates_100g Netherlands 0.321782238075
+  carbohydrates_100g Vietnam nan
+  carbohydrates_100g Scotland 0.194172661871
+  carbohydrates_100g Indonesia 0.377697841727
+  carbohydrates_100g Democratic Republic of the Congo nan
+  carbohydrates_100g Niger nan
+  carbohydrates_100g Saudi Arabia 0.185851318945
+  carbohydrates_100g Maldives nan
+  carbohydrates_100g Bulgaria 0.224417266187
+  carbohydrates_100g Jordan nan
+  carbohydrates_100g India 0.294604316547
+  sugars_100g Romania 0.211373433584
+  sugars_100g Malta 0.0219047619048
+  sugars_100g Kuwait 0.0628571428571
+  sugars_100g Sweden 0.187669172932
+  sugars_100g United Kingdom 0.159205551794
+  sugars_100g Iran nan
+  sugars_100g Norway 0.219365079365
+  sugars_100g Hungary 0.0333333333333
+  sugars_100g Canada 0.174353510896
+  sugars_100g France 0.120625348822
+  sugars_100g Polska 0.114285714286
+  sugars_100g Japan 0.456952380952
+  sugars_100g Greece 0.119307359307
+  sugars_100g Estonia nan
+  sugars_100g Senegal 0.211904761905
+  sugars_100g Israel 0.0119047619048
+  sugars_100g Argentina 0.082
+  sugars_100g Morocco 0.236149659864
+  sugars_100g Kazakhstan nan
+  sugars_100g Thailanda 0.101904761905
+  sugars_100g Russia 0.0263492063492
+  sugars_100g Belize nan
+  sugars_100g South Korea 0.047619047619
+  sugars_100g Mayotte nan
+  sugars_100g Cambodia 0.110476190476
+  sugars_100g Spain 0.0998133840682
+  sugars_100g Albania 0.0947619047619
+  sugars_100g Hawaii nan
+  sugars_100g Dominican Republic nan
+  sugars_100g Egypt 0.306666666667
+  sugars_100g South Africa 0.0737142857143
+  sugars_100g Bangladesh nan
+  sugars_100g Iraq 0.106666666667
+  sugars_100g Kenya 0.114285714286
+  sugars_100g An 0.341428571429
+  sugars_100g Panama nan
+  sugars_100g Yemen nan
+  sugars_100g Switzerland 0.130146365915
+  sugars_100g Tunisia 0.275979949875
+  sugars_100g French Polynesia 0.26380952381
+  sugars_100g Colombia 0.0652380952381
+  sugars_100g Syria nan
+  sugars_100g Luxembourg 0.140973084886
+  sugars_100g New Zealand 0.202995670996
+  sugars_100g Hong Kong 0.0821428571429
+  sugars_100g Mongolia nan
+  sugars_100g China 0.012380952381
+  sugars_100g Turkey 0.201916666667
+  sugars_100g Philippines 0.457142857143
+  sugars_100g Nederland 0.0609523809524
+  sugars_100g Lebanon 0.0097619047619
+  sugars_100g French Guiana 0.113893452381
+  sugars_100g Belarus nan
+  sugars_100g Italy 0.144717573892
+  sugars_100g Mauritius nan
+  sugars_100g Croatia nan
+  sugars_100g Qatar 0.508571428571
+  sugars_100g Irlande 0.687619047619
+  sugars_100g Chile 0.00238095238095
+  sugars_100g Sri Lanka nan
+  sugars_100g Georgia nan
+  sugars_100g Republic of the Congo nan
+  sugars_100g Armenia nan
+  sugars_100g Martinique 0.146603174603
+  sugars_100g Slovakia 0.106666666667
+  sugars_100g Malaysia nan
+  sugars_100g Cyprus nan
+  sugars_100g Czech Republic 0.180586080586
+  sugars_100g Lithuania 0.288888888889
+  sugars_100g Burundi nan
+  sugars_100g Guatemala nan
+  sugars_100g Mexico 0.0980714285714
+  sugars_100g Algeria 0.353968253968
+  sugars_100g Denmark 0.165224089636
+  sugars_100g Germany 0.124802836672
+  sugars_100g El Salvador nan
+  sugars_100g Cook Islands nan
+  sugars_100g Guadeloupe 0.124793965111
+  sugars_100g European Union 0.261428571429
+  sugars_100g United Arab Emirates 0.318095238095
+  sugars_100g Guinea nan
+  sugars_100g Mozambique nan
+  sugars_100g Macau nan
+  sugars_100g Azerbaijan nan
+  sugars_100g Monaco 0.271428571429
+  sugars_100g Australia 0.150856920252
+  sugars_100g Brunei nan
+  sugars_100g Serbia 0.238095238095
+  sugars_100g New Caledonia 0.13782010582
+  sugars_100g Iceland nan
+  sugars_100g Austria 0.12934888241
+  sugars_100g Ukraine 0.190476190476
+  sugars_100g Burkina Faso nan
+  sugars_100g Portugal 0.138770876467
+  sugars_100g Gabon nan
+  sugars_100g Mali nan
+  sugars_100g Peru nan
+  sugars_100g Andorra 0.447619047619
+  sugars_100g Vanuatu nan
+  sugars_100g Pakistan nan
+  sugars_100g Ghana nan
+  sugars_100g Saint Pierre and Miquelon 0.123323809524
+  sugars_100g Finland 0.305396825397
+  sugars_100g Ireland 0.1
+  sugars_100g Latvia nan
+  sugars_100g Tanzania nan
+  sugars_100g Togo nan
+  sugars_100g Moldova 0.02
+  sugars_100g Poland 0.146691086691
+  sugars_100g Venezuela 0.0857142857143
+  sugars_100g Aruba 0.0761904761905
+  sugars_100g Belgium 0.143919699935
+  sugars_100g Brazil 0.21000952381
+  sugars_100g Bahrain nan
+  sugars_100g Sint Maarten nan
+  sugars_100g Slovenia 0.208
+  sugars_100g United States 0.158148817038
+  sugars_100g Singapore 0.0516666666667
+  sugars_100g Taiwan 0.0561904761905
+  sugars_100g Costa Rica nan
+  sugars_100g Cuba 0.0535714285714
+  sugars_100g Mauritania nan
+  sugars_100g Ecuador nan
+  sugars_100g Thailand 0.0795037593985
+  sugars_100g Netherlands 0.216238548753
+  sugars_100g Vietnam nan
+  sugars_100g Scotland 0.0507482993197
+  sugars_100g Indonesia 0.236507936508
+  sugars_100g Democratic Republic of the Congo nan
+  sugars_100g Niger nan
+  sugars_100g Saudi Arabia 0.507619047619
+  sugars_100g Maldives nan
+  sugars_100g Bulgaria 0.324105820106
+  sugars_100g Jordan nan
+  sugars_100g India 0.159047619048
+  fiber_100g Romania 0.0275015069319
+  fiber_100g Malta 0.0158227848101
+  fiber_100g Kuwait nan
+  fiber_100g Sweden 0.0817104836092
+  fiber_100g United Kingdom 0.0215701739702
+  fiber_100g Iran nan
+  fiber_100g Norway 0.0154711673699
+  fiber_100g Hungary 0.040611814346
+  fiber_100g Canada 0.0269960150023
+  fiber_100g France 0.0286088848096
+  fiber_100g Polska nan
+  fiber_100g Japan 0.0400843881857
+  fiber_100g Greece 0.0279535864979
+  fiber_100g Estonia nan
+  fiber_100g Senegal 0.0346343178622
+  fiber_100g Israel 0.0
+  fiber_100g Argentina 0.0117352320675
+  fiber_100g Morocco 0.0211849507736
+  fiber_100g Kazakhstan nan
+  fiber_100g Thailanda 0.0580168776371
+  fiber_100g Russia 0.00914205344585
+  fiber_100g Belize nan
+  fiber_100g South Korea 0.0
+  fiber_100g Mayotte nan
+  fiber_100g Cambodia 0.0134493670886
+  fiber_100g Spain 0.0397410255717
+  fiber_100g Albania 0.0175808720113
+  fiber_100g Hawaii nan
+  fiber_100g Dominican Republic nan
+  fiber_100g Egypt 0.00580168776371
+  fiber_100g South Africa 0.0296317606444
+  fiber_100g Bangladesh nan
+  fiber_100g Iraq nan
+  fiber_100g Kenya nan
+  fiber_100g An 0.0907172995781
+  fiber_100g Panama nan
+  fiber_100g Yemen nan
+  fiber_100g Switzerland 0.0253008168973
+  fiber_100g Tunisia 0.0215393811533
+  fiber_100g French Polynesia 0.0791139240506
+  fiber_100g Colombia 0.0210970464135
+  fiber_100g Syria nan
+  fiber_100g Luxembourg 0.010864978903
+  fiber_100g New Zealand 0.0514000767165
+  fiber_100g Hong Kong 0.0211075949367
+  fiber_100g Mongolia nan
+  fiber_100g China 0.105485232068
+  fiber_100g Turkey 0.0231540084388
+  fiber_100g Philippines 0.084388185654
+  fiber_100g Nederland 0.0696202531646
+  fiber_100g Lebanon 0.0424578059072
+  fiber_100g French Guiana 0.033373769339
+  fiber_100g Belarus nan
+  fiber_100g Italy 0.0339078511151
+  fiber_100g Mauritius nan
+  fiber_100g Croatia nan
+  fiber_100g Qatar 0.0116033755274
+  fiber_100g Irlande 0.0348101265823
+  fiber_100g Chile 0.0
+  fiber_100g Sri Lanka nan
+  fiber_100g Georgia nan
+  fiber_100g Republic of the Congo nan
+  fiber_100g Armenia nan
+  fiber_100g Martinique 0.0285864978903
+  fiber_100g Slovakia nan
+  fiber_100g Malaysia nan
+  fiber_100g Cyprus nan
+  fiber_100g Czech Republic 0.0163502109705
+  fiber_100g Lithuania 0.0237341772152
+  fiber_100g Burundi nan
+  fiber_100g Guatemala nan
+  fiber_100g Mexico 0.0316832429174
+  fiber_100g Algeria 0.00949367088608
+  fiber_100g Denmark 0.033328145535
+  fiber_100g Germany 0.0431630554724
+  fiber_100g El Salvador nan
+  fiber_100g Cook Islands nan
+  fiber_100g Guadeloupe 0.0235713913632
+  fiber_100g European Union 0.0305907172996
+  fiber_100g United Arab Emirates 0.0316455696203
+  fiber_100g Guinea nan
+  fiber_100g Mozambique nan
+  fiber_100g Macau nan
+  fiber_100g Azerbaijan nan
+  fiber_100g Monaco 0.0400843881857
+  fiber_100g Australia 0.0382475503016
+  fiber_100g Brunei nan
+  fiber_100g Serbia 0.316455696203
+  fiber_100g New Caledonia 0.05531946956
+  fiber_100g Iceland nan
+  fiber_100g Austria 0.0368087941372
+  fiber_100g Ukraine 0.0351265822785
+  fiber_100g Burkina Faso nan
+  fiber_100g Portugal 0.027784126426
+  fiber_100g Gabon nan
+  fiber_100g Mali nan
+  fiber_100g Peru nan
+  fiber_100g Andorra 0.0907172995781
+  fiber_100g Vanuatu nan
+  fiber_100g Pakistan nan
+  fiber_100g Ghana nan
+  fiber_100g Saint Pierre and Miquelon 0.0273558368495
+  fiber_100g Finland 0.0242616033755
+  fiber_100g Ireland 0.0240506329114
+  fiber_100g Latvia nan
+  fiber_100g Tanzania nan
+  fiber_100g Togo nan
+  fiber_100g Moldova 0.045358649789
+  fiber_100g Poland 0.0212948312236
+  fiber_100g Venezuela nan
+  fiber_100g Aruba 0.0147679324895
+  fiber_100g Belgium 0.0371790835095
+  fiber_100g Brazil 0.0442510548523
+  fiber_100g Bahrain nan
+  fiber_100g Sint Maarten nan
+  fiber_100g Slovenia 0.0478199718706
+  fiber_100g United States 0.0316551965356
+  fiber_100g Singapore 0.0159071729958
+  fiber_100g Taiwan 0.0
+  fiber_100g Costa Rica nan
+  fiber_100g Cuba 0.0284810126582
+  fiber_100g Mauritania nan
+  fiber_100g Ecuador nan
+  fiber_100g Thailand 0.0187161826756
+  fiber_100g Netherlands 0.0421010176222
+  fiber_100g Vietnam nan
+  fiber_100g Scotland 0.0323990355636
+  fiber_100g Indonesia 0.0263713080169
+  fiber_100g Democratic Republic of the Congo nan
+  fiber_100g Niger nan
+  fiber_100g Saudi Arabia nan
+  fiber_100g Maldives nan
+  fiber_100g Bulgaria 0.0333936106088
+  fiber_100g Jordan nan
+  fiber_100g India 0.028129395218
+  proteins_100g Romania 0.0848202959831
+  proteins_100g Malta 0.0488372093023
+  proteins_100g Kuwait 0.0
+  proteins_100g Sweden 0.0947093023256
+  proteins_100g United Kingdom 0.0821860465116
+  proteins_100g Iran nan
+  proteins_100g Norway 0.0519379844961
+  proteins_100g Hungary 0.107122093023
+  proteins_100g Canada 0.0636323293938
+  proteins_100g France 0.0879666149447
+  proteins_100g Polska 0.0
+  proteins_100g Japan 0.0503488372093
+  proteins_100g Greece 0.0919896640827
+  proteins_100g Estonia nan
+  proteins_100g Senegal 0.0887718023256
+  proteins_100g Israel 0.0286821705426
+  proteins_100g Argentina 0.0285658914729
+  proteins_100g Morocco 0.0621705426357
+  proteins_100g Kazakhstan nan
+  proteins_100g Thailanda 0.0476744186047
+  proteins_100g Russia 0.10761627907
+  proteins_100g Belize 0.0406976744186
+  proteins_100g South Korea 0.0852713178295
+  proteins_100g Mayotte nan
+  proteins_100g Cambodia 0.0958471760797
+  proteins_100g Spain 0.0673547670206
+  proteins_100g Albania 0.117790697674
+  proteins_100g Hawaii nan
+  proteins_100g Dominican Republic nan
+  proteins_100g Egypt 0.0470930232558
+  proteins_100g South Africa 0.0813953488372
+  proteins_100g Bangladesh nan
+  proteins_100g Iraq 0.0
+  proteins_100g Kenya 0.05
+  proteins_100g An 0.0631782945736
+  proteins_100g Panama nan
+  proteins_100g Yemen nan
+  proteins_100g Switzerland 0.0847822189922
+  proteins_100g Tunisia 0.0729328165375
+  proteins_100g French Polynesia 0.0941860465116
+  proteins_100g Colombia 0.0368023255814
+  proteins_100g Syria nan
+  proteins_100g Luxembourg 0.0802810077519
+  proteins_100g New Zealand 0.0890697674419
+  proteins_100g Hong Kong 0.0341787790698
+  proteins_100g Mongolia nan
+  proteins_100g China 0.0976744186047
+  proteins_100g Turkey 0.093226744186
+  proteins_100g Philippines 0.093023255814
+  proteins_100g Nederland 0.244186046512
+  proteins_100g Lebanon 0.114534883721
+  proteins_100g French Guiana 0.0877296988181
+  proteins_100g Belarus nan
+  proteins_100g Italy 0.0861321467551
+  proteins_100g Mauritius nan
+  proteins_100g Croatia nan
+  proteins_100g Qatar 0.053488372093
+  proteins_100g Irlande 0.0732558139535
+  proteins_100g Chile 0.360755813953
+  proteins_100g Sri Lanka nan
+  proteins_100g Georgia nan
+  proteins_100g Republic of the Congo nan
+  proteins_100g Armenia nan
+  proteins_100g Martinique 0.0444186046512
+  proteins_100g Slovakia 0.0
+  proteins_100g Malaysia nan
+  proteins_100g Cyprus nan
+  proteins_100g Czech Republic 0.0434108527132
+  proteins_100g Lithuania 0.0891472868217
+  proteins_100g Burundi nan
+  proteins_100g Guatemala nan
+  proteins_100g Mexico 0.0441362126246
+  proteins_100g Algeria 0.0668604651163
+  proteins_100g Denmark 0.0898280068483
+  proteins_100g Germany 0.0990062490876
+  proteins_100g El Salvador nan
+  proteins_100g Cook Islands nan
+  proteins_100g Guadeloupe 0.0742632401798
+  proteins_100g European Union 0.0941860465116
+  proteins_100g United Arab Emirates 0.0822259136213
+  proteins_100g Guinea nan
+  proteins_100g Mozambique nan
+  proteins_100g Macau nan
+  proteins_100g Azerbaijan nan
+  proteins_100g Monaco 0.0581395348837
+  proteins_100g Australia 0.0773602957778
+  proteins_100g Brunei nan
+  proteins_100g Serbia 0.0982558139535
+  proteins_100g New Caledonia 0.0496511627907
+  proteins_100g Iceland nan
+  proteins_100g Austria 0.071209625323
+  proteins_100g Ukraine 0.0775581395349
+  proteins_100g Burkina Faso 0.00131782945736
+  proteins_100g Portugal 0.0813664690682
+  proteins_100g Gabon nan
+  proteins_100g Mali nan
+  proteins_100g Peru nan
+  proteins_100g Andorra 0.0697674418605
+  proteins_100g Vanuatu nan
+  proteins_100g Pakistan nan
+  proteins_100g Ghana nan
+  proteins_100g Saint Pierre and Miquelon 0.0535324779471
+  proteins_100g Finland 0.0476744186047
+  proteins_100g Ireland 0.0695348837209
+  proteins_100g Latvia nan
+  proteins_100g Tanzania nan
+  proteins_100g Togo nan
+  proteins_100g Moldova 0.0767441860465
+  proteins_100g Poland 0.0625713032032
+  proteins_100g Venezuela 0.0697674418605
+  proteins_100g Aruba 0.093023255814
+  proteins_100g Belgium 0.071799623803
+  proteins_100g Brazil 0.0748179275832
+  proteins_100g Bahrain nan
+  proteins_100g Sint Maarten nan
+  proteins_100g Slovenia 0.09
+  proteins_100g United States 0.0764869271474
+  proteins_100g Singapore 0.057015503876
+  proteins_100g Taiwan 0.0112403100775
+  proteins_100g Costa Rica nan
+  proteins_100g Cuba 0.0232558139535
+  proteins_100g Mauritania nan
+  proteins_100g Ecuador nan
+  proteins_100g Thailand 0.0817571059432
+  proteins_100g Netherlands 0.0815364086923
+  proteins_100g Vietnam nan
+  proteins_100g Scotland 0.106860465116
+  proteins_100g Indonesia 0.0639534883721
+  proteins_100g Democratic Republic of the Congo nan
+  proteins_100g Niger nan
+  proteins_100g Saudi Arabia 0.0503875968992
+  proteins_100g Maldives nan
+  proteins_100g Bulgaria 0.0531937984496
+  proteins_100g Jordan nan
+  proteins_100g India 0.0982558139535
+  salt_100g Romania 0.0020526967629
+  salt_100g Malta 0.00472440944882
+  salt_100g Kuwait 0.007
+  salt_100g Sweden 0.00199655615416
+  salt_100g United Kingdom 0.0031679939316
+  salt_100g Iran nan
+  salt_100g Norway 0.00220866141732
+  salt_100g Hungary 0.00169291338583
+  salt_100g Canada 0.00453442872658
+  salt_100g France 0.00432050041318
+  salt_100g Polska 0.0
+  salt_100g Japan 0.00885754593176
+  salt_100g Greece 0.00223680028633
+  salt_100g Estonia nan
+  salt_100g Senegal 0.00206666666667
+  salt_100g Israel 0.00598333333333
+  salt_100g Argentina 0.00150735433071
+  salt_100g Morocco 0.00217377952756
+  salt_100g Kazakhstan nan
+  salt_100g Thailanda 0.029
+  salt_100g Russia 0.00323727034121
+  salt_100g Belize nan
+  salt_100g South Korea 0.00813333333333
+  salt_100g Mayotte nan
+  salt_100g Cambodia 0.0031240056243
+  salt_100g Spain 0.00420050225738
+  salt_100g Albania 0.00089434
+  salt_100g Hawaii nan
+  salt_100g Dominican Republic nan
+  salt_100g Egypt 0.001
+  salt_100g South Africa 0.00157538057743
+  salt_100g Bangladesh nan
+  salt_100g Iraq 0.0
+  salt_100g Kenya nan
+  salt_100g An 0.00265800524934
+  salt_100g Panama nan
+  salt_100g Yemen nan
+  salt_100g Switzerland 0.00435223717217
+  salt_100g Tunisia 0.00202199305655
+  salt_100g French Polynesia 0.000557592519685
+  salt_100g Colombia 0.0021342519685
+  salt_100g Syria nan
+  salt_100g Luxembourg 0.00376128500358
+  salt_100g New Zealand 0.0038863722262
+  salt_100g Hong Kong 0.00356852854331
+  salt_100g Mongolia nan
+  salt_100g China 0.0122814444444
+  salt_100g Turkey 0.00296963582677
+  salt_100g Philippines 0.00305657480315
+  salt_100g Nederland 0.00236220472441
+  salt_100g Lebanon 0.00305
+  salt_100g French Guiana 0.00295729130435
+  salt_100g Belarus nan
+  salt_100g Italy 0.00404135512152
+  salt_100g Mauritius nan
+  salt_100g Croatia nan
+  salt_100g Qatar 0.0016
+  salt_100g Irlande 0.0033
+  salt_100g Chile 0.00261783333333
+  salt_100g Sri Lanka nan
+  salt_100g Georgia nan
+  salt_100g Republic of the Congo nan
+  salt_100g Armenia nan
+  salt_100g Martinique 0.00112210781345
+  salt_100g Slovakia 0.0
+  salt_100g Malaysia nan
+  salt_100g Cyprus nan
+  salt_100g Czech Republic 0.0010570563295
+  salt_100g Lithuania 0.00170443569554
+  salt_100g Burundi nan
+  salt_100g Guatemala nan
+  salt_100g Mexico 0.00514150211993
+  salt_100g Algeria 0.000918056692913
+  salt_100g Denmark 0.0050547620183
+  salt_100g Germany 0.00444414350877
+  salt_100g El Salvador nan
+  salt_100g Cook Islands nan
+  salt_100g Guadeloupe 0.00300614707841
+  salt_100g European Union 0.00285433070866
+  salt_100g United Arab Emirates 0.00458534488189
+  salt_100g Guinea nan
+  salt_100g Mozambique nan
+  salt_100g Macau nan
+  salt_100g Azerbaijan nan
+  salt_100g Monaco 0.0038
+  salt_100g Australia 0.00507547994918
+  salt_100g Brunei nan
+  salt_100g Serbia 0.000817086614173
+  salt_100g New Caledonia 0.000618275590551
+  salt_100g Iceland nan
+  salt_100g Austria 0.0254198886115
+  salt_100g Ukraine 0.00425196850394
+  salt_100g Burkina Faso nan
+  salt_100g Portugal 0.00559939716931
+  salt_100g Gabon nan
+  salt_100g Mali nan
+  salt_100g Peru nan
+  salt_100g Andorra 0.0001
+  salt_100g Vanuatu nan
+  salt_100g Pakistan nan
+  salt_100g Ghana nan
+  salt_100g Saint Pierre and Miquelon 0.00184275215598
+  salt_100g Finland 0.00200793700787
+  salt_100g Ireland 0.00337048931384
+  salt_100g Latvia nan
+  salt_100g Tanzania nan
+  salt_100g Togo nan
+  salt_100g Moldova 0.00472440944882
+  salt_100g Poland 0.00597966224313
+  salt_100g Venezuela nan
+  salt_100g Aruba 0.00697
+  salt_100g Belgium 0.00386240387675
+  salt_100g Brazil 0.0117076241354
+  salt_100g Bahrain nan
+  salt_100g Sint Maarten nan
+  salt_100g Slovenia 0.00237322834646
+  salt_100g United States 0.00586933321618
+  salt_100g Singapore 0.0117358923885
+  salt_100g Taiwan 0.0003195
+  salt_100g Costa Rica nan
+  salt_100g Cuba 0.00298106299213
+  salt_100g Mauritania nan
+  salt_100g Ecuador nan
+  salt_100g Thailand 0.0247714421881
+  salt_100g Netherlands 0.00884602040816
+  salt_100g Vietnam nan
+  salt_100g Scotland 0.000914285714286
+  salt_100g Indonesia 0.00500196850394
+  salt_100g Democratic Republic of the Congo nan
+  salt_100g Niger nan
+  salt_100g Saudi Arabia 0.000354330708661
+  salt_100g Maldives nan
+  salt_100g Bulgaria 0.00137526771654
+  salt_100g Jordan nan
+  salt_100g India 0.0010175
+  sodium_100g Romania 0.0020526967629
+  sodium_100g Malta 0.00472440944882
+  sodium_100g Kuwait 0.007
+  sodium_100g Sweden 0.00199655615416
+  sodium_100g United Kingdom 0.00317271480441
+  sodium_100g Iran nan
+  sodium_100g Norway 0.00220866141732
+  sodium_100g Hungary 0.00169291338583
+  sodium_100g Canada 0.00453681106435
+  sodium_100g France 0.00430572628449
+  sodium_100g Polska 0.0
+  sodium_100g Japan 0.00885676666667
+  sodium_100g Greece 0.00223680028633
+  sodium_100g Estonia nan
+  sodium_100g Senegal 0.00206666666667
+  sodium_100g Israel 0.00598333333333
+  sodium_100g Argentina 0.0015085
+  sodium_100g Morocco 0.00217377952756
+  sodium_100g Kazakhstan nan
+  sodium_100g Thailanda 0.029
+  sodium_100g Russia 0.00323727034121
+  sodium_100g Belize nan
+  sodium_100g South Korea 0.00813333333333
+  sodium_100g Mayotte nan
+  sodium_100g Cambodia 0.00312614285714
+  sodium_100g Spain 0.00420051444445
+  sodium_100g Albania 0.00089434
+  sodium_100g Hawaii nan
+  sodium_100g Dominican Republic nan
+  sodium_100g Egypt 0.001
+  sodium_100g South Africa 0.00157533333333
+  sodium_100g Bangladesh nan
+  sodium_100g Iraq 0.0
+  sodium_100g Kenya nan
+  sodium_100g An 0.00265800524934
+  sodium_100g Panama nan
+  sodium_100g Yemen nan
+  sodium_100g Switzerland 0.00435215263389
+  sodium_100g Tunisia 0.00202212727273
+  sodium_100g French Polynesia 0.000557592519685
+  sodium_100g Colombia 0.0021335
+  sodium_100g Syria nan
+  sodium_100g Luxembourg 0.00376115615605
+  sodium_100g New Zealand 0.00388636363636
+  sodium_100g Hong Kong 0.0035675
+  sodium_100g Mongolia nan
+  sodium_100g China 0.0122814444444
+  sodium_100g Turkey 0.00297253937008
+  sodium_100g Philippines 0.003055
+  sodium_100g Nederland 0.00236220472441
+  sodium_100g Lebanon 0.00305
+  sodium_100g French Guiana 0.00295741266689
+  sodium_100g Belarus nan
+  sodium_100g Italy 0.00404135503289
+  sodium_100g Mauritius nan
+  sodium_100g Croatia nan
+  sodium_100g Qatar 0.0016
+  sodium_100g Irlande 0.0033
+  sodium_100g Chile 0.00261783333333
+  sodium_100g Sri Lanka nan
+  sodium_100g Georgia nan
+  sodium_100g Republic of the Congo nan
+  sodium_100g Armenia nan
+  sodium_100g Martinique 0.00112210781345
+  sodium_100g Slovakia 0.0
+  sodium_100g Malaysia nan
+  sodium_100g Cyprus nan
+  sodium_100g Czech Republic 0.0010570563295
+  sodium_100g Lithuania 0.00170443569554
+  sodium_100g Burundi nan
+  sodium_100g Guatemala nan
+  sodium_100g Mexico 0.0051426
+  sodium_100g Algeria 0.000918056692913
+  sodium_100g Denmark 0.00505440710862
+  sodium_100g Germany 0.00444413557199
+  sodium_100g El Salvador nan
+  sodium_100g Cook Islands nan
+  sodium_100g Guadeloupe 0.00300645629757
+  sodium_100g European Union 0.00285433070866
+  sodium_100g United Arab Emirates 0.0045844
+  sodium_100g Guinea nan
+  sodium_100g Mozambique nan
+  sodium_100g Macau nan
+  sodium_100g Azerbaijan nan
+  sodium_100g Monaco 0.0038
+  sodium_100g Australia 0.00507602277496
+  sodium_100g Brunei nan
+  sodium_100g Serbia 0.000817086614173
+  sodium_100g New Caledonia 0.000618275590551
+  sodium_100g Iceland nan
+  sodium_100g Austria 0.0254198886115
+  sodium_100g Ukraine 0.00423
+  sodium_100g Burkina Faso nan
+  sodium_100g Portugal 0.00559931394181
+  sodium_100g Gabon nan
+  sodium_100g Mali nan
+  sodium_100g Peru nan
+  sodium_100g Andorra 0.0001
+  sodium_100g Vanuatu nan
+  sodium_100g Pakistan nan
+  sodium_100g Ghana nan
+  sodium_100g Saint Pierre and Miquelon 0.0018424671916
+  sodium_100g Finland 0.00200793700787
+  sodium_100g Ireland 0.00337034308211
+  sodium_100g Latvia nan
+  sodium_100g Tanzania nan
+  sodium_100g Togo nan
+  sodium_100g Moldova 0.00472440944882
+  sodium_100g Poland 0.00597969143461
+  sodium_100g Venezuela nan
+  sodium_100g Aruba 0.00697
+  sodium_100g Belgium 0.00386223259414
+  sodium_100g Brazil 0.0117057322785
+  sodium_100g Bahrain nan
+  sodium_100g Sint Maarten nan
+  sodium_100g Slovenia 0.00237322834646
+  sodium_100g United States 0.00586705399872
+  sodium_100g Singapore 0.0117356666667
+  sodium_100g Taiwan 0.0003195
+  sodium_100g Costa Rica nan
+  sodium_100g Cuba 0.00298115
+  sodium_100g Mauritania nan
+  sodium_100g Ecuador nan
+  sodium_100g Thailand 0.0247754736842
+  sodium_100g Netherlands 0.00884610075526
+  sodium_100g Vietnam nan
+  sodium_100g Scotland 0.000914285714286
+  sodium_100g Indonesia 0.005
+  sodium_100g Democratic Republic of the Congo nan
+  sodium_100g Niger nan
+  sodium_100g Saudi Arabia 0.000354330708661
+  sodium_100g Maldives nan
+  sodium_100g Bulgaria 0.00137526771654
+  sodium_100g Jordan nan
+  sodium_100g India 0.0010175
+  alcohol_100g Romania 0.023493360572
+  alcohol_100g Malta 0.127681307457
+  alcohol_100g Kuwait nan
+  alcohol_100g Sweden 0.0494939177268
+  alcohol_100g United Kingdom 0.126289204088
+  alcohol_100g Iran nan
+  alcohol_100g Norway 0.0531154239019
+  alcohol_100g Hungary 0.0723527408921
+  alcohol_100g Canada 0.0229826353422
+  alcohol_100g France 0.0865666642654
+  alcohol_100g Polska nan
+  alcohol_100g Japan nan
+  alcohol_100g Greece 0.0682669390535
+  alcohol_100g Estonia nan
+  alcohol_100g Senegal nan
+  alcohol_100g Israel 0.0510725229826
+  alcohol_100g Argentina 0.0752042900919
+  alcohol_100g Morocco 0.0551583248212
+  alcohol_100g Kazakhstan nan
+  alcohol_100g Thailanda nan
+  alcohol_100g Russia 0.119305413687
+  alcohol_100g Belize nan
+  alcohol_100g South Korea 0.0
+  alcohol_100g Mayotte nan
+  alcohol_100g Cambodia 0.0510725229826
+  alcohol_100g Spain 0.0533349880194
+  alcohol_100g Albania 0.0689479060266
+  alcohol_100g Hawaii nan
+  alcohol_100g Dominican Republic nan
+  alcohol_100g Egypt nan
+  alcohol_100g South Africa 0.0
+  alcohol_100g Bangladesh nan
+  alcohol_100g Iraq nan
+  alcohol_100g Kenya nan
+  alcohol_100g An 0.127681307457
+  alcohol_100g Panama nan
+  alcohol_100g Yemen nan
+  alcohol_100g Switzerland 0.0167732917585
+  alcohol_100g Tunisia 0.0
+  alcohol_100g French Polynesia nan
+  alcohol_100g Colombia nan
+  alcohol_100g Syria nan
+  alcohol_100g Luxembourg 0.061695607763
+  alcohol_100g New Zealand 0.0635852911134
+  alcohol_100g Hong Kong 0.00510725229826
+  alcohol_100g Mongolia nan
+  alcohol_100g China 0.0612870275792
+  alcohol_100g Turkey nan
+  alcohol_100g Philippines nan
+  alcohol_100g Nederland nan
+  alcohol_100g Lebanon nan
+  alcohol_100g French Guiana 0.0329060265577
+  alcohol_100g Belarus nan
+  alcohol_100g Italy 0.115812053115
+  alcohol_100g Mauritius 0.0510725229826
+  alcohol_100g Croatia nan
+  alcohol_100g Qatar nan
+  alcohol_100g Irlande 0.0
+  alcohol_100g Chile 0.0
+  alcohol_100g Sri Lanka nan
+  alcohol_100g Georgia nan
+  alcohol_100g Republic of the Congo nan
+  alcohol_100g Armenia 0.408580183861
+  alcohol_100g Martinique 0.0255362614913
+  alcohol_100g Slovakia nan
+  alcohol_100g Malaysia nan
+  alcohol_100g Cyprus nan
+  alcohol_100g Czech Republic 0.0275791624106
+  alcohol_100g Lithuania nan
+  alcohol_100g Burundi nan
+  alcohol_100g Guatemala nan
+  alcohol_100g Mexico nan
+  alcohol_100g Algeria nan
+  alcohol_100g Denmark 0.188908249715
+  alcohol_100g Germany 0.0626326509392
+  alcohol_100g El Salvador nan
+  alcohol_100g Cook Islands nan
+  alcohol_100g Guadeloupe 0.144535240041
+  alcohol_100g European Union nan
+  alcohol_100g United Arab Emirates nan
+  alcohol_100g Guinea nan
+  alcohol_100g Mozambique nan
+  alcohol_100g Macau nan
+  alcohol_100g Azerbaijan nan
+  alcohol_100g Monaco nan
+  alcohol_100g Australia 0.127511065713
+  alcohol_100g Brunei nan
+  alcohol_100g Serbia nan
+  alcohol_100g New Caledonia nan
+  alcohol_100g Iceland nan
+  alcohol_100g Austria 0.145166135913
+  alcohol_100g Ukraine 0.0459652706844
+  alcohol_100g Burkina Faso nan
+  alcohol_100g Portugal 0.129894450119
+  alcohol_100g Gabon nan
+  alcohol_100g Mali nan
+  alcohol_100g Peru nan
+  alcohol_100g Andorra 0.127681307457
+  alcohol_100g Vanuatu nan
+  alcohol_100g Pakistan nan
+  alcohol_100g Ghana nan
+  alcohol_100g Saint Pierre and Miquelon 0.0
+  alcohol_100g Finland 0.0674157303371
+  alcohol_100g Ireland 0.0247701736466
+  alcohol_100g Latvia nan
+  alcohol_100g Tanzania nan
+  alcohol_100g Togo nan
+  alcohol_100g Moldova nan
+  alcohol_100g Poland 0.163432073544
+  alcohol_100g Venezuela nan
+  alcohol_100g Aruba nan
+  alcohol_100g Belgium 0.056366911243
+  alcohol_100g Brazil 0.0317784587448
+  alcohol_100g Bahrain nan
+  alcohol_100g Sint Maarten nan
+  alcohol_100g Slovenia 0.050051072523
+  alcohol_100g United States 0.0746842223274
+  alcohol_100g Singapore 0.0510725229826
+  alcohol_100g Taiwan 0.0
+  alcohol_100g Costa Rica nan
+  alcohol_100g Cuba 0.408580183861
+  alcohol_100g Mauritania nan
+  alcohol_100g Ecuador nan
+  alcohol_100g Thailand 0.0255362614913
+  alcohol_100g Netherlands 0.0602655771195
+  alcohol_100g Vietnam nan
+  alcohol_100g Scotland 0.0919305413687
+  alcohol_100g Indonesia nan
+  alcohol_100g Democratic Republic of the Congo nan
+  alcohol_100g Niger nan
+  alcohol_100g Saudi Arabia nan
+  alcohol_100g Maldives nan
+  alcohol_100g Bulgaria nan
+  alcohol_100g Jordan nan
+  alcohol_100g India 0.0
+
+# Matrix of eigenvalues
+  row = 53 col = 10
+0.010989010989 0.262119013062 0.0617821782178 0.264244604317 0.0947619047619 0.0175808720113 0.117790697674 0.00089434 0.00089434 0.0689479060266 
+0.0274725274725 0.435091114336 0.168646864686 0.464988009592 0.341428571429 0.0907172995781 0.0631782945736 0.00265800524934 0.00265800524934 0.127681307457 
+0.00769230769231 0.505563618771 0.29702970297 0.363309352518 0.447619047619 0.0907172995781 0.0697674418605 0.0001 0.0001 0.127681307457 
+0.0734265734266 0.22103289792 0.0653465346535 0.251676258993 0.082 0.0117352320675 0.0285658914729 0.00150735433071 0.0015085 0.0752042900919 
+0.0222955678297 0.247028554905 0.109411078786 0.214563538033 0.150856920252 0.0382475503016 0.0773602957778 0.00507547994918 0.00507602277496 0.127511065713 
+0.0237906423473 0.263161648866 0.0995651592186 0.264708341435 0.12934888241 0.0368087941372 0.071209625323 0.0254198886115 0.0254198886115 0.145166135913 
+0.0725274725275 0.276545845561 0.140986502666 0.222702555995 0.143919699935 0.0371790835095 0.071799623803 0.00386240387675 0.00386223259414 0.056366911243 
+0.0345721694036 0.313249953711 0.123802631579 0.319705124789 0.21000952381 0.0442510548523 0.0748179275832 0.0117076241354 0.0117057322785 0.0317784587448 
+0.00854700854701 0.214713352685 0.115445544554 0.172559095581 0.110476190476 0.0134493670886 0.0958471760797 0.0031240056243 0.00312614285714 0.0510725229826 
+0.0710560625815 0.254224846938 0.105441486772 0.223879256595 0.174353510896 0.0269960150023 0.0636323293938 0.00453442872658 0.00453681106435 0.0229826353422 
+0.134615384615 0.24544428318 0.0660066006601 0.143980815348 0.00238095238095 0.0 0.360755813953 0.00261783333333 0.00261783333333 0.0 
+0.0461538461538 0.365908724399 0.131188118812 0.316996402878 0.012380952381 0.105485232068 0.0976744186047 0.0122814444444 0.0122814444444 0.0612870275792 
+0.0705128205128 0.28027600387 0.163366336634 0.220683453237 0.0535714285714 0.0284810126582 0.0232558139535 0.00298106299213 0.00298115 0.408580183861 
+0.0487179487179 0.176453797775 0.0794059405941 0.153525179856 0.180586080586 0.0163502109705 0.0434108527132 0.0010570563295 0.0010570563295 0.0275791624106 
+0.0612015721505 0.302431806101 0.163016541175 0.215175442468 0.165224089636 0.033328145535 0.0898280068483 0.0050547620183 0.00505440710862 0.188908249715 
+0.0160256410256 0.440795839381 0.182425742574 0.440827338129 0.305396825397 0.0242616033755 0.0476744186047 0.00200793700787 0.00200793700787 0.0674157303371 
+0.0742469886629 0.260390716028 0.128162942593 0.200825141397 0.120625348822 0.0286088848096 0.0879666149447 0.00432050041318 0.00430572628449 0.0865666642654 
+0.0690559440559 0.219202336482 0.0875702351485 0.19769229862 0.113893452381 0.033373769339 0.0877296988181 0.00295729130435 0.00295741266689 0.0329060265577 
+0.0299201235065 0.264956523705 0.138446278136 0.187567508225 0.124802836672 0.0431630554724 0.0990062490876 0.00444414350877 0.00444413557199 0.0626326509392 
+0.042735042735 0.277147380921 0.121242124212 0.219744204636 0.119307359307 0.0279535864979 0.0919896640827 0.00223680028633 0.00223680028633 0.0682669390535 
+0.0644171779141 0.208607591077 0.0828671617162 0.183380690406 0.124793965111 0.0235713913632 0.0742632401798 0.00300614707841 0.00300645629757 0.144535240041 
+0.0528846153846 0.183584300919 0.139851485149 0.167176258993 0.0821428571429 0.0211075949367 0.0341787790698 0.00356852854331 0.0035675 0.00510725229826 
+0.0207100591716 0.38017053701 0.235891089109 0.228237410072 0.0333333333333 0.040611814346 0.107122093023 0.00169291338583 0.00169291338583 0.0723527408921 
+0.0769230769231 0.123671383648 0.132920792079 0.294604316547 0.159047619048 0.028129395218 0.0982558139535 0.0010175 0.0010175 0.0 
+0.0274725274725 0.437651185293 0.392644978784 0.243525179856 0.1 0.0240506329114 0.0695348837209 0.00337048931384 0.00337034308211 0.0247701736466 
+0.0 0.387034349299 0.0584158415842 0.540287769784 0.687619047619 0.0348101265823 0.0732558139535 0.0033 0.0033 0.0 
+0.0384615384615 0.245202386712 0.137293729373 0.191846522782 0.0119047619048 0.0 0.0286821705426 0.00598333333333 0.00598333333333 0.0510725229826 
+0.0353490440196 0.295075089756 0.120335714539 0.278688063634 0.144717573892 0.0339078511151 0.0861321467551 0.00404135512152 0.00404135503289 0.115812053115 
+0.0843195266272 0.256037332688 0.146410891089 0.166786570743 0.140973084886 0.010864978903 0.0802810077519 0.00376128500358 0.00376115615605 0.061695607763 
+0.0512820512821 0.20198355104 0.0871287128713 0.187050359712 0.0219047619048 0.0158227848101 0.0488372093023 0.00472440944882 0.00472440944882 0.127681307457 
+0.0594405594406 0.122964038058 0.0789702970297 0.136594724221 0.146603174603 0.0285864978903 0.0444186046512 0.00112210781345 0.00112210781345 0.0255362614913 
+0.129807692308 0.310165027146 0.136908690869 0.289024780176 0.236149659864 0.0211849507736 0.0621705426357 0.00217377952756 0.00217377952756 0.0551583248212 
+0.0604395604396 0.316911250874 0.125815020526 0.321782238075 0.216238548753 0.0421010176222 0.0815364086923 0.00884602040816 0.00884610075526 0.0602655771195 
+0.102335164835 0.316224655847 0.131071107111 0.275186396337 0.202995670996 0.0514000767165 0.0890697674419 0.0038863722262 0.00388636363636 0.0635852911134 
+0.0604395604396 0.339703273666 0.128382838284 0.354436450839 0.219365079365 0.0154711673699 0.0519379844961 0.00220866141732 0.00220866141732 0.0531154239019 
+0.0888773388773 0.225303739811 0.1207248272 0.161653318854 0.146691086691 0.0212948312236 0.0625713032032 0.00597966224313 0.00597969143461 0.163432073544 
+0.0703826630223 0.277816295139 0.124067071223 0.24237036345 0.138770876467 0.027784126426 0.0813664690682 0.00559939716931 0.00559931394181 0.129894450119 
+0.0680473372781 0.368178620384 0.136203185536 0.40518705036 0.211373433584 0.0275015069319 0.0848202959831 0.0020526967629 0.0020526967629 0.023493360572 
+0.00480769230769 0.380745041122 0.249257425743 0.246803699897 0.0263492063492 0.00914205344585 0.10761627907 0.00323727034121 0.00323727034121 0.119305413687 
+0.0935550935551 0.259441521529 0.148223822382 0.21619945423 0.123323809524 0.0273558368495 0.0535324779471 0.00184275215598 0.0018424671916 0.0 
+0.0480769230769 0.221800435414 0.0758415841584 0.194172661871 0.0507482993197 0.0323990355636 0.106860465116 0.000914285714286 0.000914285714286 0.0919305413687 
+0.0384615384615 0.146796599627 0.0712541254125 0.139928057554 0.0516666666667 0.0159071729958 0.057015503876 0.0117358923885 0.0117356666667 0.0510725229826 
+0.00961538461538 0.402999516207 0.153465346535 0.391366906475 0.208 0.0478199718706 0.09 0.00237322834646 0.00237322834646 0.050051072523 
+0.0664335664336 0.36176547207 0.284935262757 0.14216934145 0.0737142857143 0.0296317606444 0.0813953488372 0.00157538057743 0.00157533333333 0.0 
+0.0769230769231 0.369698435736 0.13201320132 0.388489208633 0.047619047619 0.0 0.0852713178295 0.00813333333333 0.00813333333333 0.0 
+0.0357816864196 0.244586617151 0.13167699339 0.178578080625 0.0998133840682 0.0397410255717 0.0673547670206 0.00420050225738 0.00420051444445 0.0533349880194 
+0.00699300699301 0.284373488147 0.10004950495 0.258561151079 0.187669172932 0.0817104836092 0.0947093023256 0.00199655615416 0.00199655615416 0.0494939177268 
+0.0660910518053 0.271851744784 0.13218027624 0.216721972422 0.130146365915 0.0253008168973 0.0847822189922 0.00435223717217 0.00435215263389 0.0167732917585 
+0.0 0.0563014029995 0.0026402640264 0.0410071942446 0.0561904761905 0.0 0.0112403100775 0.0003195 0.0003195 0.0 
+0.026525198939 0.185970004838 0.0720010422095 0.193658273381 0.0795037593985 0.0187161826756 0.0817571059432 0.0247714421881 0.0247754736842 0.0255362614913 
+0.0863905325444 0.383836690384 0.236997467189 0.317117396991 0.275979949875 0.0215393811533 0.0729328165375 0.00202199305655 0.00202212727273 0.0 
+0.0484234234234 0.271129919673 0.139716786848 0.202294213373 0.159205551794 0.0215701739702 0.0821860465116 0.0031679939316 0.00317271480441 0.126289204088 
+0.0838695525007 0.284540284815 0.13503021367 0.254619220194 0.158148817038 0.0316551965356 0.0764869271474 0.00586933321618 0.00586705399872 0.0746842223274 
+
+# Fixed matrix of eigenvalues
+  row = 53 col = 10
+  fix row = 0 fix col = 0
+

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-06 12:10:33
+* @Last Modified time: 2016-05-11 22:21:35
 */
 
 function $(id) { return document.getElementById(id); }
@@ -23,6 +23,8 @@ function hideSidebarSection() {
 
     d3.select(".sidebar-panel-link-sub").attr("class", "sidebar-panel-link-sub hidden");
     d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
+    d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
+    d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
 }
 
 // show sidebar tooltip
@@ -112,7 +114,7 @@ d3.select("#sidebar-list-button-link")
 
 d3.select("#sidebar-list-button-browse")
     .on("click", function() {
-        //showPopupPanel('', null);
+        showSidebarSection('sidebar-panel-browse');
     })
     .on("mouseover", function() {
         showSidebarTooltip("sidebar-list-button-browse", "Browse the food");

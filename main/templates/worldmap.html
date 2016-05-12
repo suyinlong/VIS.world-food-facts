@@ -9,11 +9,11 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
 
 
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.panel.css" rel="stylesheet" type="text/css">
-  <link href="css/article.css" rel="stylesheet" type="text/css">
-  <link href="css/popup.panel.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/main.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/sidebar.panel.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/article.css" rel="stylesheet" type="text/css">
+  <link href="./static/css/popup.panel.css" rel="stylesheet" type="text/css">
   <title>World Food Facts</title>
 </head>
 
@@ -61,9 +61,24 @@
         <h3>Play speed</h3>
         Now is fixed @ 100.
         </div>
-        <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
+      </section>
+      <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
           <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
-        </section>
+      </section>
+      <section class="sidebar-panel-browse hidden" id="sidebar-panel-browse">
+        <div class="sidebar-panel-body">
+          <h1>Browse</h1>
+          <h3>Country</h3>
+          <a href="#" onclick="browse_setCountry('China');">China</a><br/>
+          <a href="#" onclick="browse_setCountry('Germany');">Germany</a><br/>
+          <h3>Category</h3>
+          <a href="#" onclick="browse_setCategory('Sugary snacks');">Sugary snacks</a><br/>
+          <a href="#" onclick="browse_setCategory('Plant-based foods and beverages');">Plant-based foods and beverages</a><br/>
+          <h3>Result</h3>
+          <a href="#" onclick="browse_query();">Query</a>
+        </div>
+      </section>
+      <section class="sidebar-panel-browse-sub hidden" id="sidebar-panel-browse-sub">
       </section>
     </div>
 
@@ -127,18 +142,19 @@
 
 
 
-  <script src="lib/d3/d3.v3.min.js"></script>
-  <script src="lib/topojson/topojson.v1.min.js"></script>
-  <script language="Javascript" src="lib/datamaps/datamaps.world.min.js"></script>
-  <script language="Javascript" src="js/country.data.js"></script>
-  <script language="Javascript" src="js/link.data.js"></script>
+  <script src="./static/lib/d3/d3.v3.min.js"></script>
+  <script src="./static/lib/topojson/topojson.v1.min.js"></script>
+  <script language="Javascript" src="./static/lib/datamaps/datamaps.world.min.js"></script>
+  <script language="Javascript" src="./static/js/country.data.js"></script>
+  <script language="Javascript" src="./static/js/link.data.js"></script>
 
-  <script language="Javascript" src="js/worldmap.js"></script>
-  <script language="Javascript" src="js/panel.js"></script>
-  <script language="Javascript" src="js/sidebar.js"></script>
-  <script language="Javascript" src="js/sidebar.link.chart.js"></script>
+  <script language="Javascript" src="./static/js/worldmap.js"></script>
+  <script language="Javascript" src="./static/js/panel.js"></script>
+  <script language="Javascript" src="./static/js/sidebar.js"></script>
+  <script language="Javascript" src="./static/js/sidebar.link.chart.js"></script>
+  <script language="Javascript" src="./static/js/sidebar.browse.list.js"></script>
 
-  <script language="Javascript" src="js/panel.info.chart.js"></script>
-  <script language="Javascript" src="js/panel.compare.chart.js"></script>
+  <script language="Javascript" src="./static/js/panel.info.chart.js"></script>
+  <script language="Javascript" src="./static/js/panel.compare.chart.js"></script>
 </body>
 </html>
