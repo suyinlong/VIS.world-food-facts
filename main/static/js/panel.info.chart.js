@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-29 00:52:38
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-06 14:01:26
+* @Last Modified time: 2016-05-12 21:29:45
 */
 
 // all animation duration
@@ -57,7 +57,7 @@ function info_clearSvg(id) {
 
 // make new info svg
 function info_makeSvg(id, width, height, frame) {
-    info_clearSvg();
+    info_clearSvg(id);
     var newSvg = d3.select("#" + id)
         .append("svg")
         .attr("width", width + 2 * frame)

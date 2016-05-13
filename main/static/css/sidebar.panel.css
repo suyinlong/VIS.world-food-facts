@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 22:08:47
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 19:42:52
+* @Last Modified time: 2016-05-12 22:50:33
 */
 
 .midmask {
@@ -352,7 +352,7 @@
 }
 
 .sidebar-panel-judge-sub.hidden {
-  transform: translateX(-1485px);
+  transform: translateX(-1585px);
 }
 
 .sidebar-panel-judge-sub.visible {
@@ -546,4 +546,29 @@
 .judge-foodcart-body {
   width: 520px;
   height: 280px;
+}
+
+.judge-foodcart-body td strong {
+  padding-top: 5px;
+}
+
+.judge-body-data {
+  width: 100%;
+  height: 400px;
+}
+
+.judge-body-data-bar-back {
+  fill: #dddddd;
+  rx: 3px;
+  ry: 3px;
+}
+
+.judge-body-data-bar-world {
+  fill: #cccccc;
+  opacity: 0.7;
+}
+
+.judge-body-data-bar {
+  rx: 3px;
+  ry: 3px;
 }

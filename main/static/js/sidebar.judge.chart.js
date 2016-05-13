@@ -2,25 +2,209 @@
 * @Author: Yinlong Su
 * @Date:   2016-05-12 14:57:23
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 19:35:41
+* @Last Modified time: 2016-05-12 22:44:25
 */
-var judge_queryaddress = '/query';
+
+// all animation duration
+var judge_duration = 500;
+
+// judge request addresses
+var judge_queryAddress = '/query';
+var judge_calculateAddress = '/calc';
+
+// auto update switch
 var judge_update = 0;
 
+// current country & category
 var judge_country = 'all';
 var judge_category = 'all';
 
+// shopping list image size
 var judge_list_image_width = 100;
 var judge_list_image_height = 100;
 
+// shopping cart image size
 var judge_cart_image_width = 50;
 var judge_cart_image_height = 50;
 
+// detail columns
 var judge_details_columns = ['brands', 'origins', 'manufacturing_places', 'labels', 'cities', 'ingredients_text', 'allergens_en', 'additives_en', 'energy_100g'];
 
+// shopping cart
 var judge_cart = [];
+var judge_std_dataset = dataset_normalized_world;
+var judge_cart_ori_dataset;
+var judge_cart_nor_dataset;
+
+// bar chart dataset labels
+var judge_bar_dataset_label = ['Additives', 'Energy', 'Fat', 'Carbohydrates', 'Sugars', 'Fiber', 'Proteins', 'Salt', 'Sodium', 'Alcohol'];
+
+// bar chart setting: width, height, frame, width scaler
+var judge_bar_width = 320;
+var judge_bar_height = 400;
+var judge_bar_frame = 0;
+var judge_bar_scaleW;
+
+// bar chart transform -> move to spare some space
+var judge_bar_transform = "translate(" + judge_bar_frame + ", " + (judge_bar_frame + 10) + ")";
+
+// svg group def
+var judge_bar_svg, judge_bar_g, judge_bar_data_g, judge_bar_std_g;
 
 function $(id) { return document.getElementById(id); }
+
+// clear judge svg layer
+function judge_clearSvg(id) {
+    d3.select("#" + id)
+        .selectAll("*").remove();
+}
+
+// make new judge svg
+function judge_makeSvg(id, width, height, frame) {
+    judge_clearSvg(id);
+    var newSvg = d3.select("#" + id)
+        .append("svg")
+        .attr("width", width + 2 * frame)
+        .attr("height", height + 2 * frame);
+    return newSvg;
+}
+
+// init bar chart to 0
+function judge_initBarChart() {
+    judge_cart_ori_dataset = dataset_10_empty;
+    judge_cart_nor_dataset = dataset_10_empty;
+
+    judge_bar_svg = judge_makeSvg("judge-body-data", judge_bar_width, judge_bar_height, judge_bar_frame);
+    judge_bar_back_g = judge_bar_svg.append("g")
+        .attr("id", "barBackGroup")
+        .attr("transform", judge_bar_transform);
+    judge_bar_g = judge_bar_svg.append("g")
+        .attr("id", "barGroup")
+        .attr("transform", judge_bar_transform);
+    judge_bar_std_g = judge_bar_svg.append("g")
+        .attr("id", "barStdGroup")
+        .attr("transform", judge_bar_transform);
+    judge_bar_text_g = judge_bar_svg.append("g")
+        .attr("id", "barTextGroup")
+        .attr("transform", judge_bar_transform);
+    judge_bar_data_g = judge_bar_svg.append("g")
+        .attr("id", "barDataGroup")
+        .attr("transform", judge_bar_transform);
+    judge_bar_scaleW = d3.scale.linear()
+        .domain([0, 1])
+        .range([0, judge_bar_width]);
+
+    for (i = 0; i < judge_bar_dataset_label.length; i++) {
+        judge_bar_text_g.append("text")
+            .attr("x", 0)
+            .attr("y", 40 * i)
+            .text(judge_bar_dataset_label[i]);
+        judge_bar_data_g.append("text")
+            .attr("x", judge_bar_width)
+            .attr("y", 40 * i)
+            .attr("text-anchor", "end")
+            .attr("id", "l" + i)
+            .text(dataset_10_empty[i].toFixed(2));
+        judge_bar_back_g.append("rect")
+            .attr("x", 0)
+            .attr("y", 10 + 40 * i)
+            .attr("width", judge_bar_scaleW(1))
+            .attr("height", 10)
+            .attr("class", "judge-body-data-bar-back");
+    }
+
+    judge_bar_g.selectAll("rect")
+        .data(dataset_10_empty)
+        .enter()
+        .append("rect")
+        .attr("x", 0)
+        .attr("y", function(d, i) {
+            return 10 + 40 * i;
+        })
+        .attr("width", function(d) {
+            return judge_bar_scaleW(d);
+        })
+        .attr("height", 10)
+        .attr("fill", function(d, i) {
+            return judge_barColor(d, i);
+        })
+        .attr("class", "judge-body-data-bar")
+        .on("mouseover", function(d, i) {
+            d3.select(this).transition().duration(judge_duration / 2).attr("fill", "orange");
+        })
+        .on("mouseout", function(d, i) {
+            d3.select(this).transition().duration(judge_duration / 2).attr("fill", judge_barColor(d, i));
+        });
+
+    judge_bar_std_g.selectAll("rect")
+        .data(dataset_normalized_world)
+        .enter()
+        .append("rect")
+        .attr("id", function(d, i) {
+            return "b" + i;
+        })
+        .attr("x", function(d) {
+            return judge_bar_scaleW(d) -5;
+        })
+        .attr("y", function(d, i) {
+            return 10 + 40 * i;
+        })
+        .attr("width", 10)
+        .attr("height", 10)
+        .attr("class", "judge-body-data-bar-world")
+        .on("mouseover", function(d, i) {
+            //info_showPanelDatatip("b" + i, "World avg: " + dataset_original_world[i].toFixed(2));
+        })
+        .on("mouseout", function() {
+            //info_hidePanelDatatip();
+        });
+
+}
+
+// make/update bar chart
+function judge_makeBarChart(ori_dataset, nor_dataset) {
+    judge_bar_g.selectAll("rect").data(nor_dataset).transition()
+        .duration(judge_duration)
+        .ease("bounce")
+        .attr("width", function(d) {
+            return judge_bar_scaleW(d);
+        })
+        .attr("fill", function(d, i) {
+            return judge_barColor(d, i);
+        });
+    for (i = 0; i < judge_bar_dataset_label.length; i++) {
+        judge_bar_data_g.select("#l" + i)
+            .text(ori_dataset[i].toFixed(2));
+    }
+    //$('info-country-label').innerHTML = label + " .vs. World";
+}
+
+// update standard bars
+function judge_makeCStandard(dataset) {
+    judge_bar_std_g.selectAll("rect").data(dataset).transition()
+        .duration(judge_duration)
+        .ease("bounce")
+        .attr("x", function(d) {
+            return judge_bar_scaleW(d) -5;
+        })
+        .attr("y", function(d, i) {
+            return 10 + 40 * i;
+        });
+}
+
+// bar chart color picker
+// set color according to the world average
+function judge_barColor(d, i) {
+    std_avg = judge_std_dataset[i];
+    if (d >= std_avg - 0.2 && d <= std_avg + 0.2)
+        return "limegreen";
+    if (d < std_avg - 0.2)
+        return "dodgerblue";
+    if (d > std_avg + 0.2)
+        return "orangered";
+}
+
+
 
 function judge_setCountry(country, element) {
     judge_country = country;
@@ -36,12 +220,16 @@ function judge_setCountry(country, element) {
         .attr("class", "selected");
 
     $('judge-country-text').innerHTML = country;
-    var glo = countryInfo[d3.select("#" + element).attr("short")]['GLO'];
+    var cInfo = countryInfo[d3.select("#" + element).attr("short")];
     d3.select("#sidebar-panel-judge-sub-scales-left")
-        .attr("style", "background-image: url(" + country_balladdress + glo + ");");
+        .attr("style", "background-image: url(" + country_balladdress + cInfo['GLO'] + ");");
 
     if (judge_update == 1)
         judge_query();
+
+    judge_std_dataset = cInfo['DAT'];
+    judge_makeCStandard(cInfo['DAT']);
+    judge_makeBarChart(judge_cart_ori_dataset, judge_cart_nor_dataset);
 }
 
 function judge_setCategory(category, element) {
@@ -127,7 +315,7 @@ function judge_query() {
     $('judge-foodlist-body').innerHTML = "Loading...";
 
     json_object = {'country': judge_country, 'category': judge_category};
-    var fetchResponse = fetch(judge_queryaddress, {
+    var fetchResponse = fetch(judge_queryAddress, {
         method: 'post',
         headers: {
             'Accept': 'application/json',
@@ -168,7 +356,7 @@ function judge_updateList(data) {
 
         u += "</ul>";
 
-        u += "<a href='#' onclick='judge_addCart(" + data[i]['code'] + ",\"" + data[i]['product_name'] + "\",\"" + data[i]['image_url'] + "\");'>Add to cart</a>";
+        u += "<a href='#' onclick='judge_addCart(\"" + data[i]['code'] + "\",\"" + data[i]['product_name'] + "\",\"" + data[i]['image_url'] + "\");'>Add to cart</a>";
         u += "<a href='#' onclick='judge_showHideDetails(" + i + ");'>Show/Hide details</a>";
         u += "</td></tr></table>";
 
@@ -193,6 +381,11 @@ function judge_addCart(code, name, url) {
     judge_updateCart();
 }
 
+function judge_delCart(idx) {
+    judge_cart.splice(idx, 1);
+    judge_updateCart();
+}
+
 function judge_updateCart() {
     u = ""
     for (i = 0; i < judge_cart.length; i++) {
@@ -207,12 +400,44 @@ function judge_updateCart() {
 
         if (judge_cart[i]['PRO'] != null)
             u += "<strong>" + judge_cart[i]['PRO'] + "</strong>";
-
+        u += "<a href='#' onclick='judge_delCart(" + i + ");'>[Remove]</a>"
         u += "</td></tr></table>";
     }
     $('judge-foodcart-title').innerHTML = judge_cart.length;
     $('judge-foodcart-body').innerHTML = u;
+
+    judge_calculate();
 }
+
+function judge_calculate() {
+    json_object = [];
+    for (i = 0; i < judge_cart.length; i++)
+        json_object.push(judge_cart[i]['COD']);
+
+    var fetchResponse = fetch(judge_calculateAddress, {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(json_object)
+    });
+
+    fetchResponse.then((res) => res.json()).then(function(res) {
+        judge_updateBarChart(res);
+    });
+}
+
+function judge_updateBarChart(data) {
+    judge_cart_ori_dataset = data['ORI'];
+    judge_cart_nor_dataset = data['NOR'];
+    judge_makeBarChart(data['ORI'], data['NOR']);
+
+    $('judge-body-text').innerHTML = data['TYP'];
+}
+
+judge_initBarChart();
+
 
 judge_initCountry();
 judge_initCategory();
