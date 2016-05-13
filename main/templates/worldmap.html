@@ -74,36 +74,51 @@
         </footer>
       </section>
       <section class="sidebar-panel-link-sub hidden" id="sidebar-panel-link-sub">
-          <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
+        <div class="sidebar-panel-link-sub-chart" id="sidebar-panel-link-sub-chart"></div>
       </section>
       <section class="sidebar-panel-browse hidden" id="sidebar-panel-browse">
         <div class="sidebar-panel-body">
           <h1>Browse</h1>
-          <h3>Country</h3>
+          <h3>Country: <br/><span id="browse-country-text"></span></h3>
           <div class="browse-country" id="browse-country"></div>
-          <span id="browse-country-text"></span>
-          <h3>Category</h3>
+
+          <h3>Category: <br/><span id="browse-category-text"></span></h3>
           <div class="browse-category" id="browse-category"></div>
-          <span id="browse-category-text"></span>
+
         </div>
         <footer>
           <button id="sidebar-panel-browse-button">Query</button>
         </footer>
       </section>
       <section class="sidebar-panel-browse-sub hidden" id="sidebar-panel-browse-sub">
+        <h1>Search Result: <span id="browse-foodlist-title"></span></h1>
+        <div class="foodlist-body" id="browse-foodlist-body"></div>
       </section>
       <section class="sidebar-panel-judge hidden" id="sidebar-panel-judge">
         <div class="sidebar-panel-body">
           <h1>Judge</h1>
-          <h3>Target Country</h3>
-          <img src="./static/images/020/001.gif"/><img src="./static/images/020/002.gif"/><img src="./static/images/020/003.gif"/>
-          <h3>Compare Result</h3>
+          <h3>Target Country: <br/><span id="judge-country-text"></span></h3>
+          <div class="judge-country" id="judge-country"></div>
 
+          <h3>Compare Result</h3>
+          Area reserved for comparing bar chart<br/>Area reserved for most close habit
 
         </div>
       </section>
+      <section class="sidebar-panel-judge-sub hidden" id="sidebar-panel-judge-sub">
+        <div class="sidebar-panel-judge-sub-scales">
+          <div class="sidebar-panel-judge-sub-scales-left" id="sidebar-panel-judge-sub-scales-left"></div>
+          <div class="sidebar-panel-judge-sub-scales-right" id="sidebar-panel-judge-sub-scales-right"></div>
+        </div>
+        <div class="sidebar-panel-judge-sub-list">
+          <h1>List: <span id="judge-foodlist-title"></span></h1>
+          <div class="foodlist-body judge-foodlist-body" id="judge-foodlist-body"></div>
+          <h1>Cart: <span id="judge-foodcart-title"></span></h1>
+          <div class="foodlist-body judge-foodcart-body" id="judge-foodcart-body"></div>
+          <div class="judge-category" id="judge-category"></div>
+        </div>
+      </section>
     </div>
-
 
     <article class="article-view">
       <div class="views" id="views">
@@ -168,6 +183,7 @@
   <script src="./static/lib/topojson/topojson.v1.min.js"></script>
   <script language="Javascript" src="./static/lib/datamaps/datamaps.world.min.js"></script>
   <script language="Javascript" src="./static/js/country.data.js"></script>
+  <script language="Javascript" src="./static/js/category.data.js"></script>
   <script language="Javascript" src="./static/js/link.data.js"></script>
 
   <script language="Javascript" src="./static/js/worldmap.js"></script>
@@ -175,6 +191,7 @@
   <script language="Javascript" src="./static/js/sidebar.js"></script>
   <script language="Javascript" src="./static/js/sidebar.link.chart.js"></script>
   <script language="Javascript" src="./static/js/sidebar.browse.list.js"></script>
+  <script language="Javascript" src="./static/js/sidebar.judge.chart.js"></script>
 
   <script language="Javascript" src="./static/js/panel.info.chart.js"></script>
   <script language="Javascript" src="./static/js/panel.compare.chart.js"></script>

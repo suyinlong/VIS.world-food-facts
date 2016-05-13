@@ -2,8 +2,11 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 11:43:33
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 12:54:33
+* @Last Modified time: 2016-05-12 18:49:02
 */
+
+var country_flagaddress = './static/images/flags/';
+var country_balladdress = './static/images/balls/';
 
 var dataset_length = 10;
 var dataset_5_empty = [0.0, 0.0, 0.0, 0.0, 0.0];
@@ -124,70 +127,71 @@ var countryInfo = {
     'world': {
         'DAT': dataset_normalized_world,
         'ORI': dataset_original_world,
-        'LAB': 'World'
+        'LAB': 'World',
+        'GLO': 'World.png'
     },
     'ALB': {
         'DAT': dataset_normalized_ALB,
         'ORI': dataset_original_ALB,
         'LAB': 'Albania',
         'FLG': '006.gif',
-        'GLO': ''
+        'GLO': 'Albania.png'
     },
     'AND': {
         'DAT': dataset_normalized_AND,
         'ORI': dataset_original_AND,
         'LAB': 'Andorra',
         'FLG': '001.gif',
-        'GLO': ''
+        'GLO': 'Andorra.png'
     },
     'ARG': {
         'DAT': dataset_normalized_ARG,
         'ORI': dataset_original_ARG,
         'LAB': 'Argentina',
         'FLG': '010.gif',
-        'GLO': ''
+        'GLO': 'Argentina.png'
     },
     'AUS': {
         'DAT': dataset_normalized_AUS,
         'ORI': dataset_original_AUS,
         'LAB': 'Australia',
         'FLG': '043.gif',
-        'GLO': ''
+        'GLO': 'Australia.png'
     },
     'AUT': {
         'DAT': dataset_normalized_AUT,
         'ORI': dataset_original_AUT,
         'LAB': 'Austria',
         'FLG': '032.gif',
-        'GLO': ''
+        'GLO': 'Austria.png'
     },
     'BEL': {
         'DAT': dataset_normalized_BEL,
         'ORI': dataset_original_BEL,
         'LAB': 'Belgium',
         'FLG': '120.gif',
-        'GLO': ''
+        'GLO': 'Belgium.png'
     },
     'BRA': {
         'DAT': dataset_normalized_BRA,
         'ORI': dataset_original_BRA,
         'LAB': 'Brazil',
         'FLG': '169.gif',
-        'GLO': ''
+        'GLO': 'Brazil.png'
     },
     'KHM': {
         'DAT': dataset_normalized_KHM,
         'ORI': dataset_original_KHM,
         'LAB': 'Cambodia',
         'FLG': '242.gif',
-        'GLO': ''
+        'GLO': 'Cambodia.png'
     },
     'CAN': {
         'DAT': dataset_normalized_CAN,
         'ORI': dataset_original_CAN,
         'LAB': 'Canada',
         'FLG': '176.gif',
-        'GLO': ''
+        'GLO': 'Canada.png'
     },
     'CHL': {
         'DAT': dataset_normalized_CHL,
@@ -201,7 +205,7 @@ var countryInfo = {
         'ORI': dataset_original_CHN,
         'LAB': 'China',
         'FLG': '186.gif',
-        'GLO': ''
+        'GLO': 'China.png'
     },
     'CUB': {
         'DAT': dataset_normalized_CUB,
@@ -215,265 +219,265 @@ var countryInfo = {
         'ORI': dataset_original_CZE,
         'LAB': 'Czech Republic',
         'FLG': '194.gif',
-        'GLO': ''
+        'GLO': 'Czech-Republic.png'
     },
     'DNK': {
         'DAT': dataset_normalized_DNK,
         'ORI': dataset_original_DNK,
         'LAB': 'Denmark',
         'FLG': '197.gif',
-        'GLO': ''
+        'GLO': 'Denmark.png'
     },
     'FIN': {
         'DAT': dataset_normalized_FIN,
         'ORI': dataset_original_FIN,
         'LAB': 'Finland',
         'FLG': '210.gif',
-        'GLO': ''
+        'GLO': 'Finland.png'
     },
     'FRA': {
         'DAT': dataset_normalized_FRA,
         'ORI': dataset_original_FRA,
         'LAB': 'France',
         'FLG': '215.gif',
-        'GLO': ''
+        'GLO': 'France.png'
     },
     'GUF': {
         'DAT': dataset_normalized_GUF,
         'ORI': dataset_original_GUF,
         'LAB': 'French Guiana',
         'FLG': '243.gif',
-        'GLO': ''
+        'GLO': 'French-Guiana.png'
     },
     'DEU': {
         'DAT': dataset_normalized_DEU,
         'ORI': dataset_original_DEU,
         'LAB': 'Germany',
         'FLG': '195.gif',
-        'GLO': ''
+        'GLO': 'Germany.png'
     },
     'GRC': {
         'DAT': dataset_normalized_GRC,
         'ORI': dataset_original_GRC,
         'LAB': 'Greece',
         'FLG': '227.gif',
-        'GLO': ''
+        'GLO': 'Greece.png'
     },
     'GLP': {
         'DAT': dataset_normalized_GLP,
         'ORI': dataset_original_GLP,
         'LAB': 'Guadeloupe',
         'FLG': '244.gif',
-        'GLO': ''
+        'GLO': 'Guadeloupe.png'
     },
     'HKG': {
         'DAT': dataset_normalized_HKG,
         'ORI': dataset_original_HKG,
         'LAB': 'Hong Kong',
         'FLG': '233.gif',
-        'GLO': ''
+        'GLO': 'Hong-Kong.png'
     },
     'HUN': {
         'DAT': dataset_normalized_HUN,
         'ORI': dataset_original_HUN,
         'LAB': 'Hungary',
         'FLG': '001.gif',
-        'GLO': ''
+        'GLO': 'Hungary.png'
     },
     'IND': {
         'DAT': dataset_normalized_IND,
         'ORI': dataset_original_IND,
         'LAB': 'India',
         'FLG': '012.gif',
-        'GLO': ''
+        'GLO': 'India.png'
     },
     'IRL': {
         'DAT': dataset_normalized_IRL,
         'ORI': dataset_original_IRL,
         'LAB': 'Ireland',
         'FLG': '239.gif',
-        'GLO': ''
+        'GLO': 'Ireland.png'
     },
     'ISR': {
         'DAT': dataset_normalized_ISR,
         'ORI': dataset_original_ISR,
         'LAB': 'Israel',
         'FLG': '011.gif',
-        'GLO': ''
+        'GLO': 'Israel.png'
     },
     'ITA': {
         'DAT': dataset_normalized_ITA,
         'ORI': dataset_original_ITA,
         'LAB': 'Italy',
         'FLG': '017.gif',
-        'GLO': ''
+        'GLO': 'Italy.png'
     },
     'LUX': {
         'DAT': dataset_normalized_LUX,
         'ORI': dataset_original_LUX,
         'LAB': 'Luxembourg',
         'FLG': '042.gif',
-        'GLO': ''
+        'GLO': 'Luxembourg.png'
     },
     'MLT': {
         'DAT': dataset_normalized_MLT,
         'ORI': dataset_original_MLT,
         'LAB': 'Malta',
         'FLG': '061.gif',
-        'GLO': ''
+        'GLO': 'Malta.png'
     },
     'MTQ': {
         'DAT': dataset_normalized_MTQ,
         'ORI': dataset_original_MTQ,
         'LAB': 'Martinique',
         'FLG': '245.gif',
-        'GLO': ''
+        'GLO': 'Martinique.png'
     },
     'MAR': {
         'DAT': dataset_normalized_MAR,
         'ORI': dataset_original_MAR,
         'LAB': 'Morocco',
         'FLG': '046.gif',
-        'GLO': ''
+        'GLO': 'Morocco.png'
     },
     'NLD': {
         'DAT': dataset_normalized_NLD,
         'ORI': dataset_original_NLD,
         'LAB': 'Netherlands',
         'FLG': '075.gif',
-        'GLO': ''
+        'GLO': 'Netherlands.png'
     },
     'NZL': {
         'DAT': dataset_normalized_NZL,
         'ORI': dataset_original_NZL,
         'LAB': 'New Zealand',
         'FLG': '081.gif',
-        'GLO': ''
+        'GLO': 'New-Zealand.png'
     },
     'NOR': {
         'DAT': dataset_normalized_NOR,
         'ORI': dataset_original_NOR,
         'LAB': 'Norway',
         'FLG': '172.gif',
-        'GLO': ''
+        'GLO': 'Norway.png'
     },
     'POL': {
         'DAT': dataset_normalized_POL,
         'ORI': dataset_original_POL,
         'LAB': 'Poland',
         'FLG': '090.gif',
-        'GLO': ''
+        'GLO': 'Poland.png'
     },
     'PRT': {
         'DAT': dataset_normalized_PRT,
         'ORI': dataset_original_PRT,
         'LAB': 'Portugal',
         'FLG': '095.gif',
-        'GLO': ''
+        'GLO': 'Portugal.png'
     },
     'ROU': {
         'DAT': dataset_normalized_ROU,
         'ORI': dataset_original_ROU,
         'LAB': 'Romania',
         'FLG': '120.gif',
-        'GLO': ''
+        'GLO': 'Romania.png'
     },
     'RUS': {
         'DAT': dataset_normalized_RUS,
         'ORI': dataset_original_RUS,
         'LAB': 'Russia',
         'FLG': '101.gif',
-        'GLO': ''
+        'GLO': 'Russia.png'
     },
     'SPM': {
         'DAT': dataset_normalized_SPM,
         'ORI': dataset_original_SPM,
         'LAB': 'Saint Pierre and Miquelon',
         'FLG': '246.gif',
-        'GLO': ''
+        'GLO': 'St.-Pierre-&-Miquelon.png'
     },
     'SGP': {
         'DAT': dataset_normalized_SGP,
         'ORI': dataset_original_SGP,
         'LAB': 'Singapore',
         'FLG': '110.gif',
-        'GLO': ''
+        'GLO': 'Singapore.png'
     },
     'SVN': {
         'DAT': dataset_normalized_SVN,
         'ORI': dataset_original_SVN,
         'LAB': 'Slovenia',
         'FLG': '112.gif',
-        'GLO': ''
+        'GLO': 'Slovenia.png'
     },
     'ZAF': {
         'DAT': dataset_normalized_ZAF,
         'ORI': dataset_original_ZAF,
         'LAB': 'South Africa',
         'FLG': '161.gif',
-        'GLO': ''
+        'GLO': 'South-Africa.png'
     },
     'KOR': {
         'DAT': dataset_normalized_KOR,
         'ORI': dataset_original_KOR,
         'LAB': 'South Korea',
         'FLG': '029.gif',
-        'GLO': ''
+        'GLO': 'South-Korea.png'
     },
     'ESP': {
         'DAT': dataset_normalized_ESP,
         'ORI': dataset_original_ESP,
         'LAB': 'Spain',
         'FLG': '207.gif',
-        'GLO': ''
+        'GLO': 'Spain.png'
     },
     'SWE': {
         'DAT': dataset_normalized_SWE,
         'ORI': dataset_original_SWE,
         'LAB': 'Sweden',
         'FLG': '065.gif',
-        'GLO': ''
+        'GLO': 'Sweden.png'
     },
     'SWZ': {
         'DAT': dataset_normalized_SWZ,
         'ORI': dataset_original_SWZ,
         'LAB': 'Swaziland',
         'FLG': '240.gif',
-        'GLO': ''
+        'GLO': 'Swaziland.png'
     },
     'TWN': {
         'DAT': dataset_normalized_TWN,
         'ORI': dataset_original_TWN,
         'LAB': 'Taiwan',
         'FLG': '139.gif',
-        'GLO': ''
+        'GLO': 'Taiwan.png'
     },
     'THA': {
         'DAT': dataset_normalized_THA,
         'ORI': dataset_original_THA,
         'LAB': 'Thailand',
         'FLG': '128.gif',
-        'GLO': ''
+        'GLO': 'Thailand.png'
     },
     'TUN': {
         'DAT': dataset_normalized_TUN,
         'ORI': dataset_original_TUN,
         'LAB': 'Tunisia',
         'FLG': '134.gif',
-        'GLO': ''
+        'GLO': 'Tunisia.png'
     },
     'GBR': {
         'DAT': dataset_normalized_GBR,
         'ORI': dataset_original_GBR,
         'LAB': 'United Kingdom',
         'FLG': '241.gif',
-        'GLO': ''
+        'GLO': 'United-Kingdom.png'
     },
     'USA': {
         'DAT': dataset_normalized_USA,
         'ORI': dataset_original_USA,
-        'LAB': 'United States of America',
+        'LAB': 'United States',
         'FLG': '145.gif',
-        'GLO': ''
+        'GLO': 'United-States.png'
     },
 };

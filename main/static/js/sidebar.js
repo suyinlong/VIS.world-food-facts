@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 10:44:45
+* @Last Modified time: 2016-05-12 16:11:39
 */
 
 function $(id) { return document.getElementById(id); }
@@ -16,11 +16,13 @@ function showSidebarSection(className) {
     if (className == 'sidebar-panel-link' || className == 'sidebar-panel-link-sub') {
         d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
         d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
+        d3.select(".sidebar-panel-judge-sub").attr("class", "sidebar-panel-judge-sub hidden");
         d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
     }
     else if (className == 'sidebar-panel-browse' || className == 'sidebar-panel-browse-sub') {
         d3.select(".sidebar-panel-link-sub").attr("class", "sidebar-panel-link-sub hidden");
         d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
+        d3.select(".sidebar-panel-judge-sub").attr("class", "sidebar-panel-judge-sub hidden");
         d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
     } else if (className == 'sidebar-panel-judge') {
         d3.select(".sidebar-panel-link-sub").attr("class", "sidebar-panel-link-sub hidden");
@@ -40,6 +42,7 @@ function hideSidebarSection() {
     d3.select(".sidebar-panel-link").attr("class", "sidebar-panel-link hidden");
     d3.select(".sidebar-panel-browse-sub").attr("class", "sidebar-panel-browse-sub hidden");
     d3.select(".sidebar-panel-browse").attr("class", "sidebar-panel-browse hidden");
+    d3.select(".sidebar-panel-judge-sub").attr("class", "sidebar-panel-judge-sub hidden");
     d3.select(".sidebar-panel-judge").attr("class", "sidebar-panel-judge hidden");
 }
 
@@ -142,6 +145,7 @@ d3.select("#sidebar-list-button-browse")
 d3.select("#sidebar-list-button-judge")
     .on("click", function() {
         showSidebarSection('sidebar-panel-judge');
+        showSidebarSection('sidebar-panel-judge-sub');
     })
     .on("mouseover", function() {
         showSidebarTooltip("sidebar-list-button-judge", "Balance my diet");
