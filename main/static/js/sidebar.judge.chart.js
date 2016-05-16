@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-05-12 14:57:23
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 22:44:25
+* @Last Modified time: 2016-05-13 00:38:07
 */
 
 // all animation duration
@@ -76,19 +76,19 @@ function judge_initBarChart() {
 
     judge_bar_svg = judge_makeSvg("judge-body-data", judge_bar_width, judge_bar_height, judge_bar_frame);
     judge_bar_back_g = judge_bar_svg.append("g")
-        .attr("id", "barBackGroup")
+        .attr("id", "jbarBackGroup")
         .attr("transform", judge_bar_transform);
     judge_bar_g = judge_bar_svg.append("g")
-        .attr("id", "barGroup")
+        .attr("id", "jbarGroup")
         .attr("transform", judge_bar_transform);
     judge_bar_std_g = judge_bar_svg.append("g")
-        .attr("id", "barStdGroup")
+        .attr("id", "jbarStdGroup")
         .attr("transform", judge_bar_transform);
     judge_bar_text_g = judge_bar_svg.append("g")
-        .attr("id", "barTextGroup")
+        .attr("id", "jbarTextGroup")
         .attr("transform", judge_bar_transform);
     judge_bar_data_g = judge_bar_svg.append("g")
-        .attr("id", "barDataGroup")
+        .attr("id", "jbarDataGroup")
         .attr("transform", judge_bar_transform);
     judge_bar_scaleW = d3.scale.linear()
         .domain([0, 1])
@@ -103,7 +103,7 @@ function judge_initBarChart() {
             .attr("x", judge_bar_width)
             .attr("y", 40 * i)
             .attr("text-anchor", "end")
-            .attr("id", "l" + i)
+            .attr("id", "jl" + i)
             .text(dataset_10_empty[i].toFixed(2));
         judge_bar_back_g.append("rect")
             .attr("x", 0)
@@ -141,7 +141,7 @@ function judge_initBarChart() {
         .enter()
         .append("rect")
         .attr("id", function(d, i) {
-            return "b" + i;
+            return "jb" + i;
         })
         .attr("x", function(d) {
             return judge_bar_scaleW(d) -5;
@@ -173,7 +173,7 @@ function judge_makeBarChart(ori_dataset, nor_dataset) {
             return judge_barColor(d, i);
         });
     for (i = 0; i < judge_bar_dataset_label.length; i++) {
-        judge_bar_data_g.select("#l" + i)
+        judge_bar_data_g.select("#jl" + i)
             .text(ori_dataset[i].toFixed(2));
     }
     //$('info-country-label').innerHTML = label + " .vs. World";

@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-28 22:08:47
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 22:50:33
+* @Last Modified time: 2016-05-13 00:54:18
 */
 
 .midmask {
@@ -448,12 +448,12 @@
 
 
 .foodlist-body::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 /* Track */
 .foodlist-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -462,7 +462,13 @@
 .foodlist-body::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(128,128,128,0.8);
+    background: rgba(158,158,158,1.0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.foodlist-body::-webkit-scrollbar-thumb:hover {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(114,114,114,1.0);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 .foodlist-body::-webkit-scrollbar-thumb:window-inactive {
@@ -478,7 +484,7 @@
   margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
+  width: 90%;
 }
 
 .foodlist-body tr:hover {
