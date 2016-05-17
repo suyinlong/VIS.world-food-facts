@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-05-12 14:57:23
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-13 00:38:07
+* @Last Modified time: 2016-05-16 23:33:39
 */
 
 // all animation duration
@@ -11,6 +11,7 @@ var judge_duration = 500;
 // judge request addresses
 var judge_queryAddress = '/query';
 var judge_calculateAddress = '/calc';
+var judge_suggestAddress = '/sug';
 
 // auto update switch
 var judge_update = 0;
@@ -224,8 +225,12 @@ function judge_setCountry(country, element) {
     d3.select("#sidebar-panel-judge-sub-scales-left")
         .attr("style", "background-image: url(" + country_balladdress + cInfo['GLO'] + ");");
 
-    if (judge_update == 1)
-        judge_query();
+    if (judge_update == 1) {
+        if (judge_category != 'suggest')
+            judge_query();
+        else
+            judge_suggest();
+    }
 
     judge_std_dataset = cInfo['DAT'];
     judge_makeCStandard(cInfo['DAT']);
@@ -246,8 +251,12 @@ function judge_setCategory(category, element) {
         .attr("class", "selected");
 
     //$('judge-category-text').innerHTML = category;
-    if (judge_update == 1)
-        judge_query();
+    if (judge_update == 1) {
+        if (judge_category != 'suggest')
+            judge_query();
+        else
+            judge_suggest();
+    }
 }
 
 function judge_showHideDetails(idx) {
@@ -308,6 +317,15 @@ function judge_initCategory() {
             judge_setCategory(d3.select(this).attr("label"), d3.select(this).attr("id"));
         });
     }
+
+    var li = ul.append("li")
+        .attr("label", "suggest")
+        .attr("title", "Suggestion")
+        .attr("id", "judge-category-suggest")
+        .attr("style", "background-image: url(" + category_iconaddress + "category-11.png); margin-top: 20px;");
+    li.on("click", function() {
+        judge_setCategory(d3.select(this).attr("label"), d3.select(this).attr("id"));
+    });
 }
 
 function judge_query() {
@@ -316,6 +334,29 @@ function judge_query() {
 
     json_object = {'country': judge_country, 'category': judge_category};
     var fetchResponse = fetch(judge_queryAddress, {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(json_object)
+    });
+
+    fetchResponse.then((res) => res.json()).then(function(res) {
+        judge_updateList(res);
+    });
+}
+
+function judge_suggest() {
+    $('judge-foodlist-title').innerHTML = "- Waiting for the reply -";
+    $('judge-foodlist-body').innerHTML = "Loading...";
+
+    cartCode = [];
+    for (i = 0; i < judge_cart.length; i++)
+        cartCode.push(judge_cart[i]['COD']);
+    json_object = {'country': judge_country, 'cart': cartCode};
+
+    var fetchResponse = fetch(judge_suggestAddress, {
         method: 'post',
         headers: {
             'Accept': 'application/json',

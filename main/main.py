@@ -39,6 +39,12 @@ def app_calc():
     json_object = request.json
     return to_json(calc.cartCalc(data, json_object))
 
+# suggestion
+@app.route("/sug", methods=['POST'])
+def app_sug():
+    json_object = request.json
+    return df_to_json(calc.sugCalc(data, json_object['country'], json_object['cart']))
+
 init()
 
 if __name__ == "__main__":
