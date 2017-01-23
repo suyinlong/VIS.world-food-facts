@@ -2,7 +2,7 @@
 * @Author: Yinlong Su
 * @Date:   2016-04-27 22:09:06
 * @Last Modified by:   Yinlong Su
-* @Last Modified time: 2016-05-12 16:11:39
+* @Last Modified time: 2016-05-17 23:02:26
 */
 
 function $(id) { return document.getElementById(id); }
@@ -87,7 +87,8 @@ d3.select("#sidebar-list-button-location").on("click", function() {
 
 d3.select("#sidebar-list-button-location")
     .on("click", function() {
-        //showPopupPanel('', null);
+        hidePopupPanel();
+        hideSidebarSection();
     })
     .on("mouseover", function() {
         showSidebarTooltip("sidebar-list-button-location", "Set my location");
