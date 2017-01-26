@@ -1,4 +1,4 @@
-# [World Food Facts]
+# World Food Facts
 
 This is a project to analyze [the Open Food Facts database](https://world.openfoodfacts.org/data) and visualize the results.
 
@@ -20,8 +20,8 @@ To run the server you need the following dependencies:
 
 For command line runs:
 <pre>
-$ git clone
-$ cd
+$ git clone https://github.com/suyinlong/vis.world-food-facts.git wff.git
+$ cd wff.git
 $ cd main
 $ python main.py
 </pre>
