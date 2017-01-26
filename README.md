@@ -36,9 +36,9 @@ After the server is up, you can visit http://127.0.0.1:61173/
 
 ![Country Compare](/misc/feature.country.compare.png)
 
-![Country Link](/misc/feature.country.link)
+![Country Link](/misc/feature.country.link.png)
 
-![Food Browse](/misc/feature.food.browse)
+![Food Browse](/misc/feature.food.browse.png)
 
 ![Food Recommendation](/misc/feature.food.recommend.png)
 
