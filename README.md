@@ -28,7 +28,21 @@ $ python main.py
 
 After the server is up, you can visit http://127.0.0.1:61173/
 
-### Demo Videos
+## Features
+
+![World Map](/misc/feature.worldmap.png)
+
+![Country Information](/misc/feature.country.info.png)
+
+![Country Compare](/misc/feature.country.compare.png)
+
+![Country Link](/misc/feature.country.link)
+
+![Food Browse](/misc/feature.food.browse)
+
+![Food Recommendation](/misc/feature.food.recommend.png)
+
+## Demo Videos
 
 - <https://youtu.be/i_RJ_XdzLpk>
 - <https://youtu.be/ZRz1X7x5Npw>
