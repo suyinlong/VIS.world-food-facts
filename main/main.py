@@ -8,12 +8,13 @@ from flask import Flask, request, Response, render_template
 
 data = None
 dataReady = False
-csvFileLocation = '../Data/world.food.facts.csv'
+csvFileLocation = '../data/world.food.facts.csv'
 
 app = Flask(__name__)
 
 def init():
     global data
+    global dataReady
     try:
         data = pandas.read_csv(csvFileLocation, dtype={'code': str})
     except FileNotFoundError:
